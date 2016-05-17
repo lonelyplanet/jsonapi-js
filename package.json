@@ -1,0 +1,58 @@
+{
+  "name": "open-planet-js",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "NODE_ENV=test npm test && rimraf dist/* && NODE_ENV=production webpack --config webpack.config.prod",
+    "build:dev": "NODE_ENV=test npm test && rimraf dist/* && NODE_ENV=production webpack --config webpack.config",
+    "test": "NODE_ENV=test mocha --colors --reporter dot --compilers js:babel-register --recursive test/",
+    "test:cov": "NODE_ENV=test istanbul cover node_modules/mocha/bin/_mocha -- --colors --reporter dot --compilers js:babel-register --recursive test/",
+    "test:ci": "NODE_ENV=test mocha --reporter spec --compilers js:babel-register --watch --recursive test/",
+    "lint": "./node_modules/.bin/eslint app --ext .js"
+  },
+  "pre-commit": [
+    "test"
+  ],
+  "dependencies": {
+    "babel-cli": "^6.5.1",
+    "babel-core": "^6.5.2",
+    "babel-polyfill": "^6.5.0",
+    "babel-preset-stage-1": "^6.5.0",
+    "circuitbreaker": "^0.2.1",
+    "dotenv": "~1.2.0",
+    "eslint": "^2.4.0",
+    "node-statsd": "^0.1.1",
+    "request": "^2.69.0",
+    "superagent": "^1.8.3",
+    "superagent-jsonapify": "^1.4.1",
+    "trackjs": "^2.2.0",
+    "webpack": "^1.12.15"
+  },
+  "devDependencies": {
+    "babel-eslint": "^6.0.0-beta.6",
+    "babel-loader": "^6.2.3",
+    "babel-plugin-syntax-decorators": "^6.5.0",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-preset-es2015": "^6.5.0",
+    "babel-register": "^6.6.0",
+    "chai": "~3.3.0",
+    "debug": "~2.2.0",
+    "es6-promise": "^3.1.2",
+    "eslint-config-airbnb": "^6.0.2",
+    "eslint-loader": "^1.3.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.8.5",
+    "glob": "^7.0.3",
+    "imports-loader": "^0.6.5",
+    "istanbul": "^1.0.0-alpha.2",
+    "json-loader": "^0.5.4",
+    "mocha": "~2.3.3",
+    "rimraf": "^2.5.2",
+    "sinon": "~1.17.1",
+    "supertest": "^1.2.0",
+    "webpack-dev-middleware": "^1.5.1",
+    "webpack-dev-server": "^1.14.1",
+    "webpack-hot-middleware": "^2.10.0",
+    "webpack-manifest-plugin": "^1.0.0"
+  }
+}

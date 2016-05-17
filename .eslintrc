@@ -1,0 +1,31 @@
+{
+  "parser": "babel-eslint",
+  "globals": {
+    "$": true,
+    "Modernizr": true,
+    "ENV_PROD": true,
+    "resrc": true,
+    "process": true,
+    "describe": true,
+    "it": true,
+    "expect": true
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "rules": {
+    "quotes": [1, "double"],
+    "eol-last": [0],
+    "no-mixed-requires": [0],
+    "no-underscore-dangle": [0],
+    "strict": [0, "never"],
+    "no-var": [1],
+    "no-unused-vars": [2],
+    "semi": [1, "always"],
+    "no-use-before-define": [2],
+    "no-undef": [2]
+  },
+  "extends": ["airbnb"]
+}
