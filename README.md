@@ -2,7 +2,7 @@
 A small library for consuming a JsonAPI.
 
 ### Using it
-```
+```shell
 npm install --save jsonapi-js
 ```
 
