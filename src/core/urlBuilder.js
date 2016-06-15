@@ -69,7 +69,7 @@ const createIncludes = (include) => {
   return `include=${include.join(",")}`;
 };
 
-function buildQuery({ includes, page, filters, perPage }) {
+function buildQuery({ includes = [], filters = {}, page, perPage }) {
   const urlParts = [];
 
   if (includes.length) {
@@ -96,7 +96,6 @@ function buildQuery({ includes, page, filters, perPage }) {
  * @param  {array} [options.include]=[] - An array of additional includes
  * @return {string} Built url for a resource
  * @example
- * import { build } form "open-planet-js/src/core/urlBuilder";
  *
  * build({
  *   base: "https://api.lonelyplanet.com",
@@ -112,7 +111,7 @@ function build({
   page,
   perPage,
 } = {}) {
-  let url = `${base}/${resource}`;
+  let url = `${base}${resource.substr(0, 1) === "/" ? "" : "/"}${resource}`;
 
   const query = buildQuery({
     includes, page, filters, perPage,
