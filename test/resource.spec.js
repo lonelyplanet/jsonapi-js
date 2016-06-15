@@ -3,7 +3,7 @@ import { expect } from "chai";
 import sinon from "sinon";
 import placeDoc from "./fixtures/place.json";
 import pois from "./fixtures/pois.json";
-import Benchmark from "benchmark";
+// import Benchmark from "benchmark";
 
 describe("Resource", function() {
   it("should have a find method", () => {
