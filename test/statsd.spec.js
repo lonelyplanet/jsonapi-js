@@ -1,4 +1,4 @@
-import statsd from "../../src/open-planet/decorators/statsd";
+import statsd from "../src/decorators/statsd";
 import { expect } from "chai";
 import sinon from "sinon";
 
@@ -22,11 +22,18 @@ describe("statsd decorator", function resource() {
     const decorator = statsd("foo", fakeStatsdClient);
 
     const fakeMethod = function fakeMethod() {
-      return new Promise((resolve) => {
-        setTimeout(() => {
-          resolve();
-        }, 1);
-      });
+      return {
+        then(callback) {
+          // Simulate response time
+          setTimeout(callback, 10);
+          return {
+            catch() {},
+          };
+        },
+        catch(callback) {
+          return callback();
+        },
+      };
     };
 
     const descriptor = {
@@ -39,16 +46,26 @@ describe("statsd decorator", function resource() {
       expect(fakeStatsdClient.timing.getCall(0).args[0]).to.equal("open_planet.nodejs.foo.get.success.response_time");
       expect(fakeStatsdClient.increment.getCall(0).args[0]).to.equal("open_planet.nodejs.foo.get.success.count");
       done();
-    });
+    }).catch(console.log);
   });
 
   it("should send fail counts", (done) => {
     const decorator = statsd("foo", fakeStatsdClient);
 
+    // Isn't it fun to fake a promise ಠ_ಠ
     const fakeMethod = function fakeMethod() {
-      return new Promise((resolve, reject) => {
-        reject();
-      });
+      return {
+        then() {
+          return {
+            catch(callback) {
+              return callback();
+            },
+          };
+        },
+        catch(callback) {
+          return callback();
+        },
+      };
     };
 
     const descriptor = {
@@ -58,10 +75,8 @@ describe("statsd decorator", function resource() {
 
     descriptor.value("oh hai").catch(() => {
       // The setTimeout here forces this assertion to run after the catch in the decorator
-      process.nextTick(() => {
-        expect(fakeStatsdClient.increment.getCall(0).args[0]).to.equal("open_planet.nodejs.foo.get.fail.count");
-        done();
-      });
+      expect(fakeStatsdClient.increment.getCall(0).args[0]).to.equal("open_planet.nodejs.foo.get.fail.count");
+      done();
     });
   });
 });

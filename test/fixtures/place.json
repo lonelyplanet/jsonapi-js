@@ -1,0 +1,876 @@
+{
+  "data": {
+    "attributes": {
+      "center": {
+        "coordinates": [
+          -86.7835755079,
+          36.1569141656
+        ],
+        "type": "Point"
+      },
+      "name": "Nashville",
+      "place_type": "city"
+    },
+    "id": "362228",
+    "links": {
+      "descendants": {
+        "href": "/places/362228/descendants"
+      },
+      "self": "/places/362228"
+    },
+    "relationships": {
+      "activities": {
+        "links": {
+          "related": "/partner-activities?filter[stops][intersects]=4323"
+        }
+      },
+      "articles": {
+        "links": {
+          "related": "/articles?filter[place_id][equals]=4323"
+        }
+      },
+      "image-associations": {
+        "links": {
+          "related": "/places/362228/image_associations"
+        }
+      },
+      "introduction": {
+        "data": null
+      },
+      "lodgings": {
+        "links": {
+          "related": "/lodgings?filter[location][contained_in]=4323"
+        }
+      },
+      "love-letter": {
+        "data": null
+      },
+      "news": {
+        "links": {
+          "related": "/news?filter[place_id][equals]=362228"
+        }
+      },
+      "parent": {
+        "data": {
+          "id": "362223",
+          "type": "place"
+        },
+        "links": {
+          "related": "/places/362223"
+        }
+      },
+      "pois": {
+        "data": [
+          {
+            "id": "381139",
+            "type": "poi"
+          },
+          {
+            "id": "1512974",
+            "type": "poi"
+          },
+          {
+            "id": "1247530",
+            "type": "poi"
+          },
+          {
+            "id": "381157",
+            "type": "poi"
+          },
+          {
+            "id": "1512912",
+            "type": "poi"
+          },
+          {
+            "id": "1512968",
+            "type": "poi"
+          },
+          {
+            "id": "1513071",
+            "type": "poi"
+          },
+          {
+            "id": "1512867",
+            "type": "poi"
+          },
+          {
+            "id": "1129175",
+            "type": "poi"
+          },
+          {
+            "id": "1512996",
+            "type": "poi"
+          }
+        ],
+        "links": {
+          "next": "/places/362228/pois?page[limit]=10&page[offset]=10",
+          "related": "/pois?filter[place_id][has_ancestor]=362228"
+        }
+      },
+      "shape": {
+        "data": {
+          "id": "4323",
+          "type": "place_shape"
+        },
+        "links": {
+          "related": "/places/362228/shape"
+        }
+      },
+      "top-experiences": {
+        "data": null
+      }
+    },
+    "type": "place"
+  },
+  "included": [
+    {
+      "attributes": {
+        "address": {
+          "extras": "",
+          "street": "700 Taylor St"
+        },
+        "hours_string": "5:30-10pm",
+        "location": {
+          "coordinates": [
+            -86.79225,
+            36.177653
+          ],
+          "type": "Point"
+        },
+        "name": "Rolf and Daughters",
+        "poi_attributes": [
+          {
+            "category": "preference",
+            "name": "top_choice"
+          }
+        ],
+        "poi_type": "eating",
+        "price_range": "mid-range",
+        "price_string": "mains $17-26",
+        "review": {
+          "essential": "<p>The epicenter of Germantown's foodie revival is this stunning kitchen run by Belgian chef Philip Krajeck, whose earthy pastas, rustic sauces and seasonal-changing 'modern peasant food' will stand your tastebuds on end as if to say, \\\"What was <em>that</em>?\\\"</p>",
+          "extension": "<p>Standouts of the European-inspired, locally-sourced fare – it's a feeding frenzy here as the menu fluctuates with the arrival of the season's first crops – include <em>garganelli verde</em> (green from fresh spinach) and a devastatingly-good pastured chicken with preserved lemon and garlic confit. Reservations? Certainly. But there's a communal table and bar for walk-ins as well.</p>"
+        },
+        "subtypes": [
+          "Modern European"
+        ],
+        "telephone": {
+          "national": "615-866-9897"
+        },
+        "website": "http://www.rolfanddaughters.com"
+      },
+      "id": "1512974",
+      "links": {
+        "self": "/pois/1512974"
+      },
+      "relationships": {
+        "containing-place": {
+          "data": {
+            "id": "1341152",
+            "type": "place"
+          },
+          "links": {
+            "related": "/places/1341152"
+          }
+        },
+        "image-associations": {
+          "links": {
+            "related": "/pois/1512974/image_associations"
+          }
+        }
+      },
+      "type": "poi"
+    },
+    {
+      "attributes": {
+        "tag": "hero"
+      },
+      "id": "pois_hero_334229",
+      "links": {
+        "self": "/image_associations/pois_hero_334229"
+      },
+      "relationships": {
+        "from": {
+          "data": {
+            "id": "18297",
+            "type": "image"
+          },
+          "links": {
+            "related": "/images/18297"
+          }
+        },
+        "to": {
+          "data": {
+            "id": "381139",
+            "type": "poi"
+          },
+          "links": {
+            "related": "/pois/381139"
+          }
+        }
+      },
+      "type": "image_association"
+    },
+    {
+      "attributes": {
+        "address": {
+          "extras": "",
+          "street": "224 5th Ave S"
+        },
+        "hours_string": "9.30am-6pm Sun-Wed, to 8pm Thu-Sat",
+        "location": {
+          "coordinates": [
+            -86.776693,
+            36.158
+          ],
+          "type": "Point"
+        },
+        "name": "Hatch Show Print",
+        "poi_attributes": [
+          {
+            "category": "preference",
+            "name": "top_choice"
+          }
+        ],
+        "poi_type": "shopping",
+        "price_string": "tours $15",
+        "review": {
+          "essential": "<p>One of the oldest letterpress print shops in the US, Hatch has been using old-school, hand-cut blocks to print its bright, iconic posters since Vaudeville. The company has produced graphic ads and posters for almost every country star since and have now graduated to newly-expanded digs inside the revamped Country Music Hall of Fame.</p>",
+          "extension": "<p>There are three daily tours (12:30pm, 2pm and 3:30pm); an expanded retail space; and gallery, where you can purchase re-strikes made from original wood plates dating from the 1870s to 1960s and one-of-a-kind monoprints reinterpreted from original woodblocks by Nashville legend Jim Sherraden.</p>"
+        },
+        "subtypes": [
+          "Art",
+          " Souvenirs"
+        ],
+        "website": "http://www.hatchshowprint.com"
+      },
+      "id": "381157",
+      "links": {
+        "self": "/pois/381157"
+      },
+      "relationships": {
+        "containing-place": {
+          "data": {
+            "id": "1341151",
+            "type": "place"
+          },
+          "links": {
+            "related": "/places/1341151"
+          }
+        },
+        "image-associations": {
+          "links": {
+            "related": "/pois/381157/image_associations"
+          }
+        }
+      },
+      "type": "poi"
+    },
+    {
+      "attributes": {
+        "tag": "hero"
+      },
+      "id": "pois_hero_106760",
+      "links": {
+        "self": "/image_associations/pois_hero_106760"
+      },
+      "relationships": {
+        "from": {
+          "data": {
+            "id": "18438",
+            "type": "image"
+          },
+          "links": {
+            "related": "/images/18438"
+          }
+        },
+        "to": {
+          "data": {
+            "id": "1129175",
+            "type": "poi"
+          },
+          "links": {
+            "related": "/pois/1129175"
+          }
+        }
+      },
+      "type": "image_association"
+    },
+    {
+      "attributes": {
+        "address": {
+          "extras": "",
+          "street": "303 Demonbreun St"
+        },
+        "hours_string": "11am-2pm & 5-10pm Mon-Thu, 11am-2pm & 5-10:30pm Fri, 5-10:30pm Sat",
+        "location": {
+          "coordinates": [
+            -86.775137,
+            36.159143
+          ],
+          "type": "Point"
+        },
+        "name": "Etch",
+        "poi_attributes": [
+          {
+            "category": "preference",
+            "name": "top_choice"
+          }
+        ],
+        "poi_type": "eating",
+        "price_range": "top-end",
+        "price_string": "dinner mains $21-38",
+        "review": {
+          "essential": "<p>Well-known Nashville chef Deb Paquette's Etch serves some of Nashville's most inventive cuisine – comfort food whose flavors and textures have been manipulated into tantalizing combinations that surpass expectations in every bite. Octopus and shrimp bruschetta, roasted cauliflower with truffled pea pesto, cocoa chili-spiced venison, grilled filet with sourdough baked potato bread pudding – all masterpieces. Reservations essential.</p>",
+          "extension": ""
+        },
+        "subtypes": [
+          "Modern American"
+        ],
+        "telephone": {
+          "national": "615-522-0685"
+        },
+        "website": "http://www.etchrestaurant.com"
+      },
+      "id": "1513071",
+      "links": {
+        "self": "/pois/1513071"
+      },
+      "relationships": {
+        "containing-place": {
+          "data": {
+            "id": "1341151",
+            "type": "place"
+          },
+          "links": {
+            "related": "/places/1341151"
+          }
+        },
+        "image-associations": {
+          "links": {
+            "related": "/pois/1513071/image_associations"
+          }
+        }
+      },
+      "type": "poi"
+    },
+    {
+      "attributes": {
+        "address": {
+          "extras": "",
+          "street": "519 Gallatin Ave"
+        },
+        "hours_string": "7am-8pm Mon-Fri, 8am-8pm Sat-Sun",
+        "location": {
+          "coordinates": [
+            -86.748358,
+            36.182017
+          ],
+          "type": "Point"
+        },
+        "name": "Barista Parlor",
+        "poi_attributes": [
+          {
+            "category": "preference",
+            "name": "top_choice"
+          }
+        ],
+        "poi_type": "drinking_nightlife",
+        "price_string": "coffee $5-6",
+        "review": {
+          "essential": "<p>Unrepentantly hipster coffee joint housed inside a huge former transmission shop in East Nashville. Some of America's best beans are put through methods all but fiendish coffee nerds will need defined (V60, Kone, Chemex, etc). The lone turntable preserving vinyl is a mere afterthought. Prepare to wait – the art shall not be compromised.</p>",
+          "extension": "<p>The espresso comes courtesy of the famed, rare (and hand-built!) $18,000 Slayer machine.</p>"
+        },
+        "subtypes": [
+          "Coffee"
+        ],
+        "website": "http://www.baristaparlor.com"
+      },
+      "id": "1512867",
+      "links": {
+        "self": "/pois/1512867"
+      },
+      "relationships": {
+        "containing-place": {
+          "data": {
+            "id": "1341149",
+            "type": "place"
+          },
+          "links": {
+            "related": "/places/1341149"
+          }
+        },
+        "image-associations": {
+          "links": {
+            "related": "/pois/1512867/image_associations"
+          }
+        }
+      },
+      "type": "poi"
+    },
+    {
+      "attributes": {
+        "attribution": {
+          "name": "Station Inn"
+        },
+        "caption": "",
+        "height": 360,
+        "orientation": "landscape",
+        "path": "/a/g/hi/t/e377a46312f4e0331a8456ce8365c261-station-inn.jpeg",
+        "width": 540
+      },
+      "id": "18438",
+      "links": {
+        "pixels": "https://media.lonelyplanet.com/a/g/hi/t/e377a46312f4e0331a8456ce8365c261-station-inn.jpeg",
+        "self": "/images/18438"
+      },
+      "type": "image"
+    },
+    {
+      "attributes": {
+        "attribution": {
+          "name": "Dove Wedding Photography"
+        },
+        "caption": "",
+        "height": 1486,
+        "orientation": "landscape",
+        "path": "/a/g/hi/t/d1f3f73703867dfd0c11f047927181e6-country-music-hall-of-fame-museum.jpg",
+        "width": 2228
+      },
+      "id": "18297",
+      "links": {
+        "pixels": "https://media.lonelyplanet.com/a/g/hi/t/d1f3f73703867dfd0c11f047927181e6-country-music-hall-of-fame-museum.jpg",
+        "self": "/images/18297"
+      },
+      "type": "image"
+    },
+    {
+      "attributes": {
+        "address": {
+          "extras": "",
+          "street": "316 11th Ave"
+        },
+        "hours_string": "7am-3pm",
+        "location": {
+          "coordinates": [
+            -86.782926,
+            36.152889
+          ],
+          "type": "Point"
+        },
+        "name": "Biscuit Love",
+        "poi_attributes": [
+          {
+            "category": "preference",
+            "name": "top_choice"
+          }
+        ],
+        "poi_type": "eating",
+        "price_range": "budget",
+        "price_string": "biscuits $10-14",
+        "review": {
+          "essential": "<p>Championing everything that is wrong about American breakfast, Biscuit Love started life as a food truck in 2012. Their gluttonous gourmet takes on the Southern biscuit and gravy experience took off, allowing them to graduate to this supremely cool brick-and-mortar location in the Gulch.</p>",
+          "extension": "<p>Look no further than the menu's first item, the East Nasty – a perfectly fluffy buttermilk biscuit smothered by an insanely good piece of fried chicken thigh, aged chedder and perfect sausage gravy. If that's wrong, we don't wanna be right!</p>"
+        },
+        "subtypes": [
+          "Breakfast"
+        ],
+        "website": "http://www.biscuitlovebrunch.com"
+      },
+      "id": "1512912",
+      "links": {
+        "self": "/pois/1512912"
+      },
+      "relationships": {
+        "containing-place": {
+          "data": {
+            "id": "1341151",
+            "type": "place"
+          },
+          "links": {
+            "related": "/places/1341151"
+          }
+        },
+        "image-associations": {
+          "links": {
+            "related": "/pois/1512912/image_associations"
+          }
+        }
+      },
+      "type": "poi"
+    },
+    {
+      "attributes": {
+        "address": {
+          "extras": "",
+          "street": "1416 Fourth Ave N"
+        },
+        "hours_string": "11am-10pm Mon-Thu, to 11pm Fri, 10am-11pm Sat to 10pm Sun",
+        "location": {
+          "coordinates": [
+            -86.788934,
+            36.179826
+          ],
+          "type": "Point"
+        },
+        "name": "Butchertown Hall",
+        "poi_attributes": [
+          {
+            "category": "preference",
+            "name": "top_choice"
+          }
+        ],
+        "poi_type": "drinking_nightlife",
+        "price_string": "beer $5-8",
+        "review": {
+          "essential": "<p>This hipster hangout in Germantown plays to the neighborhood's historical roots, the first beer hall in the neighborhood since 1909. The 2200-square-foot space is gorgeous: vaulted ceilings, oversized subway tiles and stacked stone and chopped wood strategically used as earthy-accented space dividers. There are 31 taps specializing in local and rarer German options as well as cask-conditioned English ales.</p>",
+          "extension": "<p>The Latin-leaning, smoke-and-brimstone-heavy German-Southern comfort food is not to be missed, either.</p>"
+        },
+        "subtypes": [
+          "Beer Hall"
+        ],
+        "website": "http://www.butchertownhall.com"
+      },
+      "id": "1512968",
+      "links": {
+        "self": "/pois/1512968"
+      },
+      "relationships": {
+        "containing-place": {
+          "data": {
+            "id": "1341152",
+            "type": "place"
+          },
+          "links": {
+            "related": "/places/1341152"
+          }
+        },
+        "image-associations": {
+          "links": {
+            "related": "/pois/1512968/image_associations"
+          }
+        }
+      },
+      "type": "poi"
+    },
+    {
+      "attributes": {
+        "center": {
+          "coordinates": [
+            -86.3446604443751,
+            35.8468959918037
+          ],
+          "type": "Point"
+        },
+        "name": "Tennessee",
+        "place_type": "region"
+      },
+      "id": "362223",
+      "links": {
+        "descendants": {
+          "href": "/places/362223/descendants"
+        },
+        "self": "/places/362223"
+      },
+      "relationships": {
+        "activities": {
+          "links": {
+            "related": "/partner-activities?filter[stops][intersects]=4474"
+          }
+        },
+        "articles": {
+          "links": {
+            "related": "/articles?filter[place_id][equals]=4474"
+          }
+        },
+        "image-associations": {
+          "links": {
+            "related": "/places/362223/image_associations"
+          }
+        },
+        "introduction": {
+          "data": {
+            "id": "41641432-1d13-4252-8787-b2c583918570",
+            "type": "narrative"
+          },
+          "links": {
+            "related": "/places/362223/introduction"
+          }
+        },
+        "lodgings": {
+          "links": {
+            "related": "/lodgings?filter[location][contained_in]=4474"
+          }
+        },
+        "love-letter": {
+          "data": null
+        },
+        "news": {
+          "links": {
+            "related": "/news?filter[place_id][equals]=362223"
+          }
+        },
+        "parent": {
+          "data": {
+            "id": "362185",
+            "type": "place"
+          },
+          "links": {
+            "related": "/places/362185"
+          }
+        },
+        "pois": {
+          "links": {
+            "related": "/pois?filter[place_id][has_ancestor]=362223"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "4474",
+            "type": "place_shape"
+          },
+          "links": {
+            "related": "/places/362223/shape"
+          }
+        },
+        "top-experiences": {
+          "data": null
+        }
+      },
+      "type": "place"
+    },
+    {
+      "attributes": {
+        "address": {
+          "extras": "",
+          "street": "222 5th Ave S"
+        },
+        "hours_string": "9am-5pm",
+        "location": {
+          "coordinates": [
+            -86.776221,
+            36.158398
+          ],
+          "type": "Point"
+        },
+        "name": "Country Music Hall of Fame & Museum",
+        "poi_attributes": [
+          {
+            "category": "preference",
+            "name": "top_choice"
+          }
+        ],
+        "poi_type": "sights",
+        "price_string": "adult/child $25/15, with audio tour $27/18, with Studio B 1hr tour $40/30",
+        "review": {
+          "essential": "<p>Following a $100-million expansion in 2014, this monumental museum, reflecting the near-biblical importance of country music to Nashville's soul, is a must-see, whether you're a country music fan or not. Gaze at Carl Perkins' blue suede shoes, Elvis' gold Cadillac (actually white) and gold piano (actually gold) and Hank Williams’ western-cut suit with musical note appliqués.</p>",
+          "extension": "<p>Highlights of the ambitious 210,000-square-foot expansion include the 800-seat CMA Theater, the Taylor Swift Education Center and the relocation of the legendary letterpress operation of Hatch Show Print. Written exhibits trace country's roots, computer touch screens access recordings and photos from the enormous archives, and the fact- and music-filled audio tour is narrated by contemporary stars.</p>"
+        },
+        "subtypes": [
+          "Museum"
+        ],
+        "website": "http://www.countrymusichalloffame.com"
+      },
+      "id": "381139",
+      "links": {
+        "self": "/pois/381139"
+      },
+      "relationships": {
+        "containing-place": {
+          "data": {
+            "id": "1341151",
+            "type": "place"
+          },
+          "links": {
+            "related": "/places/1341151"
+          }
+        },
+        "image-associations": {
+          "data": {
+            "id": "pois_hero_334229",
+            "type": "image_association"
+          },
+          "links": {
+            "related": "/pois/381139/image_associations"
+          }
+        }
+      },
+      "type": "poi"
+    },
+    {
+      "attributes": {
+        "address": {
+          "extras": "",
+          "street": "402 12th Ave S"
+        },
+        "hours_string": "open mic 7pm, live bands 9pm",
+        "location": {
+          "coordinates": [
+            -86.7846,
+            36.152473
+          ],
+          "type": "Point"
+        },
+        "name": "Station Inn",
+        "poi_attributes": [
+          {
+            "category": "preference",
+            "name": "top_choice"
+          }
+        ],
+        "poi_type": "entertainment",
+        "price_string": "",
+        "review": {
+          "essential": "<p>Sit at one of the small cocktail tables, squeezed together on the worn-wood floor in this beer-only dive, illuminated with stage lights, and neon signs, and behold the lightning fingers of bluegrass savants. We are talking stand-up bass, banjo, mandolin, fiddle and a modicum of yodeling.</p>",
+          "extension": "<p>Famed duo Doyle and Debbie, a cult-hit parody of a washed-up country-music duo, perform most Tuesdays ($20; reservations essential).</p>"
+        },
+        "subtypes": [
+          "Live Music"
+        ],
+        "telephone": {
+          "national": "615-255-3307"
+        },
+        "website": "http://www.stationinn.com"
+      },
+      "id": "1129175",
+      "links": {
+        "self": "/pois/1129175"
+      },
+      "relationships": {
+        "containing-place": {
+          "data": {
+            "id": "1341151",
+            "type": "place"
+          },
+          "links": {
+            "related": "/places/1341151"
+          }
+        },
+        "image-associations": {
+          "data": {
+            "id": "pois_hero_106760",
+            "type": "image_association"
+          },
+          "links": {
+            "related": "/pois/1129175/image_associations"
+          }
+        }
+      },
+      "type": "poi"
+    },
+    {
+      "attributes": {
+        "address": {
+          "extras": "",
+          "street": "404 12th Avenue S"
+        },
+        "location": {
+          "coordinates": [
+            -86.784546,
+            36.152361
+          ],
+          "type": "Point"
+        },
+        "name": "404",
+        "poi_attributes": [
+          {
+            "category": "preference",
+            "name": "top_choice"
+          }
+        ],
+        "poi_type": "sleeping",
+        "price_range": "top-end",
+        "price_string": "r $275-425",
+        "review": {
+          "essential": "<p>Guests let themselves in to Nashville's hippest – and smallest – hotel. Beyond the ebonized cedar frontage, industrial greys under violet lighting lead to five rooms in the minimalist space, most featuring painstakingly-hip loft spaces. Local photography by Caroline Allison adds a splash of color. There's a restaurant in a shipping container and local beers, sodas and parking are included.</p>",
+          "extension": ""
+        },
+        "subtypes": [
+          "Boutique Hotel"
+        ],
+        "telephone": {
+          "national": "615-242-7404"
+        },
+        "website": "http://www.the404nashville.com"
+      },
+      "id": "1512996",
+      "links": {
+        "self": "/pois/1512996"
+      },
+      "relationships": {
+        "containing-place": {
+          "data": {
+            "id": "1341151",
+            "type": "place"
+          },
+          "links": {
+            "related": "/places/1341151"
+          }
+        },
+        "image-associations": {
+          "links": {
+            "related": "/pois/1512996/image_associations"
+          }
+        }
+      },
+      "type": "poi"
+    },
+    {
+      "attributes": {
+        "address": {
+          "extras": "",
+          "street": "623 7th Ave S"
+        },
+        "hours_string": "10am-6pm Mon-Sat, 12-5pm Sun",
+        "location": {
+          "coordinates": [
+            -86.7780453526963,
+            36.1517227559793
+          ],
+          "type": "Point"
+        },
+        "name": "Third Man Records",
+        "poi_attributes": [
+          {
+            "category": "preference",
+            "name": "top_choice"
+          }
+        ],
+        "poi_type": "shopping",
+        "price_string": "",
+        "review": {
+          "essential": "<p>In a still-industrial slice of downtown you'll find Jack White's boutique record label, shop and novelty lounge, complete with its own lathe and live venue. They sell only Third Man recordings on vinyl and CD, collectible t-shirts, stickers, headphones, and Pro-Ject record players. You'll also find White's entire catalog of recordings; and you can record yourself on vinyl ($15).</p>",
+          "extension": "<p>Live shows go off in the studio's <strong>Blue Room</strong> once a month. They're typically open to the public (about $10), but are only announced a couple weeks in advance. Attendees receive an exclusive colored vinyl Black and Blue of the performance.</p>"
+        },
+        "subtypes": [
+          "Music"
+        ],
+        "website": "http://www.thirdmanrecords.com"
+      },
+      "id": "1247530",
+      "links": {
+        "self": "/pois/1247530"
+      },
+      "relationships": {
+        "containing-place": {
+          "data": {
+            "id": "1341151",
+            "type": "place"
+          },
+          "links": {
+            "related": "/places/1341151"
+          }
+        },
+        "image-associations": {
+          "links": {
+            "related": "/pois/1247530/image_associations"
+          }
+        }
+      },
+      "type": "poi"
+    }
+  ],
+  "links": {
+    "self": "/places/362228?include=pois,parent,pois.image-associations.from"
+  }
+}

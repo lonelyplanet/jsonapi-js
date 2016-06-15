@@ -8,13 +8,13 @@ require("dotenv").config({ path: (process.env.ENV_PATH || ".env.test" ) });
 
 // Open Planet
 // It would be sorta silly to test these ones since it's just mock data?
-require("../src/open-planet/core/request");
-require("../src/open-planet/core/resource");
-require("../src/open-planet/core/urlBuilder");
+require("../src/core/request");
+require("../src/core/resource");
+require("../src/core/urlBuilder");
 
-require("../src/open-planet/decorators/statsd");
+require("../src/decorators/statsd");
 
-require("../src/open-planet/endpoints/places");
-require("../src/open-planet/endpoints/pois");
+require("../src/endpoints/places");
+require("../src/endpoints/pois");
 
-require("../src/open-planet/index");
+require("../src/index");

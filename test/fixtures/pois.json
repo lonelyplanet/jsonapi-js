@@ -1,0 +1,618 @@
+{
+  "data": [
+    {
+      "attributes": {
+        "address": {
+          "extras": "",
+          "street": "1001 Broadway"
+        },
+        "location": {
+          "coordinates": [
+            -86.7847609519959,
+            36.1572810451043
+          ],
+          "type": "Point"
+        },
+        "name": "Union Station Hotel",
+        "poi_attributes": [
+          {
+            "category": "preference",
+            "name": "top_choice"
+          }
+        ],
+        "poi_type": "sleeping",
+        "price_range": "top-end",
+        "price_string": "r from $259",
+        "review": {
+          "essential": "<p>This soaring Romanesque gray stone castle was Nashville's train station back in the days when rail travel was a grand affair; today it's downtown's most iconic hotel. The vaulted lobby is dressed in peach and gold with inlaid marble floors and a stained-glass ceiling.</p>",
+          "extension": "<p>Rooms are tastefully modern, with flat-screen TVs and deep soaking tubs, and are set for an upcoming renovation.</p>"
+        },
+        "subtypes": [
+          "Hotel"
+        ],
+        "telephone": {
+          "national": "615-726-1001"
+        },
+        "website": "http://www.unionstationhotelnashville.com"
+      },
+      "id": "1045436",
+      "links": {
+        "self": "/pois/1045436"
+      },
+      "relationships": {
+        "containing-place": {
+          "data": {
+            "id": "1341151",
+            "type": "place"
+          },
+          "links": {
+            "related": "/places/1341151"
+          }
+        },
+        "image-associations": {
+          "links": {
+            "related": "/pois/1045436/image_associations"
+          }
+        }
+      },
+      "type": "poi"
+    },
+    {
+      "attributes": {
+        "address": {
+          "extras": "",
+          "street": "112 19th Ave S"
+        },
+        "hours_string": "Mon-Thu 11am-10pm, to midnight Fri-Sat, to 4pm Sun",
+        "location": {
+          "coordinates": [
+            -86.796434,
+            36.151182
+          ],
+          "type": "Point"
+        },
+        "name": "Hattie B's",
+        "poi_attributes": [
+          {
+            "category": "preference",
+            "name": "top_choice"
+          }
+        ],
+        "poi_type": "eating",
+        "price_range": "budget",
+        "price_string": "quarter/half plates from $8.50/12",
+        "review": {
+          "essential": "<p>Hattie's may be the hipsterized, social-media savvy yin to Prince's Hot Chicken's off-the-grid yang, but if this isn't Nashville's best cayenne-rubbed 'hot' fried chicken, our name is mud. Perfectly-moist, high-quality bird comes devilishly fried to levels that top out at 'Shut the Cluck Up!' hot and they mean business ('Damn Hot' was our limit). Get in line.</p>",
+          "extension": ""
+        },
+        "subtypes": [
+          "Southern"
+        ],
+        "website": "http://www.hattieb.com"
+      },
+      "id": "1513072",
+      "links": {
+        "self": "/pois/1513072"
+      },
+      "relationships": {
+        "containing-place": {
+          "data": {
+            "id": "1341154",
+            "type": "place"
+          },
+          "links": {
+            "related": "/places/1341154"
+          }
+        },
+        "image-associations": {
+          "links": {
+            "related": "/pois/1513072/image_associations"
+          }
+        }
+      },
+      "type": "poi"
+    },
+    {
+      "attributes": {
+        "address": {
+          "extras": "",
+          "street": "177 1st Ave N"
+        },
+        "location": {
+          "coordinates": [
+            -86.776071,
+            36.164549
+          ],
+          "type": "Point"
+        },
+        "name": "Nashville Downtown Hostel",
+        "poi_attributes": [
+          {
+            "category": "preference",
+            "name": "top_choice"
+          }
+        ],
+        "poi_type": "sleeping",
+        "price_range": "budget",
+        "price_string": "dm $35-40, r $128-140",
+        "review": {
+          "essential": "<p>Well located and up-to-the-minute in style and function. The common space in the basement, with its rather regal exposed stone walls and beamed rafters, is your all-hours mingle den. Dorm rooms are on the 3rd and 4th floors, and have lovely wood floors, exposed timber columns, silver-beamed ceilings and four, six or eight bunks to a room.</p>",
+          "extension": ""
+        },
+        "subtypes": [
+          "Hostel"
+        ],
+        "telephone": {
+          "national": "615-497-1208"
+        },
+        "website": "http://www.nashvillehostel.com"
+      },
+      "id": "1406154",
+      "links": {
+        "self": "/pois/1406154"
+      },
+      "relationships": {
+        "containing-place": {
+          "data": {
+            "id": "1341151",
+            "type": "place"
+          },
+          "links": {
+            "related": "/places/1341151"
+          }
+        },
+        "image-associations": {
+          "links": {
+            "related": "/pois/1406154/image_associations"
+          }
+        }
+      },
+      "type": "poi"
+    },
+    {
+      "attributes": {
+        "address": {
+          "extras": "",
+          "street": "731 Mcferrin Ave"
+        },
+        "hours_string": "11am-10pm Sun-Thu, to 11pm Fri-Sat",
+        "location": {
+          "coordinates": [
+            -86.754087,
+            36.184892
+          ],
+          "type": "Point"
+        },
+        "name": "The Pharmacy",
+        "poi_attributes": [
+          {
+            "category": "preference",
+            "name": "top_choice"
+          }
+        ],
+        "poi_type": "eating",
+        "price_range": "budget",
+        "price_string": "burgers $8-11",
+        "review": {
+          "essential": "<p>Prepare to go to war for a table at this burger bar, constantly voted Nashville's best, be it at the welcoming communal table, bar or spectacular backyard beer garden. Tattooed staff sling burgers, sausages and old school sides (tater tots!) washed back with specialty beers and hand-mixed old fashioned sodas. </p>",
+          "extension": ""
+        },
+        "subtypes": [
+          "Burgers",
+          " Beer Garden"
+        ],
+        "website": "http://www.thepharmacynashville.com"
+      },
+      "id": "1513010",
+      "links": {
+        "self": "/pois/1513010"
+      },
+      "relationships": {
+        "containing-place": {
+          "data": {
+            "id": "1341149",
+            "type": "place"
+          },
+          "links": {
+            "related": "/places/1341149"
+          }
+        },
+        "image-associations": {
+          "links": {
+            "related": "/pois/1513010/image_associations"
+          }
+        }
+      },
+      "type": "poi"
+    },
+    {
+      "attributes": {
+        "address": {
+          "extras": "",
+          "street": "1038 Rosa L Parks Blvd"
+        },
+        "location": {
+          "coordinates": [
+            -86.790673,
+            -86.790673
+          ],
+          "type": "Point"
+        },
+        "name": "NashTrash",
+        "poi_attributes": [
+          {
+            "category": "preference",
+            "name": "top_choice"
+          }
+        ],
+        "poi_type": "activities",
+        "price_string": "tours $32-35",
+        "review": {
+          "essential": "<p>The big-haired 'Jugg Sisters' lead a campy frolic through the risqué side of Nashville history while guests sip BYO booze on the big pink bus. Buy in advance: tours can sell out <em>months</em> in advance. Meet the bus at the north end of the Nashville Farmers Market.</p>",
+          "extension": ""
+        },
+        "subtypes": [
+          "Bus Tour"
+        ],
+        "telephone": {
+          "national": "615-226-7300"
+        },
+        "website": "http://www.nashtrash.com"
+      },
+      "id": "1129161",
+      "links": {
+        "self": "/pois/1129161"
+      },
+      "relationships": {
+        "containing-place": {
+          "data": {
+            "id": "362228",
+            "type": "place"
+          },
+          "links": {
+            "related": "/places/362228"
+          }
+        },
+        "image-associations": {
+          "links": {
+            "related": "/pois/1129161/image_associations"
+          }
+        }
+      },
+      "type": "poi"
+    },
+    {
+      "attributes": {
+        "address": {
+          "extras": "",
+          "street": "2555 West End Ave"
+        },
+        "location": {
+          "coordinates": [
+            -86.809287,
+            36.145222
+          ],
+          "type": "Point"
+        },
+        "name": "Nashville Marriott at Vanderbilt University",
+        "poi_type": "sleeping",
+        "price_range": "mid-range",
+        "price_string": "d from $179",
+        "review": {
+          "essential": "<p>Visitors to Vanderbilt University pack into this bustling chain hotel, in a prime location in Nashville's West End. Some rooms even have views over the football field, perfect for game day tailgating. Be sure to reserve rooms well in advance around Vandy graduation and on football weekends, as this friendly place fills up early.</p>",
+          "extension": "<p>Business travelers favor the hotel on weekdays, so prices are a bit lower on weekends most of the year. Insomniacs may be interested to learn that the Vanderbilt University Sleep Disorders Center laboratory is located on the 5th floor, complete with video recording equipment and electroencephalogram machines! The average guest will have no problems drifting off in the comfy rooms, though. Tastefully decorated in red and gold, they have vintage Vanderbilt photos on the walls and spacious, sparkling bathrooms.</p>"
+        },
+        "subtypes": [
+          "Hotel"
+        ],
+        "telephone": {
+          "national": "615-321-1300"
+        },
+        "transports": [
+          {
+            "description": "West End",
+            "form": "bus",
+            "local_names": [
+              "Bus"
+            ]
+          }
+        ],
+        "website": "http://www.marriott.com"
+      },
+      "id": "1092674",
+      "links": {
+        "self": "/pois/1092674"
+      },
+      "relationships": {
+        "containing-place": {
+          "data": {
+            "id": "1341154",
+            "type": "place"
+          },
+          "links": {
+            "related": "/places/1341154"
+          }
+        },
+        "image-associations": {
+          "links": {
+            "related": "/pois/1092674/image_associations"
+          }
+        }
+      },
+      "type": "poi"
+    },
+    {
+      "attributes": {
+        "address": {
+          "extras": "",
+          "street": "618 Fatherland St"
+        },
+        "location": {
+          "coordinates": [
+            -86.759849,
+            36.170759
+          ],
+          "type": "Point"
+        },
+        "name": "Big Bungalow",
+        "poi_type": "sleeping",
+        "price_range": "mid-range",
+        "price_string": "Singles from $155",
+        "review": {
+          "essential": "<p>Chatty proprietress Ellen Warshaw welcomes visitors into her East Nashville bungalow, where three casually decorated guest rooms feel more like your arty aunt's home than a fussy bed and breakfast. A massage therapist by trade, Ellen will be happy to loosen up your shoulders in her home massage room.</p>",
+          "extension": "<p>Introverts may quail, but social butterflies will love the friendly breakfasts at the Big Bungalow, where guests are encouraged to strum guitars and shoot the breeze over French toast and frittatas. Evenings sometimes bring impromptu concerts, or cocktails on the back porch. See a piece of art you like on the walls? Buy it - the Big Bungalow is also a gallery. But hands off the international doll collection in the living room, which once belonged to Ellen's globetrotting parents.</p>"
+        },
+        "subtypes": [
+          "B&B"
+        ],
+        "telephone": {
+          "national": "615-256 8375"
+        },
+        "transports": [
+          {
+            "description": "Shelby",
+            "form": "bus",
+            "local_names": [
+              "Bus"
+            ]
+          }
+        ],
+        "website": "http://www.thebigbungalow.com"
+      },
+      "id": "1092675",
+      "links": {
+        "self": "/pois/1092675"
+      },
+      "relationships": {
+        "containing-place": {
+          "data": {
+            "id": "1341149",
+            "type": "place"
+          },
+          "links": {
+            "related": "/places/1341149"
+          }
+        },
+        "image-associations": {
+          "links": {
+            "related": "/pois/1092675/image_associations"
+          }
+        }
+      },
+      "type": "poi"
+    },
+    {
+      "attributes": {
+        "address": {
+          "extras": "",
+          "street": "624 Main St"
+        },
+        "hours_string": "11am-9pm Mon-Thu, to midnight Fri & Sat, to 7pm Sun",
+        "location": {
+          "coordinates": [
+            -86.761308,
+            36.173963
+          ],
+          "type": "Point"
+        },
+        "name": "Bolton’s Spicy Chicken & Fish",
+        "poi_type": "eating",
+        "price_range": "budget",
+        "price_string": "mains $7",
+        "review": {
+          "essential": "<p>Incinerate your palate on fiery deep-fried poultry or fish at Bolton’s, where the heat quotient hits twofold: a dry rub that’s dusted on before serving and a spice that's infused into the meat before battering, giving a burn right down to the bone. Ease the heat with bottled beer and some classic down-home sides like turnip greens and baked beans.</p>",
+          "extension": "<p>After an 18-year run in a tiny East Nashville cinder-block shack, where patrons knocked on the kitchen door to order, owner Bolton Matthews upgraded to this bigger space directly behind the original. Though the decor is minimal, we doubt you’ll notice while you battle the burn of the hottest bird in town.</p><p>Bolton’s offers online ordering and has a second location on Franklin Pike in Melrose.</p>"
+        },
+        "subtypes": [
+          "Southern"
+        ],
+        "telephone": {
+          "national": "615-254-8015"
+        },
+        "website": "http://www.boltonsspicy.com"
+      },
+      "id": "1534562",
+      "links": {
+        "self": "/pois/1534562"
+      },
+      "relationships": {
+        "containing-place": {
+          "data": {
+            "id": "1341149",
+            "type": "place"
+          },
+          "links": {
+            "related": "/places/1341149"
+          }
+        },
+        "image-associations": {
+          "links": {
+            "related": "/pois/1534562/image_associations"
+          }
+        }
+      },
+      "type": "poi"
+    },
+    {
+      "attributes": {
+        "address": {
+          "extras": "",
+          "street": "1409 West Main St"
+        },
+        "hours_string": "11am-2pm & 4-8pm Mon-Thu, 11am-3pm & 4:30-9pm Fri, 11:30am-3pm & 4:30-9pm Sat",
+        "location": {
+          "coordinates": [
+            -86.887479,
+            35.912341
+          ],
+          "type": "Point"
+        },
+        "name": "Big Shake’s Hot Chicken & Fish",
+        "poi_type": "eating",
+        "price_range": "budget",
+        "price_string": "mains $9",
+        "review": {
+          "essential": "<p>Fans of the fiery fowl can get a fix at Franklin's Big Shake’s, where the bird takes the prize for the most flavorful meat – its yellow-green tint suggests preparation with a special ingredient (our guess: pickle juice brine). The heat isn’t too deadly, with medium tickling the tongue. All food is cooked to order; be prepared to wait during busy periods.</p>",
+          "extension": "<p>Die-hards can take on the Death Row Challenge: three tenders bathed in a lethal blend of 27 of the world’s hottest peppers. It’s so brutal that participants must sign a waiver and wear gloves. Only two people have so far survived the challenge.</p><p>The newer Murfreesboro Rd restaurant has more seating than the original joint on West Main St; both locations feature counter service.</p>"
+        },
+        "subtypes": [
+          "Southern"
+        ],
+        "telephone": {
+          "national": "615-988-9335"
+        },
+        "website": "http://www.bigshakeshotchicken.com"
+      },
+      "id": "1534563",
+      "links": {
+        "self": "/pois/1534563"
+      },
+      "relationships": {
+        "containing-place": {
+          "data": {
+            "id": "1340407",
+            "type": "place"
+          },
+          "links": {
+            "related": "/places/1340407"
+          }
+        },
+        "image-associations": {
+          "links": {
+            "related": "/pois/1534563/image_associations"
+          }
+        }
+      },
+      "type": "poi"
+    },
+    {
+      "attributes": {
+        "address": {
+          "extras": "",
+          "street": "600 James Robertson Parkway"
+        },
+        "location": {
+          "coordinates": [
+            -86.787422,
+            36.170819
+          ],
+          "type": "Point"
+        },
+        "name": "Bicentennial Capitol Mall",
+        "poi_type": "sights",
+        "price_string": "",
+        "review": {
+          "essential": "<p>Downtown Nashville's 19-acre green lung swoops grandly north from the Tennessee State Capitol giving unparalleled (and much televised) views of its white antebellum columns. It's a fine place for a stroll, especially on a Saturday when the <a class=\\\"poi\\\" href=\\\"/pois/381109\\\">Nashville Farmers Market</a> is in full fruity swing nearby.</p>",
+          "extension": "<p>The park was constructed in 1996 to commemorate Tennessee's 200th birthday, and is decorated with various lessons in the state's history and attractions: plot a route on the 200ft granite map of the state at the southern end of the park, complete with rivers, roads and county lines, or read about its past along the Pathway of History. The centerpiece of the park is the 2000-seat Tennessee Amphitheater.</p>"
+        },
+        "subtypes": [
+          "Park"
+        ],
+        "telephone": {
+          "national": "615-741-5280"
+        }
+      },
+      "id": "1534790",
+      "links": {
+        "self": "/pois/1534790"
+      },
+      "relationships": {
+        "containing-place": {
+          "data": {
+            "id": "1341151",
+            "type": "place"
+          },
+          "links": {
+            "related": "/places/1341151"
+          }
+        },
+        "image-associations": {
+          "data": {
+            "id": "pois_hero_334250",
+            "type": "image_association"
+          },
+          "links": {
+            "related": "/pois/1534790/image_associations"
+          }
+        }
+      },
+      "type": "poi"
+    }
+  ],
+  "included": [
+    {
+      "attributes": {
+        "attribution": {
+          "name": "Hunter Johnston"
+        },
+        "caption": "",
+        "height": 1537,
+        "orientation": "landscape",
+        "path": "/a/g/hi/t/1a68c1375a0936c75218c6228ceae66a-bicentennial-capitol-mall.jpg",
+        "width": 2306
+      },
+      "id": "18380",
+      "links": {
+        "pixels": "https://media.lonelyplanet.com/a/g/hi/t/1a68c1375a0936c75218c6228ceae66a-bicentennial-capitol-mall.jpg",
+        "self": "/images/18380"
+      },
+      "type": "image"
+    },
+    {
+      "attributes": {
+        "tag": "hero"
+      },
+      "id": "pois_hero_334250",
+      "links": {
+        "self": "/image_associations/pois_hero_334250"
+      },
+      "relationships": {
+        "from": {
+          "data": {
+            "id": "18380",
+            "type": "image"
+          },
+          "links": {
+            "related": "/images/18380"
+          }
+        },
+        "to": {
+          "data": {
+            "id": "1534790",
+            "type": "poi"
+          },
+          "links": {
+            "related": "/pois/1534790"
+          }
+        }
+      },
+      "type": "image_association"
+    }
+  ],
+  "links": {
+    "first": "/places/362228/pois?page[limit]=10&page[offset]=0&include=image-associations.from",
+    "next": "/places/362228/pois?page[limit]=10&page[offset]=20&include=image-associations.from",
+    "prev": "/places/362228/pois?page[limit]=10&page[offset]=0&include=image-associations.from",
+    "self": "/places/362228/pois?page[offset]=10&page[limit]=10&include=image-associations.from"
+  }
+}
