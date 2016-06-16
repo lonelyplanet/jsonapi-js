@@ -14,7 +14,4 @@ require("../src/core/urlBuilder");
 
 require("../src/decorators/statsd");
 
-require("../src/endpoints/places");
-require("../src/endpoints/pois");
-
 require("../src/index");

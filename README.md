@@ -1,4 +1,4 @@
-![](https://travis-ci.org/lonelyplanet/jsonapi-js.svg?branch=master)
+![https://travis-ci.org/lonelyplanet/jsonapi-js](https://travis-ci.org/lonelyplanet/jsonapi-js.svg?branch=master)
 
 # jsonapi-js
 A small library for consuming a JsonAPI.
