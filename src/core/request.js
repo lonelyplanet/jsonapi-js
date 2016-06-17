@@ -63,7 +63,7 @@ function fetch({
   cache = true,
 } = {}) {
   return new Promise((resolve, reject) => {
-    const base = process.env.API_HOST;
+    const base = process.env.JSONAPIJS_HOST;
     const url = build({
       base,
       resource,
