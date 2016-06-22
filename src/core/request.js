@@ -60,7 +60,7 @@ function fetch({
   includes,
   filters,
   page,
-  cache = true,
+  cache = false,
 } = {}) {
   return new Promise((resolve, reject) => {
     const base = process.env.JSONAPIJS_HOST;
