@@ -117,7 +117,7 @@ function build({
     includes, page, filters, perPage,
   });
 
-  url += query ? `?${query}` : "";
+  url += query ? `${resource.indexOf("?") > -1 ? "" : "?"}${query}` : "";
   return url;
 }
 
