@@ -90,27 +90,25 @@ export default class Resource {
     meta = {},
     included = [],
   } = {},
-  _fetch_) {
+  _fetch = fetch) {
     this.id = id;
     this.type = type;
     this.relationships = relationships;
     this.links = links;
     this.meta = meta;
 
-    this.fetch = _fetch_;
-
+    this._fetch = _fetch;
     this._attributes = attributes;
     this._included = included;
 
     this._create();
   }
-  get fetch() {
-    if (!this.endpoint) throw "Resources must have an endpoint";
-
-    return this._fetch || fetch;
-  }
-  set fetch(value) {
-    this._fetch = value;
+  fetch(...args) {
+    return new Promise((resolve, reject) => {
+      this._fetch(...args)
+        .then((r) => resolve(this._resolve(r)))
+        .catch(reject);
+    });
   }
   _resolve(response) {
     return (response && !_.isEmpty(response)) ? {
@@ -127,7 +125,7 @@ export default class Resource {
         resource: `${this.endpoint}`,
         ...options,
       })
-      .then((r) => resolve(this._resolve(r)))
+      .then(resolve)
       .catch(reject);
     });
   }
@@ -137,7 +135,7 @@ export default class Resource {
         resource: `${this.endpoint}/${id}`,
         ...options,
       })
-      .then((r) => resolve(this._resolve(r)))
+      .then(resolve)
       .catch(reject);
     });
   }
