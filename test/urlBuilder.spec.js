@@ -75,6 +75,20 @@ describe("urlBuilder", () => {
     expect(url).to.equal(`${base}/${resource}?include=image_associations.from`);
   });
 
+  it("should build urls from a resource", () => {
+    const base = "http://api.lonelyplanet.com";
+    const resource = "pois?filter[place_id][has_ancestor]=12345";
+
+    const url = build({
+      base,
+      resource,
+      includes: ["image_associations.from"],
+    });
+
+    expect(url).to.equal(`${base}/${resource}&include=image_associations.from`);
+  });
+
+
   it("should have an underscore method", () => {
     expect(underscore("fooBarBaz")).to.equal("foo_bar_baz");
   });
