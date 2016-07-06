@@ -52,6 +52,7 @@ const makeRequest = function makeRequest(url, callback) {
  * @param {array} [options.include] - An array of relationships to include
  * @param {object} [options.filter] - An object of filters
  * @param {number} [options.page] - Number of the page to fetch
+ * @param {number} [options.perPage] - How many results per page
  * @param {boolean} [options.cache] = true - Whether to cache the response
  * @return {promise} A promise
  */
@@ -60,6 +61,7 @@ function fetch({
   includes,
   filters,
   page,
+  perPage,
   cache = false,
 } = {}) {
   return new Promise((resolve, reject) => {
@@ -70,6 +72,7 @@ function fetch({
       filters,
       includes,
       page,
+      perPage,
     });
 
     // Keeping in for now as we're working through OP issues
