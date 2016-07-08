@@ -1,7 +1,10 @@
-import superagent from "superagent";
 import circuitbreaker from "circuitbreaker";
 import { build } from "./urlBuilder";
 import isEmpty from "lodash/isEmpty";
+
+const isofetch = typeof window !== "undefined" ?
+  require("isomorphic-fetch/fetch-npm-browserify.js") :
+  require("isomorphic-fetch");
 
 const _ = {
   isEmpty,
@@ -11,13 +14,14 @@ const responseCache = {};
 
 // Private makeRequest method to pass to our circuitbreaker
 const makeRequest = function makeRequest(url, callback) {
-  return superagent.get(url)
-  .end((err, response) => {
-    if (err && !err.response) {
-      return callback(new Error(`Open Planet ${err.message}`));
+  return isofetch(url).then((response) => {
+    if (!response.ok) {
+      callback(new Error(`Open Planet Error on ${url}`), null);
     }
-
-    const errors = (err && err.response.body.errors) || [];
+    return response.json();
+  })
+  .then((body) => {
+    const errors = (body.errors) || [];
 
     if (errors.length) {
       if (errors.length === 1) {
@@ -36,8 +40,8 @@ const makeRequest = function makeRequest(url, callback) {
     }
 
     try {
-      const model = response.body;
-      responseCache[url] = response.body;
+      const model = body;
+      responseCache[url] = body;
       return callback(null, _.isEmpty(model) ? null : model);
     } catch (e) {
       return callback(e);

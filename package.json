@@ -23,10 +23,9 @@
     "babel-preset-stage-1": "^6.5.0",
     "circuitbreaker": "^0.2.1",
     "dotenv": "~1.2.0",
+    "isomorphic-fetch": "^2.2.1",
     "lodash": "^4.13.1",
     "node-statsd": "^0.1.1",
-    "superagent": "^1.8.3",
-    "superagent-jsonapify": "^1.4.1",
     "webpack": "^1.12.15"
   },
   "devDependencies": {
