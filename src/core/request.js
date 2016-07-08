@@ -15,27 +15,26 @@ const responseCache = {};
 // Private makeRequest method to pass to our circuitbreaker
 const makeRequest = function makeRequest(url, callback) {
   return isofetch(url).then((response) => {
-    if (!response.ok) {
-      callback(new Error(`Open Planet Error on ${url}`), null);
+    if (response.status === 404) {
+      return callback(null, null);
     }
+
     return response.json();
   })
   .then((body) => {
-    const errors = (body.errors) || [];
+    const errors = body.errors;
 
-    if (errors.length) {
-      if (errors.length === 1) {
-        const error = errors[0];
+    if (errors && errors.length && errors.length === 1) {
+      const error = errors[0];
 
-        if (error.status === "404") {
-          return callback(null, null);
-        }
-
-        return callback(new Error(
-          `Open Planet ${error.title}: ${error.detail} on ${url}`
-        ));
+      if (error.status === "404") {
+        return callback(null, null);
       }
 
+      return callback(new Error(
+        `Open Planet ${error.title}: ${error.detail} on ${url}`
+      ));
+    } else if (errors && errors.length > 1) {
       return callback(new Error(`Open Planet ${errors.map(e => e.title).join("\n")}`));
     }
 
@@ -46,7 +45,8 @@ const makeRequest = function makeRequest(url, callback) {
     } catch (e) {
       return callback(e);
     }
-  });
+  })
+  .catch(e => callback(e, null));
 };
 
 /**
