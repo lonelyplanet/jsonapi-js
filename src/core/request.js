@@ -35,7 +35,9 @@ const makeRequest = function makeRequest(url, callback) {
         `Open Planet ${error.title}: ${error.detail} on ${url}`
       ));
     } else if (errors && errors.length > 1) {
-      return callback(new Error(`Open Planet ${errors.map(e => e.title).join("\n")}`));
+      return callback(
+        new Error(`Open Planet ${errors.map(e => `${e.title} ${e.detail}`).join("\n")}`)
+      );
     }
 
     try {
@@ -87,7 +89,7 @@ function fetch({
     }
 
     const breaker = circuitbreaker(makeRequest, {
-      timeout: 20000,
+      timeout: 10000,
       maxFailures: 3,
       resetTimeout: 30,
     });
