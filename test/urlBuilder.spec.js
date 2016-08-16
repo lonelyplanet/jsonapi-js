@@ -108,7 +108,29 @@ describe("urlBuilder", () => {
       resource,
       page: 3,
       perPage: 20,
-      includes: ["image_associations.from"]
+      includes: ["image_associations.from"],
     })).to.equal(`${base}/${resource}?include=image_associations.from&page[limit]=20&page[offset]=40`);
+  });
+
+  it("should filter by multiple operator value objects", () => {
+    const filterString = build({
+      base: "http://api.lonelyplanet.com",
+      resource: "lodgings",
+      filters: {
+        available: [{
+          operator: "from",
+          value: "1973-1-1",
+        }, {
+          operator: "to",
+          value: "1973-1-8",
+        }],
+        place_id: {
+          operator: "has_ancestor",
+          value: 1234,
+        },
+      },
+    });
+
+    expect(filterString).to.equal("http://api.lonelyplanet.com/lodgings?filter[available][from]=1973-1-1&filter[available][to]=1973-1-8&filter[place_id][has_ancestor]=1234");
   });
 });

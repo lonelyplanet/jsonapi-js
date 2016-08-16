@@ -30,19 +30,24 @@ const createFilters = (filter) => {
     .map(f => {
       const value = filter[f];
       // filter[poi_type]
-      let filterString = `filter[${underscore(f)}]`;
+      const baseFilter = `filter[${underscore(f)}]`;
+      let filterString = "";
 
       if (typeof filter[f] === "string") {
         // [equals]=bar
-        filterString += `[equals]=${value}`;
+        filterString += `${baseFilter}[equals]=${value}`;
       } else if (typeof filter[f] === "boolean") {
         // [exists|notexists]
-        filterString += `[${value ? "exists" : "notexists"}]`;
+        filterString += `${baseFilter}[${value ? "exists" : "notexists"}]`;
       } else if (Array.isArray(filter[f])) {
         // [equals]=a,b,c
-        filterString += `[equals]=${value.join(",")}`;
+        if (filter[f].map(fi => typeof fi).filter(ft => ft === "object").length) {
+          filterString += filter[f].map(fi => `${baseFilter}[${fi.operator}]=${fi.value}`).join("&");
+        } else {
+          filterString += `${baseFilter}[equals]=${value.join(",")}`;
+        }
       } else if (typeof filter[f] === "object") {
-        filterString += `[${filter[f].operator}]=${filter[f].value}`;
+        filterString += `${baseFilter}[${filter[f].operator}]=${filter[f].value}`;
       }
 
       return filterString;
