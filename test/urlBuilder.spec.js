@@ -156,16 +156,33 @@ describe("urlBuilder", () => {
     expect(params.base).to.equal("http://api.lonelyplanet.com");
     expect(params.resource).to.equal("lodgings/availability");
     expect(params.filters.available.length).to.equal(2);
-    expect(params.filters.lodging.place_id.operator).to.equal("has_ancestor");
-    expect(params.filters.lodging.place_id.value).to.equal("1234");
-    expect(params.filters.poi_type).to.equal("eating");
+    expect(params.filters.lodging.placeId.operator).to.equal("hasAncestor");
+    expect(params.filters.lodging.placeId.value).to.equal("1234");
+    expect(params.filters.poiType).to.equal("eating");
     expect(params.filters.subtypes.length).to.equal(2);
     expect(params.perPage).to.equal(20);
     expect(params.page).to.equal(3);
     expect(params.sort).to.equal("top_choice");
-    
+
     const rebuilt = build(params);
 
     expect(rebuilt).to.equal(url);
+  });
+
+  it("should merge url and filter object", () => {
+    const filterString = build({
+      base: "http://api.lonelyplanet.com",
+      resource: "/pois?sort=top_choice&filter[poi_type][equals]=eating&filter[subtypes][equals]=Italian&filter[place_id][has_ancestor]=362079&page[limit]=10&page[offset]=10&include=image-associations.from,containing-place.ancestry&subtypes=Italian&location=123",
+      filters: {
+        poiType: "eating",
+        location: [123, 456],
+        placeId: {
+          operator: "hasAncestor",
+          value: [362079, 362080],
+        },
+      },
+    });
+
+    expect(filterString).to.equal("http://api.lonelyplanet.com/pois?filter[poi_type][equals]=eating&filter[subtypes][equals]=Italian&filter[place_id][has_ancestor]=362079,362080&filter[location][equals]=123,456&page[limit]=10&page[offset]=10&sort=top_choice");
   });
 });
