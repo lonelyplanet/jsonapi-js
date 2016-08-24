@@ -1,7 +1,8 @@
 import merge from "lodash/merge";
 import map from "lodash/map";
+import camelCase from "lodash/camelCase";
 
-const _ = { merge, map };
+const _ = { merge, map, camelCase };
 
 /**
  * Take a cacmelCaseString and return camel_case_string;
@@ -30,6 +31,10 @@ function getOperator(operator, value) {
 }
 
 function createOperatorObject(memo, keys, value) {
+  const filter = memo;
+
+  // ["poi_type", "equals"]
+  // ["lodgings", "poi_type", "equals"]
   switch (keys.length) {
     case 2: {
       const [key, operator] = keys;
@@ -39,23 +44,23 @@ function createOperatorObject(memo, keys, value) {
         value,
       };
 
-      if (memo[key] && !Array.isArray(memo[key])) {
-        memo[key] = [memo[key]];
-        memo[key].push(operatorValue)
+      if (filter[key] && !Array.isArray(filter[key])) {
+        filter[key] = [filter[key]];
+        filter[key].push(operatorValue)
       } else {
-        memo[key] = memo[key] || operatorValue;
+        filter[key] = filter[key] || operatorValue;
       }
       break;
     }
     case 3: {
       const [relationship, ...rest] = keys;
-      memo[relationship] = createOperatorObject({}, rest, value);
+      filter[relationship] = createOperatorObject({}, rest, value);
       break;
     }
     default:
       break;
   }
-  return memo;
+  return filter;
 }
 
 // filter[abc][def]=123
@@ -68,10 +73,10 @@ function parseFilters(filters, filter, value) {
 
   // Grab abc, and def
   while (matches = reFilterG.exec(filter)) {
-    keys.push(matches[1]);
+    keys.push(_.camelCase(matches[1]));
   }
 
-  createOperatorObject(filters, keys, value);
+  return createOperatorObject(filters, keys, value);
 }
 
 function parseQueryString(url) {
@@ -79,40 +84,38 @@ function parseQueryString(url) {
   if (!split[1]) return {};
 
   const query = split[1];
-  const filters = query.split("&");
+  const urlParts = query.split("&");
 
-  const obj = filters.reduce((memo, filter) => {
+  return urlParts.reduce((memo, urlPart) => {
+    const qs = memo;
     // 123
-    const value = filter.split(/=/)[1];
+    const value = urlPart.split(/=/)[1];
 
-    if (filter.startsWith("filter")) {
-      memo.filters = memo.filters || {};
-      parseFilters(memo.filters, filter, value);
-    } else if (filter.startsWith("include")) {
-      memo.includes = memo.includes || [];
-      memo.includes = memo.includes.concat(value.split(","));
-    } else if (filter.startsWith("page")) {
-      const match = filter.match(reFilter);
+    if (urlPart.startsWith("filter")) {
+      qs.filters = Object.assign({}, parseFilters(qs.filters || {}, urlPart, value));
+    } else if (urlPart.startsWith("include")) {
+      qs.includes = qs.includes || [];
+      qs.includes = qs.includes.concat(value.split(","));
+    } else if (urlPart.startsWith("page")) {
+      const match = urlPart.match(reFilter);
 
       if (match) {
         const pageOperator = match[1];
         if (pageOperator === "limit") {
-          memo.perPage = parseInt(value, 10);
+          qs.perPage = parseInt(value, 10);
         }
         if (pageOperator === "offset") {
           const offset = parseInt(value, 10);
-          memo.page = (offset / memo.perPage) + 1;
+          qs.page = (offset / qs.perPage) + 1;
         }
       }
-    } else if (filter.startsWith("sort")) {
-      memo.sort = value;
+    } else if (urlPart.startsWith("sort")) {
+      qs.sort = value;
     }
 
 
-    return memo;
+    return qs;
   }, {});
-
-  return obj;
 }
 
 /**
@@ -153,11 +156,11 @@ function createFilter(key, value) {
     }
   } else if (typeof value === "object") {
     if (value.operator && value.value) {
-      filterString += `${baseFilter}[${value.operator}]=${value.value}`;
+      filterString += `${baseFilter}[${underscore(value.operator)}]=${value.value}`;
     } else {
       const keys = value;
       filterString += Object.keys(keys).map(relKey =>
-        `${baseFilter}[${relKey}]${createFilter(null, value[relKey])}`
+        `${baseFilter}[${underscore(relKey)}]${createFilter(null, value[relKey])}`
       ).join("&");
     }
   }
@@ -262,16 +265,16 @@ function build({
   let url = `${base}${parsed}`;
 
   const params = unbuild(resource);
+
   const merged = _.merge({}, {
-    includes, page, filters, perPage, sort,
-  }, {
     include: params.includes,
     page: params.page,
     filters: params.filters,
     perPage: params.perPage,
     sort: params.sort,
+  }, {
+    includes, page, filters, perPage, sort,
   });
-
   const query = buildQuery(merged);
 
   url += query ? `?${query}` : "";
