@@ -1,9 +1,136 @@
+import merge from "lodash/merge";
+
+const _ = { merge };
+
 /**
  * Take a cacmelCaseString and return camel_case_string;
  * @param  {string} str A camelCaseString
  * @return {string} An underscore cased string
  */
 const underscore = (str) => str.replace(/[A-Z]/g, (n) => `_${n.toLowerCase()}`);
+
+function getBaseParams(url) {
+  const matches = url.match(/(https?:\/\/[^/]*)\/([^?]*)/);
+
+  return matches && matches[0] ? {
+    base: matches[1],
+    resource: matches[2],
+  } : {};
+}
+
+function getOperator(operator, value) {
+  switch (operator) {
+    case "equals":
+      return value.indexOf(",") > -1 ? value.split(",") : value;
+    default: {
+      return { [operator]: value };
+    }
+  }
+}
+
+function createOperatorObject(memo, keys, value) {
+  switch (keys.length) {
+    case 2: {
+      const [key, operator] = keys;
+      const operatorValue = /exists|equals|notexists/.test(operator) ?
+      getOperator(operator, value) : {
+        operator,
+        value,
+      };
+
+      if (memo[key] && !Array.isArray(memo[key])) {
+        memo[key] = [memo[key]];
+        memo[key].push(operatorValue)
+      } else {
+        memo[key] = memo[key] || operatorValue;
+      }
+      break;
+    }
+    case 3: {
+      const [relationship, ...rest] = keys;
+      memo[relationship] = createOperatorObject({}, rest, value);
+      break;
+    }
+    default:
+      break;
+  }
+  return memo;
+}
+
+// filter[abc][def]=123
+const reFilterG = /\[([^\]]*)\]/g;
+const reFilter = /\[([^\]]*)\]/;
+
+function parseFilters(filters, filter, value) {
+  const keys = [];
+  let matches;
+
+  // Grab abc, and def
+  while (matches = reFilterG.exec(filter)) {
+    keys.push(matches[1]);
+  }
+
+  createOperatorObject(filters, keys, value);
+}
+
+function parseQueryString(url) {
+  const split = url.split("?");
+  if (!split[1]) return {};
+
+  const query = split[1];
+  const filters = query.split("&");
+
+  const obj = filters.reduce((memo, filter) => {
+    // 123
+    const value = filter.split(/=/)[1];
+
+    if (filter.startsWith("filter")) {
+      memo.filters = memo.filters || {};
+      parseFilters(memo.filters, filter, value);
+    } else if (filter.startsWith("include")) {
+      memo.includes = memo.includes || [];
+      memo.includes = memo.includes.concat(value.split(","));
+    } else if (filter.startsWith("page")) {
+      const match = filter.match(reFilter);
+
+      if (match) {
+        const pageOperator = match[1];
+        if (pageOperator === "limit") {
+          memo.perPage = parseInt(value, 10);
+        }
+        if (pageOperator === "offset") {
+          const offset = parseInt(value, 10);
+          memo.page = (offset / memo.perPage) + 1;
+        }
+      }
+    } else if (filter.startsWith("sort")) {
+      memo.sort = value;
+    }
+
+
+    return memo;
+  }, {});
+
+  return obj;
+}
+
+/**
+* Parse a url and returns it's filters, includes, and pagination params
+*/
+function unbuild(url) {
+  const { base, resource } = getBaseParams(url);
+  const { filters, includes, perPage, page, sort } = parseQueryString(url);
+
+  return {
+    base,
+    resource,
+    filters,
+    includes,
+    perPage,
+    page,
+    sort,
+  };
+}
 
 /**
  * Build a query string for filters
@@ -47,7 +174,15 @@ const createFilters = (filter) => {
           filterString += `${baseFilter}[equals]=${value.join(",")}`;
         }
       } else if (typeof filter[f] === "object") {
-        filterString += `${baseFilter}[${filter[f].operator}]=${filter[f].value}`;
+        if (filter[f].operator && filter[f].value) {
+          filterString += `${baseFilter}[${filter[f].operator}]=${filter[f].value}`;
+        } else if (typeof filter[f] === "object") {
+          const keys = filter[f];
+          filterString += baseFilter;
+          Object.keys(keys).forEach(relKey => {
+            filterString += `[${relKey}][${filter[f][relKey].operator}]=${filter[f][relKey].value}`;
+          });
+        }
       }
 
       return filterString;
@@ -74,7 +209,7 @@ const createIncludes = (include) => {
   return `include=${include.join(",")}`;
 };
 
-function buildQuery({ includes = [], filters = {}, page, perPage }) {
+function buildQuery({ includes = [], filters = {}, page, perPage, sort, }) {
   const urlParts = [];
 
   if (includes.length) {
@@ -87,6 +222,10 @@ function buildQuery({ includes = [], filters = {}, page, perPage }) {
 
   if (page) {
     urlParts.push(paginate({ page, perPage }));
+  }
+
+  if (sort) {
+    urlParts.push(`sort=${sort}`)
   }
 
   return urlParts.filter(part => part).join("&");
@@ -115,14 +254,27 @@ function build({
   includes = [],
   page,
   perPage,
+  sort,
 } = {}) {
-  let url = `${base}${resource.substr(0, 1) === "/" ? "" : "/"}${resource}`;
+  const parsed = `${resource.substr(0, 1) === "/" ? "" : "/"}${resource}`
+    .replace(/\?(.*)$/, "");
 
-  const query = buildQuery({
-    includes, page, filters, perPage,
+  let url = `${base}${parsed}`;
+
+  const params = unbuild(resource);
+  const merged = _.merge({}, {
+    includes, page, filters, perPage, sort,
+  }, {
+    include: params.includes,
+    page: params.page,
+    filters: params.filters,
+    perPage: params.perPage,
+    sort: params.sort,
   });
 
-  url += query ? `${resource.indexOf("?") > -1 ? "&" : "?"}${query}` : "";
+  const query = buildQuery(merged);
+
+  url += query ? `?${query}` : "";
   return url;
 }
 
@@ -130,4 +282,5 @@ export {
   underscore,
   build,
   buildQuery,
+  unbuild,
 };

@@ -1,6 +1,7 @@
 import {
   build,
   underscore,
+  unbuild,
 } from "../src/core/urlBuilder";
 import { expect } from "chai";
 
@@ -47,7 +48,7 @@ describe("urlBuilder", () => {
     expect(url).to.equal(`${base}/${resource}`);
   });
 
-  it("should build urls with only filters", () => {
+  it("should build urls with only filters and a sort", () => {
     const base = "http://api.lonelyplanet.com";
     const resource = "pois";
 
@@ -57,9 +58,10 @@ describe("urlBuilder", () => {
       filters: {
         poiType: ["eating"],
       },
+      sort: "top_choice",
     });
 
-    expect(url).to.equal(`${base}/${resource}?filter[poi_type][equals]=eating`);
+    expect(url).to.equal(`${base}/${resource}?filter[poi_type][equals]=eating&sort=top_choice`);
   });
 
   it("should build urls with only includes", () => {
@@ -85,7 +87,7 @@ describe("urlBuilder", () => {
       includes: ["image_associations.from"],
     });
 
-    expect(url).to.equal(`${base}/${resource}&include=image_associations.from`);
+    expect(url).to.equal("http://api.lonelyplanet.com/pois?include=image_associations.from&filter[place_id][has_ancestor]=12345");
   });
 
 
@@ -124,13 +126,44 @@ describe("urlBuilder", () => {
           operator: "to",
           value: "1973-1-8",
         }],
-        place_id: {
-          operator: "has_ancestor",
-          value: 1234,
+        lodging: {
+          place_id: {
+            operator: "has_ancestor",
+            value: 1234,
+          },
         },
       },
     });
 
-    expect(filterString).to.equal("http://api.lonelyplanet.com/lodgings?filter[available][from]=1973-1-1&filter[available][to]=1973-1-8&filter[place_id][has_ancestor]=1234");
+    expect(filterString).to.equal("http://api.lonelyplanet.com/lodgings?filter[available][from]=1973-1-1&filter[available][to]=1973-1-8&filter[lodging][place_id][has_ancestor]=1234");
+  });
+
+  it("should reverse url building into an object", () => {
+    const url = "http://api.lonelyplanet.com/lodgings/availability?" +
+      "include=foo,foo.bar&" +
+      "filter[available][from]=1973-1-1&" +
+      "filter[available][to]=1973-1-8&" +
+      "filter[lodging][place_id][has_ancestor]=1234&" +
+      "filter[poi_type][equals]=eating&" +
+      "filter[subtypes][equals]=foo,bar&" +
+      "page[limit]=20&page[offset]=40&" +
+      "sort=top_choice";
+    const params = unbuild(url);
+
+    expect(params.includes.length).to.equal(2);
+    expect(params.base).to.equal("http://api.lonelyplanet.com");
+    expect(params.resource).to.equal("lodgings/availability");
+    expect(params.filters.available.length).to.equal(2);
+    expect(params.filters.lodging.place_id.operator).to.equal("has_ancestor");
+    expect(params.filters.lodging.place_id.value).to.equal("1234");
+    expect(params.filters.poi_type).to.equal("eating");
+    expect(params.filters.subtypes.length).to.equal(2);
+    expect(params.perPage).to.equal(20);
+    expect(params.page).to.equal(3);
+    expect(params.sort).to.equal("top_choice");
+    
+    const rebuilt = build(params);
+
+    expect(rebuilt).to.equal(url);
   });
 });
