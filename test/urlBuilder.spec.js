@@ -30,7 +30,7 @@ describe("urlBuilder", () => {
       filters: {
         poiType: ["eating"],
       },
-      includes: ["containing_place"]
+      includes: ["containing_place"],
     });
 
     expect(url).to.equal(`${base}/${resource}?include=containing_place&filter[poi_type][equals]=eating`);
@@ -131,11 +131,13 @@ describe("urlBuilder", () => {
             operator: "has_ancestor",
             value: 1234,
           },
+          subtypes: ["resort"],
+          review: true,
         },
       },
     });
 
-    expect(filterString).to.equal("http://api.lonelyplanet.com/lodgings?filter[available][from]=1973-1-1&filter[available][to]=1973-1-8&filter[lodging][place_id][has_ancestor]=1234");
+    expect(filterString).to.equal("http://api.lonelyplanet.com/lodgings?filter[available][from]=1973-1-1&filter[available][to]=1973-1-8&filter[lodging][place_id][has_ancestor]=1234&filter[lodging][subtypes][equals]=resort&filter[lodging][review][exists]");
   });
 
   it("should reverse url building into an object", () => {
