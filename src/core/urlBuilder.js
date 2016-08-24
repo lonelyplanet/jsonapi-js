@@ -1,6 +1,7 @@
 import merge from "lodash/merge";
+import map from "lodash/map";
 
-const _ = { merge };
+const _ = { merge, map };
 
 /**
  * Take a cacmelCaseString and return camel_case_string;
@@ -132,6 +133,38 @@ function unbuild(url) {
   };
 }
 
+function createFilter(key, value) {
+  // filter[poi_type]
+  const baseFilter = key ? `filter[${underscore(key)}]` : "";
+  let filterString = "";
+
+  if (typeof value === "string") {
+    // [equals]=bar
+    filterString += `${baseFilter}[equals]=${value}`;
+  } else if (typeof value === "boolean") {
+    // [exists|notexists]
+    filterString += `${baseFilter}[${value ? "exists" : "notexists"}]`;
+  } else if (Array.isArray(value)) {
+    // [equals]=a,b,c
+    if (value.map(fi => typeof fi).filter(ft => ft === "object").length) {
+      filterString += value.map(fi => `${createFilter(key, fi)}`).join("&");
+    } else {
+      filterString += createFilter(key, value.join(","));
+    }
+  } else if (typeof value === "object") {
+    if (value.operator && value.value) {
+      filterString += `${baseFilter}[${value.operator}]=${value.value}`;
+    } else {
+      const keys = value;
+      filterString += Object.keys(keys).map(relKey =>
+        `${baseFilter}[${relKey}]${createFilter(null, value[relKey])}`
+      ).join("&");
+    }
+  }
+
+  return filterString;
+}
+
 /**
  * Build a query string for filters
  * @param  {string} filter An object containing filters
@@ -153,40 +186,7 @@ function unbuild(url) {
 const createFilters = (filter) => {
   if (!filter) return "";
 
-  const query = Object.keys(filter)
-    .map(f => {
-      const value = filter[f];
-      // filter[poi_type]
-      const baseFilter = `filter[${underscore(f)}]`;
-      let filterString = "";
-
-      if (typeof filter[f] === "string") {
-        // [equals]=bar
-        filterString += `${baseFilter}[equals]=${value}`;
-      } else if (typeof filter[f] === "boolean") {
-        // [exists|notexists]
-        filterString += `${baseFilter}[${value ? "exists" : "notexists"}]`;
-      } else if (Array.isArray(filter[f])) {
-        // [equals]=a,b,c
-        if (filter[f].map(fi => typeof fi).filter(ft => ft === "object").length) {
-          filterString += filter[f].map(fi => `${baseFilter}[${fi.operator}]=${fi.value}`).join("&");
-        } else {
-          filterString += `${baseFilter}[equals]=${value.join(",")}`;
-        }
-      } else if (typeof filter[f] === "object") {
-        if (filter[f].operator && filter[f].value) {
-          filterString += `${baseFilter}[${filter[f].operator}]=${filter[f].value}`;
-        } else if (typeof filter[f] === "object") {
-          const keys = filter[f];
-          filterString += baseFilter;
-          Object.keys(keys).forEach(relKey => {
-            filterString += `[${relKey}][${filter[f][relKey].operator}]=${filter[f][relKey].value}`;
-          });
-        }
-      }
-
-      return filterString;
-    });
+  const query = _.map(filter, (value, key) => createFilter(key, value));
   return query.join("&");
 };
 
