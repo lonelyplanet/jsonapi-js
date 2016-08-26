@@ -120,10 +120,13 @@ function parseQueryString(url) {
 
 /**
 * Parse a url and returns it's filters, includes, and pagination params
+* @param {string} url A url to parse
+* @example
+* unbuild("http://api.lonelyplanet.com/foo?bar=1"); // { base: "http://api.lonelyplanet.com", resource: "foo" ... } 
 */
 function unbuild(url) {
   const { base, resource } = getBaseParams(url);
-  const { filters, includes, perPage, page, sort } = parseQueryString(url);
+  const { filters, includes, perPage, page, sort } = parseQueryString(decodeURIComponent(url));
 
   return {
     base,
@@ -264,7 +267,7 @@ function build({
 
   let url = `${base}${parsed}`;
 
-  const params = unbuild(resource);
+  const params = unbuild(`${base}${resource}`);
 
   const merged = _.merge({}, {
     include: params.includes,

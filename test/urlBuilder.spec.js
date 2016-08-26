@@ -185,4 +185,11 @@ describe("urlBuilder", () => {
 
     expect(filterString).to.equal("http://api.lonelyplanet.com/pois?filter[poi_type][equals]=eating&filter[subtypes][equals]=Italian&filter[place_id][has_ancestor]=362079,362080&filter[location][equals]=123,456&page[limit]=10&page[offset]=10&sort=top_choice");
   });
+
+  it("should merge place data for partner activities", () => {
+    const url = "http://api.lonelyplanet.com/partner-activities?filter%5Bduration%5D%5Bfrom%5D=4320&filter%5Bplace%5D%5Bequals%5D=361858&page%5Blimit%5D=10&page%5Boffset%5D=10";
+    const params = unbuild(url);
+
+    expect(params.filters.place).to.equal("361858");
+  });
 });
