@@ -1,0 +1,2742 @@
+
+{
+    "data": {
+        "attributes": {
+            "address": {
+                "extras": "", 
+                "street": "222 5th Ave S"
+            }, 
+            "hours_string": "9am-5pm", 
+            "location": {
+                "coordinates": [
+                    -86.776221, 
+                    36.158398
+                ], 
+                "type": "Point"
+            }, 
+            "name": "Country Music Hall of Fame & Museum", 
+            "poi_attributes": [
+                {
+                    "category": "preference", 
+                    "name": "top_choice"
+                }
+            ], 
+            "poi_type": "sights", 
+            "price_string": "adult/child $25/15, with audio tour $27/18, with Studio B 1hr tour $40/30", 
+            "review": {
+                "essential": "<p>Following a $100-million expansion in 2014, this monumental museum, reflecting the near-biblical importance of country music to Nashville's soul, is a must-see, whether you're a country music fan or not. Gaze at Carl Perkins' blue suede shoes, Elvis' gold Cadillac (actually white) and gold piano (actually gold) and Hank Williams western-cut suit with musical note appliqus.</p>", 
+                "extension": "<p>Highlights of the ambitious 210,000-square-foot expansion include the 800-seat CMA Theater, the Taylor Swift Education Center and the relocation of the legendary letterpress operation of Hatch Show Print. Written exhibits trace country's roots, computer touch screens access recordings and photos from the enormous archives, and the fact- and music-filled audio tour is narrated by contemporary stars.</p>"
+            }, 
+            "searchable_name": "Country Music Hall of Fame & Museum", 
+            "subtypes": [
+                "Museum"
+            ], 
+            "website": "http://www.countrymusichalloffame.com"
+        }, 
+        "id": "381139", 
+        "links": {
+            "self": "/pois/381139"
+        }, 
+        "relationships": {
+            "containing-place": {
+                "data": {
+                    "id": "1341151", 
+                    "type": "place"
+                }, 
+                "links": {
+                    "related": "/places/1341151"
+                }
+            }, 
+            "image-associations": {
+                "data": {
+                    "id": "pois_hero_334229", 
+                    "type": "image_association"
+                }, 
+                "links": {
+                    "related": "/pois/381139/image_associations"
+                }
+            }
+        }, 
+        "type": "poi"
+    }, 
+    "included": [
+        {
+            "attributes": {
+                "additional_information": {
+                    "accommodation": "Hotels/hostels (2 nts, some multi-share), participation camping (5 nts).", 
+                    "meals": "6 breakfasts, 5 lunches, 3 dinners", 
+                    "staff_experts": "1 or 2 Chief Experience Officers (CEOs) throughout, depending on group size.", 
+                    "transport": "Air-conditioned private touring van, walking."
+                }, 
+                "canonical_category": "History & culture", 
+                "categories": [
+                    "Wildlife/Nature", 
+                    "Trekking/Hiking", 
+                    "Culture/History"
+                ], 
+                "departure_info": "New Orleans", 
+                "descriptions": {
+                    "long_description": "From the Big Easy to the Big Apple, this roadtrip swings north along the East Coast and captures the best cities, historical monuments, and beautiful scenery from New Orleans to New York and everything in between. Embrace big city beats, Nashville grooves, and the traditional twang of the Appalachian Mountains. As always, centrally located hostels in the cities and campsites in the wilderness keep you in the heart of the action. Skip flying and discover country roots and the earthly delights that come with staying grounded.", 
+                    "short_description": null
+                }, 
+                "difficulty": {
+                    "description": "2 - Light", 
+                    "grade": null, 
+                    "scale": 5
+                }, 
+                "duration": {
+                    "duration": 8.0, 
+                    "unit": "days"
+                }, 
+                "duration_info": "8 days", 
+                "exclusions": [], 
+                "external_id": "NUOY", 
+                "group_size": {
+                    "average_size": "16", 
+                    "description": "Small Group", 
+                    "maximum_size": "22", 
+                    "minimum_size": null
+                }, 
+                "highlights": [
+                    "Feel the beat in memphis and new orleans", 
+                    "Drive through the appalachian mountains", 
+                    "Visit american history in washington dc", 
+                    "Party it up in new york."
+                ], 
+                "inclusions": [
+                    "Entrance fees to all national parks and national monuments with hiking and walking excursions", 
+                    "Orientation to Washington DC and New York City", 
+                    "Visit to Arlington Cemetery", 
+                    "Self-inflating mattresses and dome tents", 
+                    "All transport between destinations and to/from included activities"
+                ], 
+                "itinerary": [
+                    {
+                        "day": 1, 
+                        "description": "For the night in New Orleans, we stay in a hotel close to the city centre with multi-share accommodation. If you would like to see all of the popular sites of this vibrant city, we recommend you book pre-tour accommodation.\n\nIncluded Activities:\nArrival Day and Welcome Meeting", 
+                        "title": "Day 1 New Orleans"
+                    }, 
+                    {
+                        "day": 2, 
+                        "description": "Explore the birthplace of Rock 'n' Roll, the Home of Blues, and the starting point of soul. Music legends, including Elvis Presley, Johnny Cash and B.B. King, made their marks on Memphis. Optional activities include visiting the National Civil Rights Museum (located where the assassination of Martin Luther King Jr took place in 1968) or visiting the Rock \u2018n\u2019 Soul Museum. \n\nTransport:\nPrivate Vehicle (8.00 hour(s), 640km)", 
+                        "title": "Day 2 New Orleans/Memphis (1B, 1L)"
+                    }, 
+                    {
+                        "day": 3, 
+                        "description": "In the morning, opt to walk in the footsteps of the King of Rock \u2018n\u2019 Roll at Elvis Presley\u2019s home, Graceland. If Graceland is not for you, enjoy the time to explore more of Memphis on your own.  Travel to Nashville in time to check out the nightlife and visit a real country cowboy bar.\n\nTransport:\nPrivate Vehicle (5.00 hour(s), 380km)", 
+                        "title": "Day 3 Memphis/Nashville (1B, 1L, 1D)"
+                    }, 
+                    {
+                        "day": 4, 
+                        "description": "Experience the Appalachian Mountains on the drive. The mountains are a perfect place to relax and to enjoy the fresh, clean air and see the true beauty of North America. \n\nTransport:\nPrivate Vehicle (8.00 hour(s), 575km)", 
+                        "title": "Day 4 Nashville/Appalachia (1B, 1L, 1D)"
+                    }, 
+                    {
+                        "day": 5, 
+                        "description": "Continue on the Skyline Drive through Shenandoah National Park, a truly beautiful, historic national treasure. Standing on top of the peaks of Shenandoah National Park, gaze across the silent mountains. It's hard to believe Washington DC is just a short distance away. \n\nIncluded Activities:\nArlington Cemetery Visit\nMonuments by Moonlight\n\nTransport:\nPrivate Vehicle (7.00 hour(s), 480km)", 
+                        "title": "Day 5 Appalachia/Washington DC (1B, 1L, 1D)"
+                    }, 
+                    {
+                        "day": 6, 
+                        "description": "There is so much to see and do in Washington DC that you can't see it all in one day. Take your time and spend a full day exploring this fascinating city. ", 
+                        "title": "Day 6 Washington DC (1B)"
+                    }, 
+                    {
+                        "day": 7, 
+                        "description": "Dive into the hustle and bustle of the Big Apple. Opt to visit Times Square, stroll Central Park or check out Greenwich Village. Experience the famous nightlife of New York.\n\nAdditional Notes:\nFor our time in NYC, we stay close to the action in a hostel near the city centre.\n\nIncluded Activities:\nOrientation Walk\n\nTransport:\nPrivate Vehicle (6.00 hour(s), 375km)", 
+                        "title": "Day 7 Washington DC/New York City (1B, 1L)"
+                    }, 
+                    {
+                        "day": 8, 
+                        "description": "From the Statue of Liberty to Ground Zero to Chinatown, New York City is full of things to do and see. We recommend spending extra time here; please speak to your sales agent to book extra accommodation. \n\nIncluded Activities:\nDeparture Day", 
+                        "title": "Day 8 New York City"
+                    }
+                ], 
+                "media": {
+                    "images": [
+                        "http:https://media.gadventures.com/media-server/image_library/7081970_1080x810_Appalachia_United States.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/6979253_1080x810_Memphis_United States.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/6982574_1080x810_Nashville_United States.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/6680784_1080x810_New Orleans_United States.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/7462480_1080x810_New York_United States.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/6487445_1080x810_Washington DC.jpg"
+                    ], 
+                    "videos": []
+                }, 
+                "minimum_price": {
+                    "amount": 1229.0, 
+                    "currency": "USD", 
+                    "formatted_amount": "$1229.0"
+                }, 
+                "name": "Music, Mountains & Monuments Eastbound", 
+                "pricing": {
+                    "discounted_price": {
+                        "amount": 921.75, 
+                        "currency": "USD", 
+                        "formatted_amount": "$921.75"
+                    }, 
+                    "regular_price": {
+                        "amount": 1229.0, 
+                        "currency": "USD", 
+                        "formatted_amount": "$1229.0"
+                    }
+                }, 
+                "provider": "gadventures", 
+                "rating": null, 
+                "return_info": "New York City", 
+                "review_count": null
+            }, 
+            "id": "g-NUOY", 
+            "links": {
+                "booking": "https://www.gadventures.com/trips/music-mountains-monuments-eastbound/2366/?aff=18424&phonecode=LonelyPlanet&utm_campaign=lonelyplanetvariation&utm_medium=referral&utm_source=lonelyplanet", 
+                "image": "https://media.gadventures.com/media-server/cache/58/7e/587e1507ee764e9e5424ddb86d3e0bec.jpg", 
+                "map": "https://media.gadventures.com/media-server/dynamic/admin/maps/2015/NUOY.png", 
+                "self": "/partner-activities/g-NUOY"
+            }, 
+            "relationships": {
+                "places": {
+                    "links": {
+                        "related": "/places?filter[id][equals]=362207,362228,362227,361211,362237,362241,362079,1336193,1336397,1319973,362080,1324324,361720,1005229,1337117,1329648,361980,1324378,362229,362185,1341151,362223,1329659,362203"
+                    }
+                }
+            }, 
+            "type": "partner_activities"
+        }, 
+        {
+            "attributes": {
+                "additional_information": {
+                    "accommodation": "Hotels/hostels (6 nts, some multi-share), participation camping (16 nts).", 
+                    "meals": "18 breakfasts, 14 lunches, 10 dinners", 
+                    "staff_experts": "1 or 2 Chief Experience Officers (CEOs) throughout, depending on group size.", 
+                    "transport": "Air-conditioned private touring van, walking"
+                }, 
+                "canonical_category": "History & culture", 
+                "categories": [
+                    "Chill Out", 
+                    "Wildlife/Nature", 
+                    "Trekking/Hiking", 
+                    "Culture/History"
+                ], 
+                "departure_info": "San Francisco", 
+                "descriptions": {
+                    "long_description": "Get out on the road and follow in the footsteps of Jack Kerouac to discover the real America. This ultimate coast-to-coast road trip connects you and your small group of fellow travellers to the iconic cities, natural wonders, national parks, and monuments that make this land great. Learn about Navajo culture in the Southwest and what the odds are in Las Vegas. Whether it\u2019s comfortable hotels in the cities or campsites in national parks, you\u2019ll always be close to the action. So slide on your cowboy boots in Texas and your dancing shoes in Nashville and Memphis \u2013 it\u2019s time to embrace the spirit of this land by hitting the open road.", 
+                    "short_description": null
+                }, 
+                "difficulty": {
+                    "description": "2 - Light", 
+                    "grade": null, 
+                    "scale": 5
+                }, 
+                "duration": {
+                    "duration": 23.0, 
+                    "unit": "days"
+                }, 
+                "duration_info": "23 days", 
+                "exclusions": [], 
+                "external_id": "NUFY", 
+                "group_size": {
+                    "average_size": "16", 
+                    "description": "Small Group", 
+                    "maximum_size": "22", 
+                    "minimum_size": null
+                }, 
+                "highlights": [
+                    "Stroll the hills of san francisco", 
+                    "Look for wildlife in yosemite", 
+                    "Party in las vegas and new orleans", 
+                    "Marvel at the grand canyon", 
+                    "Relive history in washington dc", 
+                    "Gaze at the new york city skyline."
+                ], 
+                "inclusions": [
+                    "Entrance fees to all national parks with hiking and walking excursions", 
+                    "Orientations to Las Vegas, Washington DC and New York", 
+                    "Guided tour of Mesa Verde cliff dwellings", 
+                    "Carlsbad Caverns visit", 
+                    "Arlington Cemetery visit", 
+                    "Self-inflating mattresses and dome tents", 
+                    "All transport between destinations and to/from included activities"
+                ], 
+                "itinerary": [
+                    {
+                        "day": 1, 
+                        "description": "There's a lot to see and do in San Francisco, and we recommend spending extra time here if you'd like to explore the city; speak to your sales agent to book extra accommodation. Haight-Ashbury, Alcatraz, the Golden Gate Bridge, Fisherman's Wharf, and the city's famous cable cars await you.\n\nIncluded Activities:\nArrival Day and Welcome Meeting", 
+                        "title": "Day 1 San Francisco"
+                    }, 
+                    {
+                        "day": 2, 
+                        "description": "Travel through California's Sierra Nevada Mountains on the way to Yosemite National Park. Set up camp for the night and get ready for a full day of exploring the next day.\n\nTransport:\nPrivate Vehicle (7.00 hour(s), 225km)", 
+                        "title": "Day 2 San Francisco/Yosemite National Park (1D)"
+                    }, 
+                    {
+                        "day": 3, 
+                        "description": "Admire spectacular views of Yosemite National Park's magnificent peaks and granite domes. Yosemite has many trails to offer. Be inspired by this beautiful and amazing landscape and opt to rent a bike to better explore the Yosemite Valley.\n\nIncluded Activities:\nYosemite National Park Visit", 
+                        "title": "Day 3 Yosemite National Park (1B, 1L, 1D)"
+                    }, 
+                    {
+                        "day": 4, 
+                        "description": "Marvel at the spectacular views of Yosemite National Park's magnificent peaks and granite domes while enjoying one of most scenic areas in California. \n\nAdditional Notes:\nNote: we intend on using the Tioga Pass, a scenic route through the Sierra Nevada mountain range that connects Yosemite NP with Bishop. In the spring and autumn seasons, there's a chance that the pass will be closed due to poor weather conditions or even snow. In such a case, we use an alternate route south, and will spend the night in Lake Isabella instead of Bishop. The status of the road is monitored daily, and our travel plan for the area will be confirmed during the trip.\n\nIncluded Activities:\nTioga Pass Drive\nMono Lake Visit\n\nTransport:\nPrivate Vehicle (10.00 hour(s), 330km)", 
+                        "title": "Day 4 Yosemite National Park/Bishop (1B, 1L, 1D)"
+                    }, 
+                    {
+                        "day": 5, 
+                        "description": "Visit one of the country's most rugged landscapes, legendary Death Valley, the hottest and driest spot on earth and home to the lowest point in North America.\n\nAdditional Notes:\nFor the nights in Las Vegas, we stay close to the action in a hotel either at the end of or just a few blocks off the Strip.\n\nIncluded Activities:\nDeath Valley National Park Visit\nVegas Strip Visit \n\nTransport:\nPrivate Vehicle (10.00 hour(s), 590km)", 
+                        "title": "Day 5 Bishop/Las Vegas (1B, 1L)"
+                    }, 
+                    {
+                        "day": 6, 
+                        "description": "Full day to explore Las Vegas. Walk the strip and try your luck at the tables or slot machines. Or spend the day shopping, dining or poolside. In the evening, opt to see one of the wildly entertaining shows Vegas is known for.", 
+                        "title": "Day 6 Las Vegas"
+                    }, 
+                    {
+                        "day": 7, 
+                        "description": "Considered among nature's most spectacular offerings, the Grand Canyon provides spectacular opportunities for exploration. Return to the campsite and recapture the experiences from this memorable day! \n\nAdditional Notes:\nNote: If you have pre-booked the Grand Canyon Helicopter Ride you will enjoy your 45-50min ride over the canyon on either Day 7 or 8. This will be determined by the CEO. \n\nIncluded Activities:\nGrand Canyon Sunset\n\nTransport:\nPrivate Vehicle (6.00 hour(s), 475km)", 
+                        "title": "Day 7 Las Vegas/Grand Canyon National Park (1D)"
+                    }, 
+                    {
+                        "day": 8, 
+                        "description": "Enjoy a free day to discover the Grand Canyon. Opt to wander throughout the park and take a hike. Hire a bike, check out a museum or see the canyon from the sky by helicopter.\n\nIncluded Activities:\nGrand Canyon South Rim Visit", 
+                        "title": "Day 8 Grand Canyon National Park (1B, 1L, 1D)"
+                    }, 
+                    {
+                        "day": 9, 
+                        "description": "Take an optional jeep tour led by a Navajo guide through Monument Valley and be inspired by a night under the stars while camping in this magnificent atmosphere. \n\nTransport:\nPrivate Vehicle (5.00 hour(s), 290km)", 
+                        "title": "Day 9 Grand Canyon National Park/Monument Valley (1B, 1L)"
+                    }, 
+                    {
+                        "day": 10, 
+                        "description": "Hike through history exploring Mesa Verde National Park, which offers a spectacular look into the lives of the Ancestral Puebloans. \n\nIncluded Activities:\nMesa Verde Guided Tour\n\nTransport:\nApproximate Distance to Durango: 315 km\nPrivate Vehicle (7.00 hour(s))", 
+                        "title": "Day 10 Monument Valley/Durango (1B, 1L, 1D)"
+                    }, 
+                    {
+                        "day": 11, 
+                        "description": "Continue the journey back in time and explore one of America's oldest and most beautiful cities, Santa Fe. Take a stroll downtown and visit art galleries, or enjoy some world-famous roasted green chilies.\n\nTransport:\nPrivate Vehicle (6.00 hour(s), 350km)", 
+                        "title": "Day 11 Durango/Santa Fe (1B, 1L)"
+                    }, 
+                    {
+                        "day": 12, 
+                        "description": "Look for aliens at infamous Roswell en route to exploring the Carlsbad Caverns, dodging the 400,000 bats heading out to hunt at sunset.\n\nIncluded Activities:\nExplore Roswell\nCarlsbad Caverns Tour\n\nTransport:\nPrivate Vehicle (8.00 hour(s), 470km)", 
+                        "title": "Day 12 Santa Fe/Carlsbad (1B, 1L, 1D)"
+                    }, 
+                    {
+                        "day": 13, 
+                        "description": "Sit back and gaze at the scenery while travelling through the southern United States. Upon arrival in the 'Lonestar' state, settle in at the campsite for a night under the stars.\n\nTransport:\nPrivate Vehicle (9.00 hour(s), 764km)", 
+                        "title": "Day 13 Carlsbad/Austin (1B, 1L)"
+                    }, 
+                    {
+                        "day": 14, 
+                        "description": "Spend a free day in Austin. Opt to visit the SoCo area for thrift shopping, take a dip in the Barton natural pool, or let loose at a local country bar in the evening.", 
+                        "title": "Day 14 Austin (1B)"
+                    }, 
+                    {
+                        "day": 15, 
+                        "description": "The CEO will point out a few things on the drive in, then get out and experience the city at its best.\n\nTransport:\nPrivate Vehicle (9.00 hour(s), 820km)", 
+                        "title": "Day 15 Austin/New Orleans (1B)"
+                    }, 
+                    {
+                        "day": 16, 
+                        "description": "New travellers may join you today for the rest of the adventure. You are welcome to join them at a group meeting this evening, followed by an optional dinner.", 
+                        "title": "Day 16 New Orleans (1B)"
+                    }, 
+                    {
+                        "day": 17, 
+                        "description": "Explore the birthplace of Rock 'n' Roll, the Home of Blues, and the starting point of soul. Music legends, including Elvis Presley, Johnny Cash and B.B. King, made their marks on Memphis. Optional activities include visiting the National Civil Rights Museum (located where the assassination of Martin Luther King Jr took place in 1968) or visiting the Rock \u2018n\u2019 Soul Museum. \n\nTransport:\nPrivate Vehicle (8.00 hour(s), 640km)", 
+                        "title": "Day 17 New Orleans/Memphis (1B, 1L)"
+                    }, 
+                    {
+                        "day": 18, 
+                        "description": "In the morning, opt to walk in the footsteps of the King of Rock \u2018n\u2019 Roll at Elvis Presley\u2019s home, Graceland. If Graceland is not for you, enjoy the time to explore more of Memphis on your own.  Travel to Nashville in time to check out the nightlife and visit a real country cowboy bar.\n\nTransport:\nPrivate Vehicle (5.00 hour(s), 380km)", 
+                        "title": "Day 18 Memphis/Nashville (1B, 1L, 1D)"
+                    }, 
+                    {
+                        "day": 19, 
+                        "description": "Experience the Appalachian Mountains on the drive. The mountains are a perfect place to relax and to enjoy the fresh, clean air and see the true beauty of North America. \n\nTransport:\nPrivate Vehicle (8.00 hour(s), 575km)", 
+                        "title": "Day 19 Nashville/Appalachia (1B, 1L, 1D)"
+                    }, 
+                    {
+                        "day": 20, 
+                        "description": "Continue on the Skyline Drive through Shenandoah National Park, a truly beautiful, historic national treasure. Standing on top of the peaks of Shenandoah National Park, gaze across the silent mountains. It's hard to believe Washington DC is just a short distance away. \n\nIncluded Activities:\nArlington Cemetery Visit\nMonuments by Moonlight\n\nTransport:\nPrivate Vehicle (7.00 hour(s), 480km)", 
+                        "title": "Day 20 Appalachia/Washington DC (1B, 1L, 1D)"
+                    }, 
+                    {
+                        "day": 21, 
+                        "description": "There is so much to see and do in Washington DC that you can't see it all in one day. Take your time and spend a full day exploring this fascinating city. ", 
+                        "title": "Day 21 Washington DC (1B)"
+                    }, 
+                    {
+                        "day": 22, 
+                        "description": "Dive into the hustle and bustle of the Big Apple. Opt to visit Times Square, stroll Central Park or check out Greenwich Village. Experience the famous nightlife of New York.\n\nAdditional Notes:\nFor our time in NYC, we stay close to the action in a hostel near the city centre.\n\nIncluded Activities:\nOrientation Walk\n\nTransport:\nPrivate Vehicle (6.00 hour(s), 375km)", 
+                        "title": "Day 22 Washington DC/New York City (1B, 1L)"
+                    }, 
+                    {
+                        "day": 23, 
+                        "description": "From the Statue of Liberty to Ground Zero to Chinatown, New York City is full of things to do and see. We recommend spending extra time here; please speak to your sales agent to book extra accommodation. \n\nIncluded Activities:\nDeparture Day", 
+                        "title": "Day 23 New York City"
+                    }
+                ], 
+                "media": {
+                    "images": [
+                        "http:https://media.gadventures.com/media-server/image_library/IMGP0279-web.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/IMGP1610-web.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/IMG_1511-web.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/IMGP0772-web.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/USA-Arizona-Grand-Canyon-Travellers-Group-Sunrise-Leo-Tamburri-2011-IMGP1203-Lg-RGB-web.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/7081970_1080x810_Appalachia_United States.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/7662017_1080x810_Bishop.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/7793333_1080x810_Carlsbad_United States.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/7753246_1080x810_Durango_United States.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/7629756_1080x810_Grand_Canyon_US.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/8544675_1080x810_Grand_Canyon_National_Park_US.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/7839635_1080x810_Las_Vegas_US.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/6979253_1080x810_Memphis_United States.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/7638717_1080x810_Monument_Valley_US.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/6982574_1080x810_Nashville_United States.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/6680784_1080x810_New Orleans_United States.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/7462480_1080x810_New York_United States.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/7725049_1080x810_San_Francisco_US.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/7823010_1080x810_Santa Fe_United States.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/6487445_1080x810_Washington DC.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/7743995_1080x810_Yosemite_US.jpg"
+                    ], 
+                    "videos": []
+                }, 
+                "minimum_price": {
+                    "amount": 3499.0, 
+                    "currency": "USD", 
+                    "formatted_amount": "$3499.0"
+                }, 
+                "name": "Coast to Coast Road Trip Eastbound", 
+                "pricing": {
+                    "regular_price": {
+                        "amount": 3499.0, 
+                        "currency": "USD", 
+                        "formatted_amount": "$3499.0"
+                    }
+                }, 
+                "provider": "gadventures", 
+                "rating": null, 
+                "return_info": "New York City", 
+                "review_count": null
+            }, 
+            "id": "g-NUFY", 
+            "links": {
+                "booking": "https://www.gadventures.com/trips/coast-to-coast-road-trip-eastbound/2651/?aff=18424&phonecode=LonelyPlanet&utm_campaign=lonelyplanetvariation&utm_medium=referral&utm_source=lonelyplanet", 
+                "image": "https://media.gadventures.com/media-server/cache/81/7b/817b228c8cd1a282df2f387de5019ff1.jpg", 
+                "map": "https://media.gadventures.com/media-server/dynamic/admin/maps/2016/NUFY.png", 
+                "self": "/partner-activities/g-NUFY"
+            }, 
+            "relationships": {
+                "places": {
+                    "links": {
+                        "related": "/places?filter[id][equals]=362150,362172,362228,362227,361858,361780,361888,1338774,361211,1339079,1334495,1314239,362178,362207,362237,362241,362079,1324576,362149,1335547,361720,1005229,361880,361879,1324624,1338745,1339037,1329640,361859,1336193,1336397,1319973,362080,1324324,1337117,1329648,361980,1324378,362229,362185,1341151,362223,1329659,362203,1319250,1339164,1314240,362157,362153,1334417,1339071,362156,1314203,362137,1340624,362143,1334512,362120,1320142,362119,362109,362108"
+                    }
+                }
+            }, 
+            "type": "partner_activities"
+        }, 
+        {
+            "attributes": {
+                "additional_information": {
+                    "accommodation": "Hotels (8 nts).", 
+                    "meals": "1 breakfast, 1 lunch, 1 dinner", 
+                    "staff_experts": "Chief Experience Officer (CEO) throughout.", 
+                    "transport": "Air-conditioned private touring van, walking"
+                }, 
+                "canonical_category": "History & culture", 
+                "categories": [
+                    "Photography", 
+                    "Culture/History"
+                ], 
+                "departure_info": "Charleston", 
+                "descriptions": {
+                    "long_description": "There aren\u2019t many places in the US \u2013 or the world, frankly \u2013 that can match the Deep South for charm, character, and quirkiness. This nine-day trip pulls back the curtain on this unique part of the country by way of groovy Charleston, cosmopolitan Atlanta, sultry Savannah, the Elvis mecca of Memphis, and other hotspots while serving up heaping helpings of colonial estates, Cajun cuisine, country music, whiskey, and fun. It\u2019s different down here. Way different. Come on down and git yer drawl on, y\u2019all.", 
+                    "short_description": null
+                }, 
+                "difficulty": {
+                    "description": "2 - Light", 
+                    "grade": null, 
+                    "scale": 5
+                }, 
+                "duration": {
+                    "duration": 9.0, 
+                    "unit": "days"
+                }, 
+                "duration_info": "9 days", 
+                "exclusions": [], 
+                "external_id": "NUSH", 
+                "group_size": {
+                    "average_size": "10", 
+                    "description": "Small Group", 
+                    "maximum_size": "14", 
+                    "minimum_size": null
+                }, 
+                "highlights": [
+                    "View historic houses in charleston", 
+                    "Explore the dark and mysterious side of savannah", 
+                    "Get into the country groove in nashville", 
+                    "Learn about the blues in memphis", 
+                    "Eat cajun-style food and party on bourbon street"
+                ], 
+                "inclusions": [
+                    "Charleston orientation walk", 
+                    "Southern cooking demonstration with lunch", 
+                    "Historic district walk (Savannah)", 
+                    "Atlanta orientation walk", 
+                    "Southern barbecue dinner (Memphis)", 
+                    "Breakfast at Caf\u00e9 du Monde (New Orleans)", 
+                    "Daily suggestions for regional cuisine at local hot spots and dives", 
+                    "All transport between destinations and to/from included activities"
+                ], 
+                "itinerary": [
+                    {
+                        "day": 1, 
+                        "description": "There are no activities planned until an evening welcome meeting.\n\nIncluded Activities:\nArrival Day and Welcome Meeting", 
+                        "title": "Day 1 Charleston"
+                    }, 
+                    {
+                        "day": 2, 
+                        "description": "Enjoy a morning orientation walk of Charleston. In the afternoon, take part in a \"low country\" cooking demo with included lunch. Opt to take a historic house tour, visit the Charleston City Market, or Folly Beach.\n\nIncluded Activities:\nOrientation Walk\nSouthern Cooking Demonstration with Lunch", 
+                        "title": "Day 2 Charleston (1L)"
+                    }, 
+                    {
+                        "day": 3, 
+                        "description": "Head south to Savannah, Georgia. Enjoy a walk around the Bonaventure Cemetery and historic district of Savannah with the CEO. Opt to try one of the local favourites for dinner.\n\nIncluded Activities:\nBonaventure Cemetery and Historic District Tour\n\nTransport:\nPrivate Vehicle (2.00-2.50 hours)", 
+                        "title": "Day 3 Charleston/Savannah"
+                    }, 
+                    {
+                        "day": 4, 
+                        "description": "Opt to see an Atlanta Braves baseball game (when the team is in town).\n\nIncluded Activities:\nOrientation Walk\n\nTransport:\nPrivate Vehicle (3.50-4.50 hours)", 
+                        "title": "Day 4 Savannah/Atlanta"
+                    }, 
+                    {
+                        "day": 5, 
+                        "description": "On the way to Nashville, Tennessee, stop in Lynchburg and opt for a tour of the Jack Daniel's Distillery. Later, head out for live music and cowboy nightlife in this country music capital.\n\nTransport:\nPrivate Vehicle (4.00 hour(s))\nPrivate Vehicle (1.50-2.00 hours)", 
+                        "title": "Day 5 Atlanta/Nashville"
+                    }, 
+                    {
+                        "day": 6, 
+                        "description": "Travel west to Memphis, home of Graceland, Sun Studios and the National Civil Rights Museum. Opt to tour Elvis' home and enjoy an included Southern barbecue dinner.\n\nTransport:\nPrivate Vehicle (4.00-5.00 hours)", 
+                        "title": "Day 6 Nashville/Memphis (1D)"
+                    }, 
+                    {
+                        "day": 7, 
+                        "description": "Cross the border into Louisiana and drive straight to the Bayou. Opt to explore Bourbon St and the French Quarter and try some authentic Cajun food for dinner. \n\nTransport:\nPrivate Vehicle (6.00-7.00 hours)", 
+                        "title": "Day 7 Memphis/New Orleans"
+                    }, 
+                    {
+                        "day": 8, 
+                        "description": "Enjoy a free day to explore this city and surrounding area. Start the morning with beignets and coffee at Caf\u00e9 du Monde before checking out some optional activities like a swamp tour, a ghost tour or a Creole cooking class. \n\nIncluded Activities:\nCaf\u00e9 du Monde Visit", 
+                        "title": "Day 8 New Orleans (1B)"
+                    }, 
+                    {
+                        "day": 9, 
+                        "description": "Depart at any time.", 
+                        "title": "Day 9 New Orleans"
+                    }
+                ], 
+                "media": {
+                    "images": [
+                        "http:https://media.gadventures.com/media-server/image_library/6526759_1080x810_Atlanta_United States.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/6912707_1080x810_Charleston_United States.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/6979253_1080x810_Memphis_United States.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/6982574_1080x810_Nashville_United States.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/6680784_1080x810_New Orleans_United States.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/6567736_1080x810_Savannah_United States.jpg"
+                    ], 
+                    "videos": []
+                }, 
+                "minimum_price": {
+                    "amount": 1999.0, 
+                    "currency": "USD", 
+                    "formatted_amount": "$1999.0"
+                }, 
+                "name": "Highlights of the Deep South", 
+                "pricing": {
+                    "regular_price": {
+                        "amount": 1999.0, 
+                        "currency": "USD", 
+                        "formatted_amount": "$1999.0"
+                    }
+                }, 
+                "provider": "gadventures", 
+                "rating": null, 
+                "return_info": "New Orleans", 
+                "review_count": null
+            }, 
+            "id": "g-NUSH", 
+            "links": {
+                "booking": "https://www.gadventures.com/trips/highlights-of-the-deep-south/1096/?aff=18424&phonecode=LonelyPlanet&utm_campaign=lonelyplanetvariation&utm_medium=referral&utm_source=lonelyplanet", 
+                "image": "https://media.gadventures.com/media-server/cache/40/9e/409ed41df780586d7097cae2e12b085c.jpg", 
+                "map": "https://media.gadventures.com/media-server/dynamic/admin/maps/2015/NUSH.png", 
+                "self": "/partner-activities/g-NUSH"
+            }, 
+            "relationships": {
+                "places": {
+                    "links": {
+                        "related": "/places?filter[id][equals]=362220,362193,362196,362227,362192,362228,362223,362203,1329657,362207,1341151,362185,361720,361211,1005229,1329659,1336397,362219,1341353,362194"
+                    }
+                }
+            }, 
+            "type": "partner_activities"
+        }, 
+        {
+            "attributes": {
+                "additional_information": {}, 
+                "canonical_category": "History & culture", 
+                "categories": [
+                    "Cultural & Theme Tours", 
+                    "Tours & Sightseeing"
+                ], 
+                "departure_info": "Tour departs from selected Nashville hotels", 
+                "descriptions": {
+                    "long_description": "You\u2019ll be picked up from your Nashville hotel in the afternoon to begin your 3.5-hour coach tour, which takes you to the real-life filming locations featured on the hit ABC show Nashville.Learn interesting insider information and little-known tidbits about the show from your friendly, informative guide, who's as big of a Nashville fan as you are! Drive to the homes of the characters Scarlett, Rayna, Deacon and Lamar, and hop off the coach to enter the historic Ryman Auditorium, where you can get your photo taken on stage standing right where Rayna and Juliette performed their duet, \u2018Wrong Song.\u2019 This 2,362-seat live performance venue is best known as the most former home of the world-famous Grand Ole Opry, and has also held artists including Elvis Presley, Johnny Cash, Mae West and Louis Armstrong. Next, view the historic Bluebird Caf\u00e9 or Two Old Hippies Cafe, where countless artists have made their mark and launched their careers, including Garth Brooks and Taylor Swift. This dynamic 120-seat music club is famous for its intimate acoustic performances by established and amateur artists alike. You'll witness first-hand why playing at this classic venue is a songwriter\u2019s dream gig -- it's no wonder why the entrance lines are usually around the corner!Your guide will take you to several other surprise filming locations throughout the city, making the show come to life right before your eyes. At the end of your tour, you\u2019ll be taken back to your hotel. ", 
+                    "short_description": "Get a behind-the-scenes look at ABC\u2019s hit show \u2018Nashville!\u2019 Visit the homes of Rayna, Deacon, Scarlett and Lamar; visit the world-famous Ryman Auditorium (Former Grand Ole Opry House) house stage where Rayna and Juliette performed their duet \u2018Wrong Song;\u2019 and see the Bluebird Caf\u00e9 from the outside. This classic venue is a songwriter\u2019s dream gig."
+                }, 
+                "difficulty": {}, 
+                "duration": {
+                    "duration": 3.5, 
+                    "unit": "hours"
+                }, 
+                "duration_info": "3 hours 30 minutes", 
+                "exclusions": [
+                    "Food and drinks", 
+                    "Gratuities (optional)"
+                ], 
+                "external_id": "3131ABC", 
+                "group_size": {}, 
+                "highlights": [], 
+                "inclusions": [
+                    "Transport by air-conditioned coach", 
+                    "Hotel pickup and drop-off"
+                ], 
+                "itinerary": {}, 
+                "media": {}, 
+                "minimum_price": {
+                    "amount": 52.0, 
+                    "currency": "USD", 
+                    "formatted_amount": "$52.0"
+                }, 
+                "name": "ABCs Nashville", 
+                "pricing": {
+                    "regular_price": {
+                        "amount": 52.0, 
+                        "currency": "USD", 
+                        "formatted_amount": "$52.0"
+                    }
+                }, 
+                "provider": "viator", 
+                "rating": 4.31481481481481, 
+                "return_info": "Tour returns to original departure point at approximately 5pm", 
+                "review_count": 162
+            }, 
+            "id": "v-3131ABC", 
+            "links": {
+                "booking": "http://www.viator.com/tours/Nashville/Insider-Tour-of-ABCs-Nashville-Film-Locations/d799-3131ABC?eap=lonelyplanet-main-6296&aid=vba6296en2", 
+                "image": "http://cache-graphicslib.viator.com/graphicslib/thumbs674x446/3131/SITours/insider-tour-of-abcs-nashville-film-locations-in-nashville-140637.jpg", 
+                "self": "/partner-activities/v-3131ABC"
+            }, 
+            "relationships": {
+                "places": {
+                    "links": {
+                        "related": "/places?filter[id][equals]=362228,1341151,362223,362185,361720,361211,1005229"
+                    }
+                }
+            }, 
+            "type": "partner_activities"
+        }, 
+        {
+            "attributes": {
+                "center": {
+                    "coordinates": [
+                        -86.7835755079, 
+                        36.1569141656
+                    ], 
+                    "type": "Point"
+                }, 
+                "name": "Nashville", 
+                "place_type": "city"
+            }, 
+            "id": "362228", 
+            "links": {
+                "self": "/places/362228"
+            }, 
+            "relationships": {
+                "activities": {
+                    "links": {
+                        "related": "/partner-activities?filter[place][equals]=362228"
+                    }
+                }, 
+                "ancestry": {
+                    "links": {
+                        "related": "/places/362228/ancestry"
+                    }
+                }, 
+                "articles": {
+                    "links": {
+                        "related": "/articles?filter[place][equals]=362228&page[limit]=2"
+                    }
+                }, 
+                "descendants": {
+                    "links": {
+                        "related": "/places/362228/descendants"
+                    }
+                }, 
+                "image-associations": {
+                    "links": {
+                        "related": "/places/362228/image_associations"
+                    }
+                }, 
+                "introduction": {
+                    "links": {
+                        "related": "/places/362228/introduction"
+                    }
+                }, 
+                "lodgings": {
+                    "links": {
+                        "related": "/lodgings?filter[place_id][has_ancestor]=362228"
+                    }
+                }, 
+                "love-letter": {
+                    "links": {
+                        "related": "/places/362228/love_letter"
+                    }
+                }, 
+                "news": {
+                    "links": {
+                        "related": "/news?filter[place][equals]=362228&page[limit]=2"
+                    }
+                }, 
+                "parent": {
+                    "data": {
+                        "id": "362223", 
+                        "type": "place"
+                    }, 
+                    "links": {
+                        "related": "/places/362223"
+                    }
+                }, 
+                "pois": {
+                    "links": {
+                        "related": "/pois?filter[place_id][has_ancestor]=362228"
+                    }
+                }, 
+                "shape": {
+                    "data": {
+                        "id": "4323", 
+                        "type": "place_shape"
+                    }, 
+                    "links": {
+                        "related": "/places/362228/shape"
+                    }
+                }, 
+                "top-experiences": {
+                    "links": {
+                        "related": "/places/362228/top_experiences"
+                    }
+                }
+            }, 
+            "type": "place"
+        }, 
+        {
+            "attributes": {
+                "additional_information": {
+                    "accommodation": "Hostels (5 nts, multi-share), participation camping (9 nts).", 
+                    "meals": "9 breakfasts, 9 lunches, 7 dinners", 
+                    "staff_experts": "1 or 2 Chief Experience Officers (CEOs) throughout, depending on group size.", 
+                    "transport": "Air-conditioned private touring van"
+                }, 
+                "canonical_category": "Photography", 
+                "categories": [
+                    "Photography"
+                ], 
+                "departure_info": "New York City", 
+                "descriptions": {
+                    "long_description": "This whirlwind two-week camping trip throughout the United States covers nearly every major cultural touchstone of this massive (and hugely exciting) destination. Experience the lights of NYC's Times Square, discover the Elvis fan in you at Graceland, mosey down noisy Bourbon Street in New Orleans, peer across the majesty of the Grand Canyon, and then walk down the crookedest street in the world in San Francisco, all the while camping out beneath a night sky that has had countless songs written about it. Come along and see the best of the USA the way it was meant to be seen. ", 
+                    "short_description": null
+                }, 
+                "difficulty": {
+                    "description": "2 - Light", 
+                    "grade": null, 
+                    "scale": 5
+                }, 
+                "duration": {
+                    "duration": 15.0, 
+                    "unit": "days"
+                }, 
+                "duration_info": "15 days", 
+                "exclusions": [], 
+                "external_id": "NUNS", 
+                "group_size": {
+                    "average_size": "16", 
+                    "description": "Small Group", 
+                    "maximum_size": "22", 
+                    "minimum_size": null
+                }, 
+                "highlights": [
+                    "See the sights of new york city", 
+                    "Feel the beat in memphis and nashville", 
+                    "Explore monuments in washington dc", 
+                    "Experience a grand canyon sunset", 
+                    "Roll the dice in vegas", 
+                    "Hike in yosemite", 
+                    "Stroll the streets of san francisco."
+                ], 
+                "inclusions": [
+                    "Entrance fees to all national parks and national monuments with hiking and walking excursions", 
+                    "Orientation to Washington DC", 
+                    "Visit to Arlington Cemetery", 
+                    "Visit to London Bridge in Lake Havasu", 
+                    "Sunset at the rim of the Grand Canyon", 
+                    "Death Valley visit", 
+                    "Internal flight", 
+                    "Self-inflating mattresses and dome tents", 
+                    "All transport between destinations and to/from included activities"
+                ], 
+                "itinerary": [
+                    {
+                        "day": 1, 
+                        "description": "Arrive to the joining hostel at any time. Welcome meeting at 7:00pm. \r\n\r\nFrom the Statue of Liberty to Ground Zero to Chinatown, New York City is full of things to do and see. We recommend spending extra time here; please speak to your sales agent to book pre-trip accommodation.\n\nIncluded Activities:\nArrival Day and Welcome Meeting", 
+                        "title": "Day 1 New York City"
+                    }, 
+                    {
+                        "day": 2, 
+                        "description": "Dive into the hustle and bustle of the Big Apple on a brief orientation to the city with the CEO. Arrive at the capital of the USA, Washington DC, in the late afternoon.\n\nAdditional Notes:\nThis tour departs New York City mid-day on Day 2.\n\nIncluded Activities:\nOrientation Walk\nMonuments by Moonlight\n\nTransport:\nPrivate Vehicle (7.00 hour(s), 375km)", 
+                        "title": "Day 2 New York City/Washington DC (1L, 1D)"
+                    }, 
+                    {
+                        "day": 3, 
+                        "description": "Today is all about the capital of the United States. There is so much to see and do in Washington DC that you can't see it all in one day. Take your time spending a full day exploring this fascinating city.", 
+                        "title": "Day 3 Washington DC (1B)"
+                    }, 
+                    {
+                        "day": 4, 
+                        "description": "Standing on top of the peaks of Shenandoah National Park while gazing across the silent mountains, it's hard to believe Washington DC is just a short distance away. \r\n\r\nOpt to take a short hike on the many trails throughout the park. \r\n\r\n\n\nIncluded Activities:\nArlington Cemetery Visit\n\nTransport:\nPrivate Vehicle (9.00 hour(s), 480km)", 
+                        "title": "Day 4 Washington DC/Appalachia (1B, 1L, 1D)"
+                    }, 
+                    {
+                        "day": 5, 
+                        "description": "Continue through the Appalachian Mountains, a perfect place to relax. Enjoy the fresh, clean air and see the true beauty of North America. Travel to the country music capital of the world, and be immersed in the local music scene in downtown Nashville at night.\n\nTransport:\nPrivate Vehicle (8.00 hour(s), 575km)", 
+                        "title": "Day 5 Appalachia/Nashville (1B, 1L, 1D)"
+                    }, 
+                    {
+                        "day": 6, 
+                        "description": "In the afternoon, opt to walk in the footsteps of the King of Rock \u2018n\u2019 Roll at Elvis Presley\u2019s home, Graceland. See how the legend lived and discover videos, pictures, stage costumes, and much more. Then hear the music in Memphis, Tennessee! Explore the birthplace of Rock 'n' Roll, Home of Blues, and the starting point of soul. Music legends, including Elvis Presley, Johnny Cash, and B.B. King, made their marks on Memphis. \r\n\r\nOpt to check out the National Civil Rights Museum, located where Martin Luther King Jr was assassinated.\n\nTransport:\nPrivate Vehicle (5.00 hour(s), 380km)", 
+                        "title": "Day 6 Nashville/Memphis (1B, 1L)"
+                    }, 
+                    {
+                        "day": 7, 
+                        "description": "The CEO will point out a few things on the drive in, then get out and experience the city at its best. Enjoy a night out with the group.\r\n\n\nAdditional Notes:\nFor our time in New Orleans, we stay close to the action in a hotel in the city centre (multi-share accommodation).\n\nTransport:\nPrivate Vehicle (8.00 hour(s), 640km)", 
+                        "title": "Day 7 Memphis/New Orleans (1B, 1L)"
+                    }, 
+                    {
+                        "day": 8, 
+                        "description": "Hop on a flight to LA, and get ready to explore the highlights of the West.\n\nAdditional Notes:\nPlease note that there may be additional baggage fees for the internal flight if you are checking your bag.\n\nTransport:\nPlane", 
+                        "title": "Day 8 New Orleans/Los Angeles"
+                    }, 
+                    {
+                        "day": 9, 
+                        "description": "Be on celebrity-watch while passing by a few popular sites on the way out of California's most glamourous city. Hike among the boulders and famous Joshua trees, then cool off in the crystal-clear waters of the Colorado River at Lake Havasu.\n\nIncluded Activities:\nJoshua Tree NP Hike\n\nTransport:\nIncludes stops\nPrivate Van (7.00 hour(s), 435km)", 
+                        "title": "Day 9 Los Angeles/Lake Havasu (1D)"
+                    }, 
+                    {
+                        "day": 10, 
+                        "description": "In the morning, discover something unexpected, the London Bridge, in Lake Havasu City. Continue across vast desert landscapes to one of the earth's greatest on-going geological spectacles: the Grand Canyon. Take short hikes at the most spectacular gorge in the world and enjoy a pizza dinner at the rim as you view the stunning sunset. \n\nIncluded Activities:\nLondon Bridge Visit\nGrand Canyon South Rim Visit\nHiking\n\nTransport:\nPrivate Van (9.00 hour(s))", 
+                        "title": "Day 10 Lake Havasu/Grand Canyon (1B, 1D)"
+                    }, 
+                    {
+                        "day": 11, 
+                        "description": "For our night in Las Vegas, we stay close to the action in a hotel in the city centre.\n\nIncluded Activities:\nVegas Strip Visit \n\nTransport:\nIncludes stops along Route 66.\nPrivate Van (9.00 hour(s), 475km)", 
+                        "title": "Day 11 Grand Canyon/Las Vegas (1B, 1L)"
+                    }, 
+                    {
+                        "day": 12, 
+                        "description": "Visit a land of extremes in Death Valley National Park.\n\nIncluded Activities:\nDeath Valley National Park Visit\n\nTransport:\nPrivate Van (7.00 hour(s), 450km)", 
+                        "title": "Day 12 Las Vegas/Bishop (1L, 1D)"
+                    }, 
+                    {
+                        "day": 13, 
+                        "description": "With a keen eye, you may be lucky enough to spot black bears, deer or coyotes. \n\nAdditional Notes:\nWe intend to use the Tioga Pass, a scenic a route through the Sierra Nevada mountain range that connects Bishop with Yosemite NP. In the spring and autumn seasons, there's a chance the pass will be closed due to poor weather conditions or even snow. In this case, we use an alternate route, and spend the night in Lake Isabella instead of Bishop. The status of the road is monitored daily, and our travel plan for the area will be confirmed during the trip.\n\nIncluded Activities:\nYosemite National Park Visit\n\nTransport:\nIncludes stops\nPrivate Van (7.00 hour(s), 305km)", 
+                        "title": "Day 13 Bishop/Yosemite National Park (1B, 1L, 1D)"
+                    }, 
+                    {
+                        "day": 14, 
+                        "description": "Catch a glimpse of the Golden Gate Bridge on the way into one of America's most popular cities. Opt to take a cable car ride over the steep hills, rent a bike to explore the city on wheels, or set sail into the setting sun.\n\nAdditional Notes:\nFor our final night on the tour, we stay close to the action in a hotel in the city centre.\n\nTransport:\nIncludes stops\nPrivate Van (6.00 hour(s), 225km)", 
+                        "title": "Day 14 Yosemite National Park/San Francisco (1B, 1L)"
+                    }, 
+                    {
+                        "day": 15, 
+                        "description": "There's a lot to see and do in San Francisco, and we recommend spending extra time here if you'd like to explore the city; speak to your sales agent to book extra accommodation. Haight-Ashbury, Alcatraz, the Golden Gate Bridge, Fisherman's Wharf and the city's famous cable cars await you.\n\nIncluded Activities:\nDeparture Day (Activities)", 
+                        "title": "Day 15 San Francisco"
+                    }
+                ], 
+                "media": {
+                    "images": [
+                        "http:https://media.gadventures.com/media-server/image_library/IMGP8905-web.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/IMGP0279-web.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/IMGP8847-web.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/IMG_1511-web.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/IMGP0772-web.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/USA-California-San-Francisco-Skyline-Windigo-2013-IMG1336-Lg-RGB-web.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/7081970_1080x810_Appalachia_United States.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/7662017_1080x810_Bishop.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/7629756_1080x810_Grand_Canyon_US.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/7694456_1080x810_Joshua_Tree_NP.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/7697715_1080x810_Lake Havasu_United States 2.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/7839635_1080x810_Las_Vegas_US.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/7701494_1080x810_Los_Angeles.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/6979253_1080x810_Memphis_United States.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/6982574_1080x810_Nashville_United States.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/6680784_1080x810_New Orleans_United States.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/7462537_1080x810_New York_United States.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/7462480_1080x810_New York_United States.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/7725049_1080x810_San_Francisco_US.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/6487445_1080x810_Washington DC.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/7743995_1080x810_Yosemite_US.jpg"
+                    ], 
+                    "videos": []
+                }, 
+                "minimum_price": {
+                    "amount": 2499.0, 
+                    "currency": "USD", 
+                    "formatted_amount": "$2499.0"
+                }, 
+                "name": "Best of the US Express", 
+                "pricing": {
+                    "regular_price": {
+                        "amount": 2499.0, 
+                        "currency": "USD", 
+                        "formatted_amount": "$2499.0"
+                    }
+                }, 
+                "provider": "gadventures", 
+                "rating": null, 
+                "return_info": "San Francisco", 
+                "review_count": null
+            }, 
+            "id": "g-NUNS", 
+            "links": {
+                "booking": "https://www.gadventures.com/trips/best-us-express/1274/?aff=18424&phonecode=LonelyPlanet&utm_campaign=lonelyplanetvariation&utm_medium=referral&utm_source=lonelyplanet", 
+                "image": "https://media.gadventures.com/media-server/cache/e2/7a/e27ad55d69b8cea10baac7f50e526a16.jpg", 
+                "map": "https://media.gadventures.com/media-server/dynamic/admin/maps/2016/NUNS.png", 
+                "self": "/partner-activities/g-NUNS"
+            }, 
+            "relationships": {
+                "places": {
+                    "links": {
+                        "related": "/places?filter[id][equals]=362207,361858,362079,362241,362237,361211,362228,362227,361780,1340624,1314208,362150,1337475,361814,361888,1338774,1324609,1339037,361824,1324619,1335547,361720,1005229,1339079,362143,1334512,362137,1334417,1324576,362149,361880,361879,1324624,1338745,1329640,361859,1336193,1336397,1319973,362080,1324324,1337117,1329648,361980,1324378,362229,362185,1341151,362223,1329659,362203"
+                    }
+                }
+            }, 
+            "type": "partner_activities"
+        }, 
+        {
+            "attributes": {
+                "tag": "hero"
+            }, 
+            "id": "pois_hero_334229", 
+            "links": {
+                "self": "/image_associations/pois_hero_334229"
+            }, 
+            "relationships": {
+                "from": {
+                    "data": {
+                        "id": "18297", 
+                        "type": "image"
+                    }, 
+                    "links": {
+                        "related": "/images/18297"
+                    }
+                }, 
+                "to": {
+                    "data": {
+                        "id": "381139", 
+                        "type": "poi"
+                    }, 
+                    "links": {
+                        "related": "/pois/381139"
+                    }
+                }
+            }, 
+            "type": "image_association"
+        }, 
+        {
+            "attributes": {
+                "additional_information": {
+                    "accommodation": "Hotels/hostels (10 nts, some multi-share), participation camping (33 nts).", 
+                    "meals": "34 breakfasts, 28 lunches, 25 dinners", 
+                    "staff_experts": "1 or 2 Chief Experience Officers (CEOs) throughout, depending on group size.", 
+                    "transport": "Air-conditioned private touring van, walking"
+                }, 
+                "canonical_category": "Nature & wildlife", 
+                "categories": [
+                    "Wildlife/Nature"
+                ], 
+                "departure_info": "San Francisco", 
+                "descriptions": {
+                    "long_description": "Is it possible to capture the complex, diverse flavour of a country and its 300-million-strong people in a single trip? Short answer: Yup. This epic sojourn across America from sea to shining sea (and back again) is, quite possibly, the most ambitious road trip you\u2019ll ever take. Wide-open spaces, iconic monuments, sprawling national parks, quirky local slang, regional delicacies and the incredible cities you\u2019ve always wanted to visit. It\u2019s all here. Welcome to the US of A, where the \"A\" stands for \"Amazing.\"", 
+                    "short_description": null
+                }, 
+                "difficulty": {
+                    "description": "3 - Average", 
+                    "grade": null, 
+                    "scale": 5
+                }, 
+                "duration": {
+                    "duration": 44.0, 
+                    "unit": "days"
+                }, 
+                "duration_info": "44 days", 
+                "exclusions": [], 
+                "external_id": "NUFB", 
+                "group_size": {
+                    "average_size": "16", 
+                    "description": "Small Group", 
+                    "maximum_size": "22", 
+                    "minimum_size": null
+                }, 
+                "highlights": [
+                    "Look for wildlife in yellowstone and yosemite", 
+                    "Learn about navajo culture in the southwest and the history of rock & roll in memphis", 
+                    "Follow the trail of independence from philadelphia to washington dc", 
+                    "Get a taste of cowboy culture."
+                ], 
+                "inclusions": [
+                    "Entrance fees to all national parks with hiking and walking excursions", 
+                    "Death Valley visit", 
+                    "Sunset pizza dinner at the Grand Canyon rim", 
+                    "Carlsbad Caverns visit", 
+                    "Maid of the Mist boat tour in Niagara Falls", 
+                    "Visit Arlington Cemetery", 
+                    "Beer brewery tour and tasting in Milwaukee", 
+                    "Orientation to Las Vegas, Washington DC and New York", 
+                    "Wall Drug visit", 
+                    "Mt Rushmore visit", 
+                    "Deadwood visit", 
+                    "Self-inflating mattresses and dome tents", 
+                    "All transport between destinations and to/from included activities"
+                ], 
+                "itinerary": [
+                    {
+                        "day": 1, 
+                        "description": "There's a lot to see and do in San Francisco, and we recommend spending extra time here if you'd like to explore the city; speak to your sales agent to book extra accommodation. Haight-Ashbury, Alcatraz, the Golden Gate Bridge, Fisherman's Wharf, and the city's famous cable cars await you.\n\nIncluded Activities:\nArrival Day and Welcome Meeting", 
+                        "title": "Day 1 San Francisco"
+                    }, 
+                    {
+                        "day": 2, 
+                        "description": "Travel through California's Sierra Nevada Mountains on the way to Yosemite National Park. Set up camp for the night and get ready for a full day of exploring the next day.\n\nTransport:\nPrivate Vehicle (7.00 hour(s), 225km)", 
+                        "title": "Day 2 San Francisco/Yosemite National Park (1D)"
+                    }, 
+                    {
+                        "day": 3, 
+                        "description": "Admire spectacular views of Yosemite National Park's magnificent peaks and granite domes. Yosemite has many trails to offer. Be inspired by this beautiful and amazing landscape and opt to rent a bike to better explore the Yosemite Valley.\n\nIncluded Activities:\nYosemite National Park Visit", 
+                        "title": "Day 3 Yosemite National Park (1B, 1L, 1D)"
+                    }, 
+                    {
+                        "day": 4, 
+                        "description": "Marvel at the spectacular views of Yosemite National Park's magnificent peaks and granite domes while enjoying one of most scenic areas in California. \n\nAdditional Notes:\nNote: we intend on using the Tioga Pass, a scenic route through the Sierra Nevada mountain range that connects Yosemite NP with Bishop. In the spring and autumn seasons, there's a chance that the pass will be closed due to poor weather conditions or even snow. In such a case, we use an alternate route south, and will spend the night in Lake Isabella instead of Bishop. The status of the road is monitored daily, and our travel plan for the area will be confirmed during the trip.\n\nIncluded Activities:\nTioga Pass Drive\nMono Lake Visit\n\nTransport:\nPrivate Vehicle (10.00 hour(s), 330km)", 
+                        "title": "Day 4 Yosemite National Park/Bishop (1B, 1L, 1D)"
+                    }, 
+                    {
+                        "day": 5, 
+                        "description": "Visit one of the country's most rugged landscapes, legendary Death Valley, the hottest and driest spot on earth and home to the lowest point in North America.\n\nAdditional Notes:\nFor the nights in Las Vegas, we stay close to the action in a hotel either at the end of or just a few blocks off the Strip.\n\nIncluded Activities:\nDeath Valley National Park Visit\nVegas Strip Visit \n\nTransport:\nPrivate Vehicle (10.00 hour(s), 590km)", 
+                        "title": "Day 5 Bishop/Las Vegas (1B, 1L)"
+                    }, 
+                    {
+                        "day": 6, 
+                        "description": "Full day to explore Las Vegas. Walk the strip and try your luck at the tables or slot machines. Or spend the day shopping, dining or poolside. In the evening, opt to see one of the wildly entertaining shows Vegas is known for.", 
+                        "title": "Day 6 Las Vegas"
+                    }, 
+                    {
+                        "day": 7, 
+                        "description": "Considered among nature's most spectacular offerings, the Grand Canyon provides spectacular opportunities for exploration. Return to the campsite and recapture the experiences from this memorable day! \n\nAdditional Notes:\nNote: If you have pre-booked the Grand Canyon Helicopter Ride you will enjoy your 45-50min ride over the canyon on either Day 7 or 8. This will be determined by the CEO. \n\nIncluded Activities:\nGrand Canyon Sunset\n\nTransport:\nPrivate Vehicle (6.00 hour(s), 475km)", 
+                        "title": "Day 7 Las Vegas/Grand Canyon National Park (1D)"
+                    }, 
+                    {
+                        "day": 8, 
+                        "description": "Enjoy a free day to discover the Grand Canyon. Opt to wander throughout the park and take a hike. Hire a bike, check out a museum or see the canyon from the sky by helicopter.\n\nIncluded Activities:\nGrand Canyon South Rim Visit", 
+                        "title": "Day 8 Grand Canyon National Park (1B, 1L, 1D)"
+                    }, 
+                    {
+                        "day": 9, 
+                        "description": "Take an optional jeep tour led by a Navajo guide through Monument Valley and be inspired by a night under the stars while camping in this magnificent atmosphere. \n\nTransport:\nPrivate Vehicle (5.00 hour(s), 290km)", 
+                        "title": "Day 9 Grand Canyon National Park/Monument Valley (1B, 1L)"
+                    }, 
+                    {
+                        "day": 10, 
+                        "description": "Hike through history exploring Mesa Verde National Park, which offers a spectacular look into the lives of the Ancestral Puebloans. \n\nIncluded Activities:\nMesa Verde Guided Tour\n\nTransport:\nApproximate Distance to Durango: 315 km\nPrivate Vehicle (7.00 hour(s))", 
+                        "title": "Day 10 Monument Valley/Durango (1B, 1L, 1D)"
+                    }, 
+                    {
+                        "day": 11, 
+                        "description": "Continue the journey back in time and explore one of America's oldest and most beautiful cities, Santa Fe. Take a stroll downtown and visit art galleries, or enjoy some world-famous roasted green chilies.\n\nTransport:\nPrivate Vehicle (6.00 hour(s), 350km)", 
+                        "title": "Day 11 Durango/Santa Fe (1B, 1L)"
+                    }, 
+                    {
+                        "day": 12, 
+                        "description": "Look for aliens at infamous Roswell en route to exploring the Carlsbad Caverns, dodging the 400,000 bats heading out to hunt at sunset.\n\nIncluded Activities:\nExplore Roswell\nCarlsbad Caverns Tour\n\nTransport:\nPrivate Vehicle (8.00 hour(s), 470km)", 
+                        "title": "Day 12 Santa Fe/Carlsbad (1B, 1L, 1D)"
+                    }, 
+                    {
+                        "day": 13, 
+                        "description": "Sit back and gaze at the scenery while travelling through the southern United States. Upon arrival in the 'Lonestar' state, settle in at the campsite for a night under the stars.\n\nTransport:\nPrivate Vehicle (9.00 hour(s), 764km)", 
+                        "title": "Day 13 Carlsbad/Austin (1B, 1L)"
+                    }, 
+                    {
+                        "day": 14, 
+                        "description": "Spend a free day in Austin. Opt to visit the SoCo area for thrift shopping, take a dip in the Barton natural pool, or let loose at a local country bar in the evening.", 
+                        "title": "Day 14 Austin (1B)"
+                    }, 
+                    {
+                        "day": 15, 
+                        "description": "The CEO will point out a few things on the drive in, then get out and experience the city at its best.\n\nTransport:\nPrivate Vehicle (9.00 hour(s), 820km)", 
+                        "title": "Day 15 Austin/New Orleans (1B)"
+                    }, 
+                    {
+                        "day": 16, 
+                        "description": "New travellers may join you today for the rest of the adventure. You are welcome to join them at a group meeting this evening, followed by an optional dinner.", 
+                        "title": "Day 16 New Orleans (1B)"
+                    }, 
+                    {
+                        "day": 17, 
+                        "description": "Explore the birthplace of Rock 'n' Roll, the Home of Blues, and the starting point of soul. Music legends, including Elvis Presley, Johnny Cash and B.B. King, made their marks on Memphis. Optional activities include visiting the National Civil Rights Museum (located where the assassination of Martin Luther King Jr took place in 1968) or visiting the Rock \u2018n\u2019 Soul Museum. \n\nTransport:\nPrivate Vehicle (8.00 hour(s), 640km)", 
+                        "title": "Day 17 New Orleans/Memphis (1B, 1L)"
+                    }, 
+                    {
+                        "day": 18, 
+                        "description": "In the morning, opt to walk in the footsteps of the King of Rock \u2018n\u2019 Roll at Elvis Presley\u2019s home, Graceland. If Graceland is not for you, enjoy the time to explore more of Memphis on your own.  Travel to Nashville in time to check out the nightlife and visit a real country cowboy bar.\n\nTransport:\nPrivate Vehicle (5.00 hour(s), 380km)", 
+                        "title": "Day 18 Memphis/Nashville (1B, 1L, 1D)"
+                    }, 
+                    {
+                        "day": 19, 
+                        "description": "Experience the Appalachian Mountains on the drive. The mountains are a perfect place to relax and to enjoy the fresh, clean air and see the true beauty of North America. \n\nTransport:\nPrivate Vehicle (8.00 hour(s), 575km)", 
+                        "title": "Day 19 Nashville/Appalachia (1B, 1L, 1D)"
+                    }, 
+                    {
+                        "day": 20, 
+                        "description": "Continue on the Skyline Drive through Shenandoah National Park, a truly beautiful, historic national treasure. Standing on top of the peaks of Shenandoah National Park, gaze across the silent mountains. It's hard to believe Washington DC is just a short distance away. \n\nIncluded Activities:\nArlington Cemetery Visit\nMonuments by Moonlight\n\nTransport:\nPrivate Vehicle (7.00 hour(s), 480km)", 
+                        "title": "Day 20 Appalachia/Washington DC (1B, 1L, 1D)"
+                    }, 
+                    {
+                        "day": 21, 
+                        "description": "There is so much to see and do in Washington DC that you can't see it all in one day. Take your time and spend a full day exploring this fascinating city. ", 
+                        "title": "Day 21 Washington DC (1B)"
+                    }, 
+                    {
+                        "day": 22, 
+                        "description": "Dive into the hustle and bustle of the Big Apple. Opt to visit Times Square or stroll through Central Park. Check out the famous nightlife in NYC.\n\nAdditional Notes:\nFor our night in NYC, we stay close to the action in a hostel in Manhattan close to the subway line. Today, new travellers may join you for the rest of your adventure. You are welcome to join them at a group meeting this evening, followed by an optional dinner.\n\nTransport:\nPrivate Vehicle (6.00 hour(s), 375km)", 
+                        "title": "Day 22 Washington DC/New York City (1B, 1L)"
+                    }, 
+                    {
+                        "day": 23, 
+                        "description": "Dive into the hustle and bustle of the Big Apple on a brief orientation to the city with the CEO, then trade in the big city for a campfire. \n\nAdditional Notes:\nThis tour departs New York City mid-day on Day 2.\n\nTransport:\nPrivate Vehicle (3.00 hour(s), 112km)", 
+                        "title": "Day 23 New York City/Newburgh (1D)"
+                    }, 
+                    {
+                        "day": 24, 
+                        "description": "Discover one of the highest waterfalls east of the Rocky Mountains, Taughannock Falls. Take a hike to explore this beautiful area on foot, rent a kayak or paddleboard, or just relax by the lake. Opt to taste wine from one of the local vineyards.\n\nIncluded Activities:\nTaughannock Falls Visit\n\nTransport:\nPrivate Vehicle (6.00 hour(s), 375km)", 
+                        "title": "Day 24 Newburgh/Finger Lakes (1B, 1L, 1D)"
+                    }, 
+                    {
+                        "day": 25, 
+                        "description": "An exciting adventure awaits in Niagara Falls. Feel the rushing waters of the falls taking the famous \"Maid of the Mist Boat Tour.\" Return after darkness settles over the Niagara region and witness the Falls illuminated in a rainbow of colour!\n\nIncluded Activities:\nMaid of the Mist Tour\n\nTransport:\nPrivate Vehicle (4.00 hour(s), 190km)", 
+                        "title": "Day 25 Finger Lakes/Niagara Falls (1B, 1L, 1D)"
+                    }, 
+                    {
+                        "day": 26, 
+                        "description": "Travel to Sandusky and opt to catch some thrills at a local amusement park. \n\nTransport:\nApproximate Distance to Sandusky: 430km (267 mi)\nPrivate Vehicle (6.00 hour(s))", 
+                        "title": "Day 26 Niagara Falls/Sandusky (1B, 1L, 1D)"
+                    }, 
+                    {
+                        "day": 27, 
+                        "description": "Stop for lunch in the Amish community of Shipshewana before continuing on to Chicago. Walk along the river to Millennium Park, enjoy dazzling music, and stroll the boardwalk of the Navy Pier. Opt to ride to the top of the Willis (formerly Sears) Tower, then hit the town for a night out with the group.\n\nIncluded Activities:\nAmish Community Visit\nOrientation Walk\n\nTransport:\nPrivate Vehicle (4.00 hour(s), 275km)\nPrivate Vehicle (3.50 hour(s), 240km)", 
+                        "title": "Day 27 Sandusky/Chicago (1B)"
+                    }, 
+                    {
+                        "day": 28, 
+                        "description": "Today, new travellers may join you for the rest of your adventure. You are welcome to join them at a group meeting this evening, followed by an optional dinner.", 
+                        "title": "Day 28 Chicago"
+                    }, 
+                    {
+                        "day": 29, 
+                        "description": "Tour the Miller Brewing Company in Milwaukee. Drive through Wisconsin and finish the day at a campground on the banks of the Mississippi River.\n\nIncluded Activities:\nMiller Brewery Tour and Tasting\n\nTransport:\nPrivate Vehicle (9.00 hour(s), 535km)", 
+                        "title": "Day 29 Chicago/Frontenac (1D)"
+                    }, 
+                    {
+                        "day": 30, 
+                        "description": "Enjoy a free morning at the largest shopping mall in America \u2013 the Mall of America. Afterwards, venture into South Dakota and head into the lands of the Sioux and the Great Plains.\n\nIncluded Activities:\nMall of America visit\n\nTransport:\nPrivate Vehicle (10.00 hour(s), 500km)", 
+                        "title": "Day 30 Frontenac/Sioux Falls (1B, 1D)"
+                    }, 
+                    {
+                        "day": 31, 
+                        "description": "Travel through the Badlands before reaching the Black Hills. \n\nTransport:\nPrivate Vehicle (6.00 hour(s), 450km)", 
+                        "title": "Day 31 Sioux Falls/Badlands National Park (1B, 1L, 1D)"
+                    }, 
+                    {
+                        "day": 32, 
+                        "description": "Explore the spectacular, bizarre, and moon-like landscape at Badlands National Park. Discover Wall Drug, an American roadside wonder before reaching the famous Black Hills in the heart of South Dakota. Then take the scenic route to Custer State Park. \n\nIncluded Activities:\nBadlands National Park Visit\nWall Drug Visit\n\nTransport:\nApproximate Distance to Custer: 250km (155 mi)\nPrivate Vehicle (6.00 hour(s))", 
+                        "title": "Day 32 Badlands National Park/Custer State Park (1B, 1L, 1D)"
+                    }, 
+                    {
+                        "day": 33, 
+                        "description": "Check out the larger than life ex-presidents of Mount Rushmore, tour around Crazy Horse Memorial, and stop off at Deadwood en route to Devils Tower in Wyoming.\n\nIncluded Activities:\nMount Rushmore National Memorial Visit\nCrazy Horse Memorial Visit\nDeadwood Visit\n\nTransport:\nPrivate Vehicle (3.00 hour(s), 240km)", 
+                        "title": "Day 33 Custer State Park/Devils Tower (1B, 1D)"
+                    }, 
+                    {
+                        "day": 34, 
+                        "description": "With crystal-clear lakes, alpine meadows, and glacial carved valleys, the Bighorn National Forest is one of the most scenic drives in Wyoming towards Cody, the \"Rodeo Capital of the World.\"\n\nTransport:\nPrivate Vehicle (7.00 hour(s), 500km)", 
+                        "title": "Day 34 Devils Tower/Cody (1B, 1L)"
+                    }, 
+                    {
+                        "day": 35, 
+                        "description": "Yellowstone is beyond special. Geysers, waterfalls, wildlife, and scenic beauty are around every corner just waiting to be explored. In fact, Yellowstone National Park is a super volcano with the world\u2019s largest active geyser field, boasting more than 10,000 geysers. The Park is also home to more wild animals than almost anywhere else in the U.S., including roaming bison, gray wolves, elk, black bears, and, of course, the famous grizzly bear.\n\nIncluded Activities:\nLamar Valley Visit\nYellowstone Northern Loop Excursion\n\nTransport:\nPrivate Vehicle (8.00 hour(s), 320km)", 
+                        "title": "Day 35 Cody/Yellowstone National Park (1B, 1L, 1D)"
+                    }, 
+                    {
+                        "day": 36, 
+                        "description": "Travel through some of the most famous landmarks of Yellowstone, including Old Faithful, Grand Prismatic Spring, West Thumb, and Yellowstone Lake.\n\nIncluded Activities:\nYellowstone South Loop Excursion\n\nTransport:\nWalking (4.00 hour(s))", 
+                        "title": "Day 36 Yellowstone National Park (1B, 1L, 1D)"
+                    }, 
+                    {
+                        "day": 37, 
+                        "description": "Stop at Jenny Lake in Grand Teton National Park and take in the tranquil surroundings.\r\n\r\nIn the late afternoon, reach Jackson and marvel at the town square\u2019s elk antler arches. In the evening, enjoy a night out with a true wild western atmosphere at the One Million Dollar Bar.\n\nIncluded Activities:\nGrand Teton National Park Visit\n\nTransport:\nPrivate Vehicle (6.00 hour(s), 230km)", 
+                        "title": "Day 37 Yellowstone National Park/Jackson (1B, 1L)"
+                    }, 
+                    {
+                        "day": 38, 
+                        "description": "Choose to go whitewater rafting or horseback riding during a free morning, then cross the border into Idaho. Stop off at Shoshone Falls en route.\n\nTransport:\nPrivate Vehicle (5.00 hour(s), 410km)", 
+                        "title": "Day 38 Jackson/Twin Falls (1B, 1L, 1D)"
+                    }, 
+                    {
+                        "day": 39, 
+                        "description": "Sit back and relax during a road trip day, crossing into Nevada. Enjoy the bright lights both in and outside the casinos in \"The Biggest Little City in the World.\"\n\nTransport:\nPrivate Vehicle (8.00 hour(s), 740km)", 
+                        "title": "Day 39 Twin Falls/Reno (1B, 1L)"
+                    }, 
+                    {
+                        "day": 40, 
+                        "description": "Arrive to Lake Tahoe after a short drive. Enjoy a free afternoon for hiking, lake activities or relaxing.\n\nTransport:\nPrivate Vehicle (1.50 hour(s), 110km)", 
+                        "title": "Day 40 Reno/South Lake Tahoe (1L, 1D)"
+                    }, 
+                    {
+                        "day": 41, 
+                        "description": "With a keen eye and a little luck, spot black bears, deer or coyotes. \n\nIncluded Activities:\nTioga Pass Drive\nYosemite National Park Visit\n\nTransport:\nPrivate Vehicle (8.00 hour(s), 385km)", 
+                        "title": "Day 41 South Lake Tahoe/Yosemite National Park (1L, 1D)"
+                    }, 
+                    {
+                        "day": 42, 
+                        "description": "Full day to explore Yosemite National Park. Hike the many trails Yosemite has to offer and be inspired by this beautiful and amazing landscape. Option to rent bikes in Yosemite Valley.\n\nIncluded Activities:\nYosemite National Park Visit\n\nTransport:\nPrivate Vehicle (2.00 hour(s))", 
+                        "title": "Day 42 Yosemite National Park (1B, 1L, 1D)"
+                    }, 
+                    {
+                        "day": 43, 
+                        "description": "Arrive at one of the most iconic cities in the world: San Francisco. The CEO will point out some popular sites on the drive into town. \r\n\r\nFor the final night of the tour in San Francisco, stay close to the action in a hotel in the city centre.\n\nAdditional Notes:\nStay close to the action in a hotel in the city centre of San Francisco.\n\nTransport:\nPrivate Vehicle (6.00 hour(s), 225km)", 
+                        "title": "Day 43 Yosemite National Park/San Francisco (1B)"
+                    }, 
+                    {
+                        "day": 44, 
+                        "description": "There's a lot to see and do in San Francisco. We recommend spending extra time here if you'd like to explore the city; speak to your sales agent to book extra accommodation. \n\nIncluded Activities:\nDeparture Day", 
+                        "title": "Day 44 San Francisco"
+                    }
+                ], 
+                "media": {
+                    "images": [
+                        "http:https://media.gadventures.com/media-server/image_library/IMGP8905-web.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/IMGP0279-web.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/IMGP1610-web.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/IMGP8847-web.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/IMG_1511-web.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/IMGP0772-web.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/USA-Arizona-Grand-Canyon-Travellers-Group-Sunrise-Leo-Tamburri-2011-IMGP1203-Lg-RGB-web.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/USA-California-San-Francisco-Skyline-Windigo-2013-IMG1336-Lg-RGB-web.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/7081970_1080x810_Appalachia_United States.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/7662017_1080x810_Bishop.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/7793333_1080x810_Carlsbad_United States.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/7222569_1080x810_Chicago_United States.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/8152781_1080x810_Cody_United States.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/8095411_1080x810_Custer State Park_United States.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/8154326_1080x810_Devils Tower_United States.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/7753246_1080x810_Durango_United States.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/7451040_1080x810_Finger Lakes.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/7629756_1080x810_Grand_Canyon_US.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/8544675_1080x810_Grand_Canyon_National_Park_US.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/8159786_1080x810_Jackson_United States.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/7839635_1080x810_Las_Vegas_US.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/6979253_1080x810_Memphis_United States.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/7638717_1080x810_Monument_Valley_US.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/6982574_1080x810_Nashville_United States.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/7462553_1080x810_Newburgh.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/6680784_1080x810_New Orleans_United States.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/7462480_1080x810_New York_United States.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/7462622_1080x810_Niagara Falls_United States.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/7504485_1080x810_Sandusky.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/7725049_1080x810_San_Francisco_US.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/7823010_1080x810_Santa Fe_United States.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/6487445_1080x810_Washington DC.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/8174657_1080x810_Yellowstone National Park_United States.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/7743995_1080x810_Yosemite_US.jpg"
+                    ], 
+                    "videos": []
+                }, 
+                "minimum_price": {
+                    "amount": 5899.0, 
+                    "currency": "USD", 
+                    "formatted_amount": "$5899.0"
+                }, 
+                "name": "Best of the USA Tour\u2013San Fran to San Fran", 
+                "pricing": {
+                    "regular_price": {
+                        "amount": 5899.0, 
+                        "currency": "USD", 
+                        "formatted_amount": "$5899.0"
+                    }
+                }, 
+                "provider": "gadventures", 
+                "rating": null, 
+                "return_info": "San Francisco", 
+                "review_count": null
+            }, 
+            "id": "g-NUFB", 
+            "links": {
+                "booking": "https://www.gadventures.com/trips/best-of-the-usa-tour-san-fran-to-san-fran/2653/?aff=18424&phonecode=LonelyPlanet&utm_campaign=lonelyplanetvariation&utm_medium=referral&utm_source=lonelyplanet", 
+                "image": "https://media.gadventures.com/media-server/cache/ec/c0/ecc02063c945af270bb3a234d27a07bb.jpg", 
+                "map": "https://media.gadventures.com/media-server/dynamic/admin/maps/2016/NUFB.png", 
+                "self": "/partner-activities/g-NUFB"
+            }, 
+            "relationships": {
+                "places": {
+                    "links": {
+                        "related": "/places?filter[id][equals]=361858,361780,361888,1338774,361211,362150,1339079,1334495,1314239,362178,362207,362227,362228,362237,362241,362079,361389,361932,1006590,361952,1315476,361967,361970,361969,1324539,1324537,1315480,362131,1314375,362135,362133,1314428,362124,1337493,362149,361882,362086,1335113,361372,1324324,361212,1005229,1324576,1335547,361720,361880,361879,1324624,1338745,1339037,1329640,361859,1319216,361929,361928,1324505,361942,361954,361968,362108,1339104,362134,362152,362151,1334417,1339640,361883,1336193,1336397,1319973,362080,1337117,1329648,361980,1324378,362229,362185,1341151,362223,1329659,362203,1319250,1339164,362172,1314240,362157,362153,1339071,362156,1314203,362137,1340624,362143,1334512,362120,1320142,362119,362109,1324328,1314484,1324330,1324474,361948"
+                    }
+                }
+            }, 
+            "type": "partner_activities"
+        }, 
+        {
+            "attributes": {
+                "center": {
+                    "coordinates": [
+                        -97.0, 
+                        38.0
+                    ], 
+                    "type": "Point"
+                }, 
+                "name": "USA", 
+                "place_type": "country"
+            }, 
+            "id": "361720", 
+            "links": {
+                "self": "/places/361720"
+            }, 
+            "relationships": {
+                "activities": {
+                    "links": {
+                        "related": "/partner-activities?filter[place][equals]=361720"
+                    }
+                }, 
+                "ancestry": {
+                    "links": {
+                        "related": "/places/361720/ancestry"
+                    }
+                }, 
+                "articles": {
+                    "links": {
+                        "related": "/articles?filter[place][equals]=361720&page[limit]=2"
+                    }
+                }, 
+                "descendants": {
+                    "links": {
+                        "related": "/places/361720/descendants"
+                    }
+                }, 
+                "image-associations": {
+                    "links": {
+                        "related": "/places/361720/image_associations"
+                    }
+                }, 
+                "introduction": {
+                    "links": {
+                        "related": "/places/361720/introduction"
+                    }
+                }, 
+                "lodgings": {
+                    "links": {
+                        "related": "/lodgings?filter[place_id][has_ancestor]=361720"
+                    }
+                }, 
+                "love-letter": {
+                    "links": {
+                        "related": "/places/361720/love_letter"
+                    }
+                }, 
+                "news": {
+                    "links": {
+                        "related": "/news?filter[place][equals]=361720&page[limit]=2"
+                    }
+                }, 
+                "parent": {
+                    "data": {
+                        "id": "361211", 
+                        "type": "place"
+                    }, 
+                    "links": {
+                        "related": "/places/361211"
+                    }
+                }, 
+                "pois": {
+                    "links": {
+                        "related": "/pois?filter[place_id][has_ancestor]=361720"
+                    }
+                }, 
+                "shape": {
+                    "data": {
+                        "id": "12795", 
+                        "type": "place_shape"
+                    }, 
+                    "links": {
+                        "related": "/places/361720/shape"
+                    }
+                }, 
+                "top-experiences": {
+                    "links": {
+                        "related": "/places/361720/top_experiences"
+                    }
+                }
+            }, 
+            "type": "place"
+        }, 
+        {
+            "attributes": {
+                "attribution": {
+                    "name": "Dove Wedding Photography"
+                }, 
+                "caption": "", 
+                "height": 1486, 
+                "orientation": "landscape", 
+                "path": "/a/g/hi/t/d1f3f73703867dfd0c11f047927181e6-country-music-hall-of-fame-museum.jpg", 
+                "width": 2228
+            }, 
+            "id": "18297", 
+            "links": {
+                "pixels": "https://media.lonelyplanet.com/a/g/hi/t/d1f3f73703867dfd0c11f047927181e6-country-music-hall-of-fame-museum.jpg", 
+                "self": "/images/18297"
+            }, 
+            "type": "image"
+        }, 
+        {
+            "attributes": {
+                "center": {
+                    "coordinates": [
+                        -112.7397962429, 
+                        53.3113240242028
+                    ], 
+                    "type": "Point"
+                }, 
+                "name": "North America", 
+                "place_type": "continent"
+            }, 
+            "id": "361211", 
+            "links": {
+                "self": "/places/361211"
+            }, 
+            "relationships": {
+                "activities": {
+                    "links": {
+                        "related": "/partner-activities?filter[place][equals]=361211"
+                    }
+                }, 
+                "ancestry": {
+                    "links": {
+                        "related": "/places/361211/ancestry"
+                    }
+                }, 
+                "articles": {
+                    "links": {
+                        "related": "/articles?filter[place][equals]=361211&page[limit]=2"
+                    }
+                }, 
+                "descendants": {
+                    "links": {
+                        "related": "/places/361211/descendants"
+                    }
+                }, 
+                "image-associations": {
+                    "links": {
+                        "related": "/places/361211/image_associations"
+                    }
+                }, 
+                "introduction": {
+                    "links": {
+                        "related": "/places/361211/introduction"
+                    }
+                }, 
+                "lodgings": {
+                    "links": {
+                        "related": "/lodgings?filter[place_id][has_ancestor]=361211"
+                    }
+                }, 
+                "love-letter": {
+                    "links": {
+                        "related": "/places/361211/love_letter"
+                    }
+                }, 
+                "news": {
+                    "links": {
+                        "related": "/news?filter[place][equals]=361211&page[limit]=2"
+                    }
+                }, 
+                "parent": {
+                    "data": {
+                        "id": "1005229", 
+                        "type": "place"
+                    }, 
+                    "links": {
+                        "related": "/places/1005229"
+                    }
+                }, 
+                "pois": {
+                    "links": {
+                        "related": "/pois?filter[place_id][has_ancestor]=361211"
+                    }
+                }, 
+                "shape": {
+                    "data": {
+                        "id": "4485", 
+                        "type": "place_shape"
+                    }, 
+                    "links": {
+                        "related": "/places/361211/shape"
+                    }
+                }, 
+                "top-experiences": {
+                    "links": {
+                        "related": "/places/361211/top_experiences"
+                    }
+                }
+            }, 
+            "type": "place"
+        }, 
+        {
+            "attributes": {
+                "center": {
+                    "coordinates": [
+                        -85.2765620389398, 
+                        33.9833023602483
+                    ], 
+                    "type": "Point"
+                }, 
+                "name": "The South", 
+                "place_type": "region"
+            }, 
+            "id": "362185", 
+            "links": {
+                "self": "/places/362185"
+            }, 
+            "relationships": {
+                "activities": {
+                    "links": {
+                        "related": "/partner-activities?filter[place][equals]=362185"
+                    }
+                }, 
+                "ancestry": {
+                    "links": {
+                        "related": "/places/362185/ancestry"
+                    }
+                }, 
+                "articles": {
+                    "links": {
+                        "related": "/articles?filter[place][equals]=362185&page[limit]=2"
+                    }
+                }, 
+                "descendants": {
+                    "links": {
+                        "related": "/places/362185/descendants"
+                    }
+                }, 
+                "image-associations": {
+                    "links": {
+                        "related": "/places/362185/image_associations"
+                    }
+                }, 
+                "introduction": {
+                    "links": {
+                        "related": "/places/362185/introduction"
+                    }
+                }, 
+                "lodgings": {
+                    "links": {
+                        "related": "/lodgings?filter[place_id][has_ancestor]=362185"
+                    }
+                }, 
+                "love-letter": {
+                    "links": {
+                        "related": "/places/362185/love_letter"
+                    }
+                }, 
+                "news": {
+                    "links": {
+                        "related": "/news?filter[place][equals]=362185&page[limit]=2"
+                    }
+                }, 
+                "parent": {
+                    "data": {
+                        "id": "361720", 
+                        "type": "place"
+                    }, 
+                    "links": {
+                        "related": "/places/361720"
+                    }
+                }, 
+                "pois": {
+                    "links": {
+                        "related": "/pois?filter[place_id][has_ancestor]=362185"
+                    }
+                }, 
+                "shape": {
+                    "data": {
+                        "id": "8161", 
+                        "type": "place_shape"
+                    }, 
+                    "links": {
+                        "related": "/places/362185/shape"
+                    }
+                }, 
+                "top-experiences": {
+                    "links": {
+                        "related": "/places/362185/top_experiences"
+                    }
+                }
+            }, 
+            "type": "place"
+        }, 
+        {
+            "attributes": {
+                "additional_information": {
+                    "accommodation": "Hotels/hostels (10 nts, some multi-share), participation camping (33 nts).", 
+                    "meals": "34 breakfasts, 28 lunches, 25 dinners", 
+                    "staff_experts": "1 or 2 Chief Experience Officers (CEOs) throughout depending on group size, local guides.", 
+                    "transport": "Air-conditioned private touring van, walking"
+                }, 
+                "canonical_category": "History & culture", 
+                "categories": [
+                    "Chill Out", 
+                    "Wildlife/Nature", 
+                    "Trekking/Hiking", 
+                    "Culture/History"
+                ], 
+                "departure_info": "New York City", 
+                "descriptions": {
+                    "long_description": "From hip hop to country fiddles, Yankee accents to a western drawl, businessmen in power suits and ranchers in cowboy hats \u2013 the US is one heck of a country. And if you\u2019ve got the time, this \u2013 our ultimate American tour \u2013 is the best way to explore the iconic cities, the legendary national parks, national monuments, and wide-open spaces. Centrally located hostels in the cities and campsites in the wilderness keep you in the heart of the action no matter where you are.", 
+                    "short_description": null
+                }, 
+                "difficulty": {
+                    "description": "3 - Average", 
+                    "grade": null, 
+                    "scale": 5
+                }, 
+                "duration": {
+                    "duration": 44.0, 
+                    "unit": "days"
+                }, 
+                "duration_info": "44 days", 
+                "exclusions": [], 
+                "external_id": "NUYY", 
+                "group_size": {
+                    "average_size": "16", 
+                    "description": "Small Group", 
+                    "maximum_size": "22", 
+                    "minimum_size": null
+                }, 
+                "highlights": [
+                    "Break a sweat in death valley and cool off in the spray of niagara falls", 
+                    "Dance like a cowboy in jackson", 
+                    "Meet the navajo in monument valley", 
+                    "Hike in stunning national parks."
+                ], 
+                "inclusions": [
+                    "Entrance fees to all national and state parks with hiking and walking excursions", 
+                    "Orientations to Washington DC, and Chicago", 
+                    "Maid of the Mist Tour (Niagara Falls)", 
+                    "Beer factory tour and beer tasting (Milwaukee)", 
+                    "Wall Drug visit", 
+                    "Mt", 
+                    "Rushmore visit", 
+                    "Deadwood visit", 
+                    "Death Valley visit", 
+                    "Sunset pizza dinner at the Grand Canyon rim", 
+                    "Guided tour of Mesa Verde", 
+                    "Carlsbad Caverns visit", 
+                    "Self-inflating mattresses and dome tents", 
+                    "Transportation between destinations and included activities"
+                ], 
+                "itinerary": [
+                    {
+                        "day": 1, 
+                        "description": "Arrive to the joining hostel at any time. Welcome meeting at 7:00pm.\r\n\r\nFrom the Statue of Liberty to Ground Zero to Chinatown, New York City is full of things to do and see. We recommend spending extra time here; please speak to your sales agent to book pre-trip accommodation.\n\nIncluded Activities:\nArrival Day and Welcome Meeting", 
+                        "title": "Day 1 New York City"
+                    }, 
+                    {
+                        "day": 2, 
+                        "description": "Dive into the hustle and bustle of the Big Apple on a brief orientation to the city with the CEO, then trade in the big city for a campfire. \n\nAdditional Notes:\nThis tour departs New York City mid-day on Day 2.\n\nTransport:\nPrivate Vehicle (3.00 hour(s), 112km)", 
+                        "title": "Day 2 New York City/Newburgh (1D)"
+                    }, 
+                    {
+                        "day": 3, 
+                        "description": "Discover one of the highest waterfalls east of the Rocky Mountains, Taughannock Falls. Take a hike to explore this beautiful area on foot, rent a kayak or paddleboard, or just relax by the lake. Opt to taste wine from one of the local vineyards.\n\nIncluded Activities:\nTaughannock Falls Visit\n\nTransport:\nPrivate Vehicle (6.00 hour(s), 375km)", 
+                        "title": "Day 3 Newburgh/Finger Lakes (1B, 1L, 1D)"
+                    }, 
+                    {
+                        "day": 4, 
+                        "description": "An exciting adventure awaits in Niagara Falls. Feel the rushing waters of the falls taking the famous \"Maid of the Mist Boat Tour.\" Return after darkness settles over the Niagara region and witness the Falls illuminated in a rainbow of colour!\n\nIncluded Activities:\nMaid of the Mist Tour\n\nTransport:\nPrivate Vehicle (4.00 hour(s), 190km)", 
+                        "title": "Day 4 Finger Lakes/Niagara Falls (1B, 1L, 1D)"
+                    }, 
+                    {
+                        "day": 5, 
+                        "description": "Travel to Sandusky and opt to catch some thrills at a local amusement park. \n\nTransport:\nApproximate Distance to Sandusky: 430km (267 mi)\nPrivate Vehicle (6.00 hour(s))", 
+                        "title": "Day 5 Niagara Falls/Sandusky (1B, 1L, 1D)"
+                    }, 
+                    {
+                        "day": 6, 
+                        "description": "Stop for lunch in the Amish community of Shipshewana before continuing on to Chicago. Walk along the river to Millennium Park, enjoy dazzling music, and stroll the boardwalk of the Navy Pier. Opt to ride to the top of the Willis (formerly Sears) Tower, then hit the town for a night out with the group.\n\nIncluded Activities:\nAmish Community Visit\nOrientation Walk\n\nTransport:\nPrivate Vehicle (4.00 hour(s), 275km)\nPrivate Vehicle (3.50 hour(s), 240km)", 
+                        "title": "Day 6 Sandusky/Chicago (1B)"
+                    }, 
+                    {
+                        "day": 7, 
+                        "description": "Today, new travellers may join you for the rest of your adventure. You are welcome to join them at a group meeting this evening, followed by an optional dinner.", 
+                        "title": "Day 7 Chicago"
+                    }, 
+                    {
+                        "day": 8, 
+                        "description": "Tour the Miller Brewing Company in Milwaukee. Drive through Wisconsin and finish the day at a campground on the banks of the Mississippi River.\n\nIncluded Activities:\nMiller Brewery Tour and Tasting\n\nTransport:\nPrivate Vehicle (9.00 hour(s), 535km)", 
+                        "title": "Day 8 Chicago/Frontenac (1D)"
+                    }, 
+                    {
+                        "day": 9, 
+                        "description": "Enjoy a free morning at the largest shopping mall in America \u2013 the Mall of America. Afterwards, venture into South Dakota and head into the lands of the Sioux and the Great Plains.\n\nIncluded Activities:\nMall of America visit\n\nTransport:\nPrivate Vehicle (10.00 hour(s), 500km)", 
+                        "title": "Day 9 Frontenac/Sioux Falls (1B, 1D)"
+                    }, 
+                    {
+                        "day": 10, 
+                        "description": "Travel through the Badlands before reaching the Black Hills. \n\nTransport:\nPrivate Vehicle (6.00 hour(s), 450km)", 
+                        "title": "Day 10 Sioux Falls/Badlands National Park (1B, 1L, 1D)"
+                    }, 
+                    {
+                        "day": 11, 
+                        "description": "Explore the spectacular, bizarre, and moon-like landscape at Badlands National Park. Discover Wall Drug, an American roadside wonder before reaching the famous Black Hills in the heart of South Dakota. Then take the scenic route to Custer State Park. \n\nIncluded Activities:\nBadlands National Park Visit\nWall Drug Visit\n\nTransport:\nApproximate Distance to Custer: 250km (155 mi)\nPrivate Vehicle (6.00 hour(s))", 
+                        "title": "Day 11 Badlands National Park/Custer State Park (1B, 1L, 1D)"
+                    }, 
+                    {
+                        "day": 12, 
+                        "description": "Check out the larger than life ex-presidents of Mount Rushmore, tour around Crazy Horse Memorial, and stop off at Deadwood en route to Devils Tower in Wyoming.\n\nIncluded Activities:\nMount Rushmore National Memorial Visit\nCrazy Horse Memorial Visit\nDeadwood Visit\n\nTransport:\nPrivate Vehicle (3.00 hour(s), 240km)", 
+                        "title": "Day 12 Custer State Park/Devils Tower (1B, 1D)"
+                    }, 
+                    {
+                        "day": 13, 
+                        "description": "With crystal-clear lakes, alpine meadows, and glacial carved valleys, the Bighorn National Forest is one of the most scenic drives in Wyoming towards Cody, the \"Rodeo Capital of the World.\"\n\nTransport:\nPrivate Vehicle (7.00 hour(s), 500km)", 
+                        "title": "Day 13 Devils Tower/Cody (1B, 1L)"
+                    }, 
+                    {
+                        "day": 14, 
+                        "description": "Yellowstone is beyond special. Geysers, waterfalls, wildlife, and scenic beauty are around every corner just waiting to be explored. In fact, Yellowstone National Park is a super volcano with the world\u2019s largest active geyser field, boasting more than 10,000 geysers. The Park is also home to more wild animals than almost anywhere else in the U.S., including roaming bison, gray wolves, elk, black bears, and, of course, the famous grizzly bear.\n\nIncluded Activities:\nLamar Valley Visit\nYellowstone Northern Loop Excursion\n\nTransport:\nPrivate Vehicle (8.00 hour(s), 320km)", 
+                        "title": "Day 14 Cody/Yellowstone National Park (1B, 1L, 1D)"
+                    }, 
+                    {
+                        "day": 15, 
+                        "description": "Travel through some of the most famous landmarks of Yellowstone, including Old Faithful, Grand Prismatic Spring, West Thumb, and Yellowstone Lake.\n\nIncluded Activities:\nYellowstone South Loop Excursion\n\nTransport:\nWalking (4.00 hour(s))", 
+                        "title": "Day 15 Yellowstone National Park (1B, 1L, 1D)"
+                    }, 
+                    {
+                        "day": 16, 
+                        "description": "Stop at Jenny Lake in Grand Teton National Park and take in the tranquil surroundings.\r\n\r\nIn the late afternoon, reach Jackson and marvel at the town square\u2019s elk antler arches. In the evening, enjoy a night out with a true wild western atmosphere at the One Million Dollar Bar.\n\nIncluded Activities:\nGrand Teton National Park Visit\n\nTransport:\nPrivate Vehicle (6.00 hour(s), 230km)", 
+                        "title": "Day 16 Yellowstone National Park/Jackson (1B, 1L)"
+                    }, 
+                    {
+                        "day": 17, 
+                        "description": "Choose to go whitewater rafting or horseback riding during a free morning, then cross the border into Idaho. Stop off at Shoshone Falls en route.\n\nTransport:\nPrivate Vehicle (5.00 hour(s), 410km)", 
+                        "title": "Day 17 Jackson/Twin Falls (1B, 1L, 1D)"
+                    }, 
+                    {
+                        "day": 18, 
+                        "description": "Sit back and relax during a road trip day, crossing into Nevada. Enjoy the bright lights both in and outside the casinos in \"The Biggest Little City in the World.\"\n\nTransport:\nPrivate Vehicle (8.00 hour(s), 740km)", 
+                        "title": "Day 18 Twin Falls/Reno (1B, 1L)"
+                    }, 
+                    {
+                        "day": 19, 
+                        "description": "Arrive to Lake Tahoe after a short drive. Enjoy a free afternoon for hiking, lake activities or relaxing.\n\nTransport:\nPrivate Vehicle (1.50 hour(s), 110km)", 
+                        "title": "Day 19 Reno/South Lake Tahoe (1L, 1D)"
+                    }, 
+                    {
+                        "day": 20, 
+                        "description": "With a keen eye and a little luck, spot black bears, deer or coyotes. \n\nIncluded Activities:\nTioga Pass Drive\nYosemite National Park Visit\n\nTransport:\nPrivate Vehicle (8.00 hour(s), 385km)", 
+                        "title": "Day 20 South Lake Tahoe/Yosemite National Park (1L, 1D)"
+                    }, 
+                    {
+                        "day": 21, 
+                        "description": "Full day to explore Yosemite National Park. Hike the many trails Yosemite has to offer and be inspired by this beautiful and amazing landscape. Option to rent bikes in Yosemite Valley.\n\nIncluded Activities:\nYosemite National Park Visit\n\nTransport:\nPrivate Vehicle (2.00 hour(s))", 
+                        "title": "Day 21 Yosemite National Park (1B, 1L, 1D)"
+                    }, 
+                    {
+                        "day": 22, 
+                        "description": "Arrive at one of the most iconic cities in the world: San Francisco. The CEO will point out some popular sites on the drive into town. \n\nAdditional Notes:\nStay close to the action in a hotel in the city centre of San Francisco.\n\nTransport:\nPrivate Vehicle (6.00 hour(s), 225km)", 
+                        "title": "Day 22 Yosemite National Park/San Francisco (1B)"
+                    }, 
+                    {
+                        "day": 23, 
+                        "description": "Travel through California's Sierra Nevada Mountains on the way to Yosemite National Park. Set up camp for the night and get ready for a full day of exploring the next day.\n\nTransport:\nPrivate Vehicle (7.00 hour(s), 225km)", 
+                        "title": "Day 23 San Francisco/Yosemite National Park (1D)"
+                    }, 
+                    {
+                        "day": 24, 
+                        "description": "Admire spectacular views of Yosemite National Park's magnificent peaks and granite domes. Yosemite has many trails to offer. Be inspired by this beautiful and amazing landscape and opt to rent a bike to better explore the Yosemite Valley.\n\nIncluded Activities:\nYosemite National Park Visit", 
+                        "title": "Day 24 Yosemite National Park (1B, 1L, 1D)"
+                    }, 
+                    {
+                        "day": 25, 
+                        "description": "Marvel at the spectacular views of Yosemite National Park's magnificent peaks and granite domes while enjoying one of most scenic areas in California. \n\nAdditional Notes:\nNote: we intend on using the Tioga Pass, a scenic route through the Sierra Nevada mountain range that connects Yosemite NP with Bishop. In the spring and autumn seasons, there's a chance that the pass will be closed due to poor weather conditions or even snow. In such a case, we use an alternate route south, and will spend the night in Lake Isabella instead of Bishop. The status of the road is monitored daily, and our travel plan for the area will be confirmed during the trip.\n\nIncluded Activities:\nTioga Pass Drive\nMono Lake Visit\n\nTransport:\nPrivate Vehicle (10.00 hour(s), 330km)", 
+                        "title": "Day 25 Yosemite National Park/Bishop (1B, 1L, 1D)"
+                    }, 
+                    {
+                        "day": 26, 
+                        "description": "Visit one of the country's most rugged landscapes, legendary Death Valley, the hottest and driest spot on earth and home to the lowest point in North America.\n\nAdditional Notes:\nFor the nights in Las Vegas, we stay close to the action in a hotel either at the end of or just a few blocks off the Strip.\n\nIncluded Activities:\nDeath Valley National Park Visit\nVegas Strip Visit \n\nTransport:\nPrivate Vehicle (10.00 hour(s), 590km)", 
+                        "title": "Day 26 Bishop/Las Vegas (1B, 1L)"
+                    }, 
+                    {
+                        "day": 27, 
+                        "description": "Full day to explore Las Vegas. Walk the strip and try your luck at the tables or slot machines. Or spend the day shopping, dining or poolside. In the evening, opt to see one of the wildly entertaining shows Vegas is known for.", 
+                        "title": "Day 27 Las Vegas"
+                    }, 
+                    {
+                        "day": 28, 
+                        "description": "Considered among nature's most spectacular offerings, the Grand Canyon provides spectacular opportunities for exploration. Return to the campsite and recapture the experiences from this memorable day! \n\nAdditional Notes:\nNote: If you have pre-booked the Grand Canyon Helicopter Ride you will enjoy your 45-50min ride over the canyon on either Day 7 or 8. This will be determined by the CEO. \n\nIncluded Activities:\nGrand Canyon Sunset\n\nTransport:\nPrivate Vehicle (6.00 hour(s), 475km)", 
+                        "title": "Day 28 Las Vegas/Grand Canyon National Park (1D)"
+                    }, 
+                    {
+                        "day": 29, 
+                        "description": "Enjoy a free day to discover the Grand Canyon. Opt to wander throughout the park and take a hike. Hire a bike, check out a museum or see the canyon from the sky by helicopter.\n\nIncluded Activities:\nGrand Canyon South Rim Visit", 
+                        "title": "Day 29 Grand Canyon National Park (1B, 1L, 1D)"
+                    }, 
+                    {
+                        "day": 30, 
+                        "description": "Take an optional jeep tour led by a Navajo guide through Monument Valley and be inspired by a night under the stars while camping in this magnificent atmosphere. \n\nTransport:\nPrivate Vehicle (5.00 hour(s), 290km)", 
+                        "title": "Day 30 Grand Canyon National Park/Monument Valley (1B, 1L)"
+                    }, 
+                    {
+                        "day": 31, 
+                        "description": "Hike through history exploring Mesa Verde National Park, which offers a spectacular look into the lives of the Ancestral Puebloans. \n\nIncluded Activities:\nMesa Verde Guided Tour\n\nTransport:\nApproximate Distance to Durango: 315 km\nPrivate Vehicle (7.00 hour(s))", 
+                        "title": "Day 31 Monument Valley/Durango (1B, 1L, 1D)"
+                    }, 
+                    {
+                        "day": 32, 
+                        "description": "Continue the journey back in time and explore one of America's oldest and most beautiful cities, Santa Fe. Take a stroll downtown and visit art galleries, or enjoy some world-famous roasted green chilies.\n\nTransport:\nPrivate Vehicle (6.00 hour(s), 350km)", 
+                        "title": "Day 32 Durango/Santa Fe (1B, 1L)"
+                    }, 
+                    {
+                        "day": 33, 
+                        "description": "Look for aliens at infamous Roswell en route to exploring the Carlsbad Caverns, dodging the 400,000 bats heading out to hunt at sunset.\n\nIncluded Activities:\nExplore Roswell\nCarlsbad Caverns Tour\n\nTransport:\nPrivate Vehicle (8.00 hour(s), 470km)", 
+                        "title": "Day 33 Santa Fe/Carlsbad (1B, 1L, 1D)"
+                    }, 
+                    {
+                        "day": 34, 
+                        "description": "Sit back and gaze at the scenery while travelling through the southern United States. Upon arrival in the 'Lonestar' state, settle in at the campsite for a night under the stars.\n\nTransport:\nPrivate Vehicle (9.00 hour(s), 764km)", 
+                        "title": "Day 34 Carlsbad/Austin (1B, 1L)"
+                    }, 
+                    {
+                        "day": 35, 
+                        "description": "Spend a free day in Austin. Opt to visit the SoCo area for thrift shopping, take a dip in the Barton natural pool, or let loose at a local country bar in the evening.", 
+                        "title": "Day 35 Austin (1B)"
+                    }, 
+                    {
+                        "day": 36, 
+                        "description": "The CEO will point out a few things on the drive in, then get out and experience the city at its best.\n\nTransport:\nPrivate Vehicle (9.00 hour(s), 820km)", 
+                        "title": "Day 36 Austin/New Orleans (1B)"
+                    }, 
+                    {
+                        "day": 37, 
+                        "description": "New travellers may join you today for the rest of the adventure. You are welcome to join them at a group meeting this evening, followed by an optional dinner.", 
+                        "title": "Day 37 New Orleans (1B)"
+                    }, 
+                    {
+                        "day": 38, 
+                        "description": "Explore the birthplace of Rock 'n' Roll, the Home of Blues, and the starting point of soul. Music legends, including Elvis Presley, Johnny Cash and B.B. King, made their marks on Memphis. Optional activities include visiting the National Civil Rights Museum (located where the assassination of Martin Luther King Jr took place in 1968) or visiting the Rock \u2018n\u2019 Soul Museum. \n\nTransport:\nPrivate Vehicle (8.00 hour(s), 640km)", 
+                        "title": "Day 38 New Orleans/Memphis (1B, 1L)"
+                    }, 
+                    {
+                        "day": 39, 
+                        "description": "In the morning, opt to walk in the footsteps of the King of Rock \u2018n\u2019 Roll at Elvis Presley\u2019s home, Graceland. If Graceland is not for you, enjoy the time to explore more of Memphis on your own.  Travel to Nashville in time to check out the nightlife and visit a real country cowboy bar.\n\nTransport:\nPrivate Vehicle (5.00 hour(s), 380km)", 
+                        "title": "Day 39 Memphis/Nashville (1B, 1L, 1D)"
+                    }, 
+                    {
+                        "day": 40, 
+                        "description": "Experience the Appalachian Mountains on the drive. The mountains are a perfect place to relax and to enjoy the fresh, clean air and see the true beauty of North America. \n\nTransport:\nPrivate Vehicle (8.00 hour(s), 575km)", 
+                        "title": "Day 40 Nashville/Appalachia (1B, 1L, 1D)"
+                    }, 
+                    {
+                        "day": 41, 
+                        "description": "Continue on the Skyline Drive through Shenandoah National Park, a truly beautiful, historic national treasure. Standing on top of the peaks of Shenandoah National Park, gaze across the silent mountains. It's hard to believe Washington DC is just a short distance away. \n\nIncluded Activities:\nArlington Cemetery Visit\nMonuments by Moonlight\n\nTransport:\nPrivate Vehicle (7.00 hour(s), 480km)", 
+                        "title": "Day 41 Appalachia/Washington DC (1B, 1L, 1D)"
+                    }, 
+                    {
+                        "day": 42, 
+                        "description": "There is so much to see and do in Washington DC that you can't see it all in one day. Take your time and spend a full day exploring this fascinating city. ", 
+                        "title": "Day 42 Washington DC (1B)"
+                    }, 
+                    {
+                        "day": 43, 
+                        "description": "Dive into the hustle and bustle of the Big Apple. Opt to visit Times Square, stroll Central Park or check out Greenwich Village. Experience the famous nightlife of New York.\n\nAdditional Notes:\nFor our time in NYC, we stay close to the action in a hostel near the city centre.\n\nIncluded Activities:\nOrientation Walk\n\nTransport:\nPrivate Vehicle (6.00 hour(s), 375km)", 
+                        "title": "Day 43 Washington DC/New York City (1B, 1L)"
+                    }, 
+                    {
+                        "day": 44, 
+                        "description": "From the Statue of Liberty to Ground Zero to Chinatown, New York City is full of things to do and see. We recommend spending extra time here; please speak to your sales agent to book extra accommodation. \n\nIncluded Activities:\nDeparture Day", 
+                        "title": "Day 44 New York City"
+                    }
+                ], 
+                "media": {
+                    "images": [
+                        "http:https://media.gadventures.com/media-server/image_library/6680784_1080x810_New Orleans_United States.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/7462480_1080x810_New York_United States.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/7462622_1080x810_Niagara Falls_United States.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/7504485_1080x810_Sandusky.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/7725049_1080x810_San_Francisco_US.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/7823010_1080x810_Santa Fe_United States.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/6487445_1080x810_Washington DC.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/8174657_1080x810_Yellowstone National Park_United States.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/7743995_1080x810_Yosemite_US.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/IMGP8905-web.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/IMGP0279-web.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/IMGP1610-web.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/IMG_1511-web.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/IMGP0772-web.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/USA-Arizona-Grand-Canyon-Travellers-Group-Sunrise-Leo-Tamburri-2011-IMGP1203-Lg-RGB-web.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/7081970_1080x810_Appalachia_United States.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/7662017_1080x810_Bishop.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/7793333_1080x810_Carlsbad_United States.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/7222569_1080x810_Chicago_United States.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/8152781_1080x810_Cody_United States.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/8095411_1080x810_Custer State Park_United States.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/8154326_1080x810_Devils Tower_United States.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/7753246_1080x810_Durango_United States.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/7451040_1080x810_Finger Lakes.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/7629756_1080x810_Grand_Canyon_US.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/8544675_1080x810_Grand_Canyon_National_Park_US.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/8159786_1080x810_Jackson_United States.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/7839635_1080x810_Las_Vegas_US.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/6979253_1080x810_Memphis_United States.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/7638717_1080x810_Monument_Valley_US.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/6982574_1080x810_Nashville_United States.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/7462553_1080x810_Newburgh.jpg"
+                    ], 
+                    "videos": []
+                }, 
+                "minimum_price": {
+                    "amount": 5899.0, 
+                    "currency": "USD", 
+                    "formatted_amount": "$5899.0"
+                }, 
+                "name": "Best of the USA Tour\u2013New York to New York", 
+                "pricing": {
+                    "regular_price": {
+                        "amount": 5899.0, 
+                        "currency": "USD", 
+                        "formatted_amount": "$5899.0"
+                    }
+                }, 
+                "provider": "gadventures", 
+                "rating": null, 
+                "return_info": "New York City", 
+                "review_count": null
+            }, 
+            "id": "g-NUYY", 
+            "links": {
+                "booking": "https://www.gadventures.com/trips/best-of-the-usa-tour-new-york-to-new-york/2655/?aff=18424&phonecode=LonelyPlanet&utm_campaign=lonelyplanetvariation&utm_medium=referral&utm_source=lonelyplanet", 
+                "image": "https://media.gadventures.com/media-server/cache/02/21/02210691d14dab2821c259a30c9a6d40.jpg", 
+                "map": "https://media.gadventures.com/media-server/dynamic/admin/maps/2016/NUYY.png", 
+                "self": "/partner-activities/g-NUYY"
+            }, 
+            "relationships": {
+                "places": {
+                    "links": {
+                        "related": "/places?filter[id][equals]=362079,361389,361932,1006590,361952,1315476,361967,361970,361969,1324539,1324537,1315480,362131,1314375,362135,362133,1314428,362124,1337493,362149,361882,361888,361858,361780,1338774,362150,361211,1339079,1334495,1314239,362178,362207,362227,362228,362237,362241,362086,1335113,361372,1324324,361212,1005229,1324576,1335547,361720,361880,361879,1324624,1338745,1339037,1329640,361859,1319216,361929,361928,1324505,361942,361954,361968,362108,1339104,362134,362152,362151,1334417,1339640,361883,1336193,1336397,1319973,362080,1337117,1329648,361980,1324378,362229,362185,1341151,362223,1329659,362203,1319250,1339164,362172,1314240,362157,362153,1339071,362156,1314203,362137,1340624,362143,1334512,362120,1320142,362119,362109,1324328,1314484,1324330,1324474,361948"
+                    }
+                }
+            }, 
+            "type": "partner_activities"
+        }, 
+        {
+            "attributes": {
+                "center": {
+                    "coordinates": [
+                        -86.7782288317166, 
+                        36.1627758673134
+                    ], 
+                    "type": "Point"
+                }, 
+                "name": "Downtown", 
+                "place_type": "neighborhood"
+            }, 
+            "id": "1341151", 
+            "links": {
+                "self": "/places/1341151"
+            }, 
+            "relationships": {
+                "activities": {
+                    "data": [
+                        {
+                            "id": "g-NUFY", 
+                            "type": "partner_activities"
+                        }, 
+                        {
+                            "id": "g-NUCW", 
+                            "type": "partner_activities"
+                        }, 
+                        {
+                            "id": "g-NUSH", 
+                            "type": "partner_activities"
+                        }, 
+                        {
+                            "id": "g-NUYY", 
+                            "type": "partner_activities"
+                        }, 
+                        {
+                            "id": "g-NUFB", 
+                            "type": "partner_activities"
+                        }, 
+                        {
+                            "id": "g-NUOY", 
+                            "type": "partner_activities"
+                        }, 
+                        {
+                            "id": "g-NUNN", 
+                            "type": "partner_activities"
+                        }, 
+                        {
+                            "id": "g-NUNS", 
+                            "type": "partner_activities"
+                        }, 
+                        {
+                            "id": "v-3131DN", 
+                            "type": "partner_activities"
+                        }, 
+                        {
+                            "id": "v-3131ABC", 
+                            "type": "partner_activities"
+                        }
+                    ], 
+                    "links": {
+                        "next": "/partner-activities?filter%5Bplace%5D%5Bequals%5D=1341151&page%5Blimit%5D=10&page%5Boffset%5D=10", 
+                        "related": "/partner-activities?filter[place][equals]=1341151"
+                    }
+                }, 
+                "ancestry": {
+                    "data": [
+                        {
+                            "id": "362228", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362223", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362185", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361720", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361211", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1005229", 
+                            "type": "place"
+                        }
+                    ], 
+                    "links": {
+                        "related": "/places/1341151/ancestry"
+                    }
+                }, 
+                "articles": {
+                    "links": {
+                        "related": "/articles?filter[place][equals]=1341151&page[limit]=2"
+                    }
+                }, 
+                "descendants": {
+                    "links": {
+                        "related": "/places/1341151/descendants"
+                    }
+                }, 
+                "image-associations": {
+                    "links": {
+                        "related": "/places/1341151/image_associations"
+                    }
+                }, 
+                "introduction": {
+                    "links": {
+                        "related": "/places/1341151/introduction"
+                    }
+                }, 
+                "lodgings": {
+                    "links": {
+                        "related": "/lodgings?filter[place_id][has_ancestor]=1341151"
+                    }
+                }, 
+                "love-letter": {
+                    "links": {
+                        "related": "/places/1341151/love_letter"
+                    }
+                }, 
+                "news": {
+                    "links": {
+                        "related": "/news?filter[place][equals]=1341151&page[limit]=2"
+                    }
+                }, 
+                "parent": {
+                    "data": {
+                        "id": "362228", 
+                        "type": "place"
+                    }, 
+                    "links": {
+                        "related": "/places/362228"
+                    }
+                }, 
+                "pois": {
+                    "links": {
+                        "related": "/pois?filter[place_id][has_ancestor]=1341151"
+                    }
+                }, 
+                "shape": {
+                    "data": {
+                        "id": "35031", 
+                        "type": "place_shape"
+                    }, 
+                    "links": {
+                        "related": "/places/1341151/shape"
+                    }
+                }, 
+                "top-experiences": {
+                    "links": {
+                        "related": "/places/1341151/top_experiences"
+                    }
+                }
+            }, 
+            "type": "place"
+        }, 
+        {
+            "attributes": {
+                "center": {
+                    "coordinates": [
+                        -86.3446604443751, 
+                        35.8468959918037
+                    ], 
+                    "type": "Point"
+                }, 
+                "name": "Tennessee", 
+                "place_type": "region"
+            }, 
+            "id": "362223", 
+            "links": {
+                "self": "/places/362223"
+            }, 
+            "relationships": {
+                "activities": {
+                    "links": {
+                        "related": "/partner-activities?filter[place][equals]=362223"
+                    }
+                }, 
+                "ancestry": {
+                    "links": {
+                        "related": "/places/362223/ancestry"
+                    }
+                }, 
+                "articles": {
+                    "links": {
+                        "related": "/articles?filter[place][equals]=362223&page[limit]=2"
+                    }
+                }, 
+                "descendants": {
+                    "links": {
+                        "related": "/places/362223/descendants"
+                    }
+                }, 
+                "image-associations": {
+                    "links": {
+                        "related": "/places/362223/image_associations"
+                    }
+                }, 
+                "introduction": {
+                    "links": {
+                        "related": "/places/362223/introduction"
+                    }
+                }, 
+                "lodgings": {
+                    "links": {
+                        "related": "/lodgings?filter[place_id][has_ancestor]=362223"
+                    }
+                }, 
+                "love-letter": {
+                    "links": {
+                        "related": "/places/362223/love_letter"
+                    }
+                }, 
+                "news": {
+                    "links": {
+                        "related": "/news?filter[place][equals]=362223&page[limit]=2"
+                    }
+                }, 
+                "parent": {
+                    "data": {
+                        "id": "362185", 
+                        "type": "place"
+                    }, 
+                    "links": {
+                        "related": "/places/362185"
+                    }
+                }, 
+                "pois": {
+                    "links": {
+                        "related": "/pois?filter[place_id][has_ancestor]=362223"
+                    }
+                }, 
+                "shape": {
+                    "data": {
+                        "id": "4474", 
+                        "type": "place_shape"
+                    }, 
+                    "links": {
+                        "related": "/places/362223/shape"
+                    }
+                }, 
+                "top-experiences": {
+                    "links": {
+                        "related": "/places/362223/top_experiences"
+                    }
+                }
+            }, 
+            "type": "place"
+        }, 
+        {
+            "attributes": {
+                "additional_information": {
+                    "accommodation": "Hostels (2 nts, multi-share), participation camping (5 nts).", 
+                    "meals": "6 breakfasts, 5 lunches, 3 dinners", 
+                    "staff_experts": "1 or 2 Chief Experience Officers (CEOs) throughout, depending on group size.", 
+                    "transport": "Air-conditioned private touring van, walking."
+                }, 
+                "canonical_category": "Photography", 
+                "categories": [
+                    "Photography"
+                ], 
+                "departure_info": "New York City", 
+                "descriptions": {
+                    "long_description": "Culture vultures, get ready to take flight on an incredible tour of American capitals \u2013 business, political, and musical. From Manhattan, follow the trail of independence to Washington, DC. Just try to prevent your boots from shufflin' in the music meccas of Memphis, Nashville, and New Orleans.", 
+                    "short_description": null
+                }, 
+                "difficulty": {
+                    "description": "2 - Light", 
+                    "grade": null, 
+                    "scale": 5
+                }, 
+                "duration": {
+                    "duration": 8.0, 
+                    "unit": "days"
+                }, 
+                "duration_info": "8 days", 
+                "exclusions": [], 
+                "external_id": "NUNN", 
+                "group_size": {
+                    "average_size": "16", 
+                    "description": "Small Group", 
+                    "maximum_size": "22", 
+                    "minimum_size": null
+                }, 
+                "highlights": [
+                    "Feel the beat in memphis and nashville", 
+                    "Drive through the picturesque appalachian mountains", 
+                    "Explore monuments in washington dc", 
+                    "See the sights of new york city"
+                ], 
+                "inclusions": [
+                    "Entrance fees to all national parks and national monuments with hiking and walking excursions", 
+                    "Orientation to Washington DC", 
+                    "Visit to Arlington Cemetery", 
+                    "Self-inflating mattresses and dome tents", 
+                    "All transport between destinations and to/from included activities"
+                ], 
+                "itinerary": [
+                    {
+                        "day": 1, 
+                        "description": "Arrive to the joining hostel at any time. Welcome meeting at 7:00pm. \r\n\r\nFrom the Statue of Liberty to Ground Zero to Chinatown, New York City is full of things to do and see. We recommend spending extra time here; please speak to your sales agent to book pre-trip accommodation.\n\nIncluded Activities:\nArrival Day and Welcome Meeting", 
+                        "title": "Day 1 New York City"
+                    }, 
+                    {
+                        "day": 2, 
+                        "description": "Dive into the hustle and bustle of the Big Apple on a brief orientation to the city with the CEO. Arrive at the capital of the USA, Washington DC, in the late afternoon.\n\nAdditional Notes:\nThis tour departs New York City mid-day on Day 2.\n\nIncluded Activities:\nOrientation Walk\nMonuments by Moonlight\n\nTransport:\nPrivate Vehicle (7.00 hour(s), 375km)", 
+                        "title": "Day 2 New York City/Washington DC (1L, 1D)"
+                    }, 
+                    {
+                        "day": 3, 
+                        "description": "Today is all about the capital of the United States. There is so much to see and do in Washington DC that you can't see it all in one day. Take your time spending a full day exploring this fascinating city.", 
+                        "title": "Day 3 Washington DC (1B)"
+                    }, 
+                    {
+                        "day": 4, 
+                        "description": "Standing on top of the peaks of Shenandoah National Park while gazing across the silent mountains, it's hard to believe Washington DC is just a short distance away. \r\n\r\nOpt to take a short hike on the many trails throughout the park. \r\n\r\n\n\nIncluded Activities:\nArlington Cemetery Visit\n\nTransport:\nPrivate Vehicle (9.00 hour(s), 480km)", 
+                        "title": "Day 4 Washington DC/Appalachia (1B, 1L, 1D)"
+                    }, 
+                    {
+                        "day": 5, 
+                        "description": "Continue through the Appalachian Mountains, a perfect place to relax. Enjoy the fresh, clean air and see the true beauty of North America. Travel to the country music capital of the world, and be immersed in the local music scene in downtown Nashville at night.\n\nTransport:\nPrivate Vehicle (8.00 hour(s), 575km)", 
+                        "title": "Day 5 Appalachia/Nashville (1B, 1L, 1D)"
+                    }, 
+                    {
+                        "day": 6, 
+                        "description": "In the afternoon, opt to walk in the footsteps of the King of Rock \u2018n\u2019 Roll at Elvis Presley\u2019s home, Graceland. See how the legend lived and discover videos, pictures, stage costumes, and much more. Then hear the music in Memphis, Tennessee! Explore the birthplace of Rock 'n' Roll, Home of Blues, and the starting point of soul. Music legends, including Elvis Presley, Johnny Cash, and B.B. King, made their marks on Memphis. \r\n\r\nOpt to check out the National Civil Rights Museum, located where Martin Luther King Jr was assassinated.\n\nTransport:\nPrivate Vehicle (5.00 hour(s), 380km)", 
+                        "title": "Day 6 Nashville/Memphis (1B, 1L)"
+                    }, 
+                    {
+                        "day": 7, 
+                        "description": "The CEO will point out a few things on the drive in, then get out and experience the city at its best. Enjoy a night out with the group.\r\n\n\nAdditional Notes:\nFor our time in New Orleans, we stay close to the action in a hotel in the city centre (multi-share accommodation).\n\nTransport:\nPrivate Vehicle (8.00 hour(s), 640km)", 
+                        "title": "Day 7 Memphis/New Orleans (1B, 1L)"
+                    }, 
+                    {
+                        "day": 8, 
+                        "description": "We recommend spending extra time here if you'd like to check out all of New Orleans' sights and sounds; speak to your sales agent to book extra accommodation.\n\nIncluded Activities:\nDeparture Day", 
+                        "title": "Day 8 New Orleans (1B)"
+                    }
+                ], 
+                "media": {
+                    "images": [
+                        "http:https://media.gadventures.com/media-server/image_library/7081970_1080x810_Appalachia_United States.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/6979253_1080x810_Memphis_United States.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/6982574_1080x810_Nashville_United States.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/6680784_1080x810_New Orleans_United States.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/7462537_1080x810_New York_United States.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/7462480_1080x810_New York_United States.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/6487445_1080x810_Washington DC.jpg"
+                    ], 
+                    "videos": []
+                }, 
+                "minimum_price": {
+                    "amount": 1229.0, 
+                    "currency": "USD", 
+                    "formatted_amount": "$1229.0"
+                }, 
+                "name": "Music, Mountains & Monuments Westbound", 
+                "pricing": {
+                    "regular_price": {
+                        "amount": 1229.0, 
+                        "currency": "USD", 
+                        "formatted_amount": "$1229.0"
+                    }
+                }, 
+                "provider": "gadventures", 
+                "rating": null, 
+                "return_info": "New Orleans", 
+                "review_count": null
+            }, 
+            "id": "g-NUNN", 
+            "links": {
+                "booking": "https://www.gadventures.com/trips/music-mountains-monuments-westbound/2364/?aff=18424&phonecode=LonelyPlanet&utm_campaign=lonelyplanetvariation&utm_medium=referral&utm_source=lonelyplanet", 
+                "image": "https://media.gadventures.com/media-server/cache/73/e6/73e62f05181006183d42aed7c03092ae.jpg", 
+                "map": "https://media.gadventures.com/media-server/dynamic/admin/maps/2015/NUNN.png", 
+                "self": "/partner-activities/g-NUNN"
+            }, 
+            "relationships": {
+                "places": {
+                    "links": {
+                        "related": "/places?filter[id][equals]=362096,362227,362228,362207,362079,362241,362237,361211,1336193,1336397,1319973,362080,1324324,361720,1005229,1337117,1329648,361980,1324378,362229,362185,1341151,362223,1329659,362203"
+                    }
+                }
+            }, 
+            "type": "partner_activities"
+        }, 
+        {
+            "attributes": {
+                "additional_information": {}, 
+                "canonical_category": "Sightseeing tours", 
+                "categories": [
+                    "Tours & Sightseeing"
+                ], 
+                "departure_info": "Nashville area hotels", 
+                "descriptions": {
+                    "long_description": "Enjoy a narrated tour of Historic Downtown, Fort Nashborough, the State Capitol, The Parthenon, Vanderbilt University and Music Row. Your tour will also include entrance into the Ryman Auditorium - the Mother Church of Country Music, long time home of the Grand Ole Opry and recently voted the finest concert venue in the United States.You will also tour the Country Music Hall of Fame and Museum. This 37 million dollar facility is a beautiful tribute to Country Music and the artists who have made it great.", 
+                    "short_description": "Come along for an exciting 3.5 hour tour of Nashville, Music City USA! Travel in air-conditioned comfort to the best and most famous sites in town - The Ryman Auditorium (the one-time home to the Grand Ole Opry), The impressive Parthenon, the Country Music Hall of Fame, and more."
+                }, 
+                "difficulty": {}, 
+                "duration": {
+                    "duration": 3.5, 
+                    "unit": "hours"
+                }, 
+                "duration_info": "3 hours 30 minutes", 
+                "exclusions": [
+                    "Gratuities (optional)", 
+                    "Meals"
+                ], 
+                "external_id": "3131DN", 
+                "group_size": {}, 
+                "highlights": [], 
+                "inclusions": [
+                    "Transport by air-conditioned coach", 
+                    "Hotel pickup and drop-off", 
+                    "Guided sightseeing tour", 
+                    "Admission to Ryman Auditorium", 
+                    "Admission to The Country Music Hall of Fame"
+                ], 
+                "itinerary": {}, 
+                "media": {}, 
+                "minimum_price": {
+                    "amount": 59.0, 
+                    "currency": "USD", 
+                    "formatted_amount": "$59.0"
+                }, 
+                "name": "Discover Nashville", 
+                "pricing": {
+                    "regular_price": {
+                        "amount": 59.0, 
+                        "currency": "USD", 
+                        "formatted_amount": "$59.0"
+                    }
+                }, 
+                "provider": "viator", 
+                "rating": 4.33935018050542, 
+                "return_info": "Returns to original departure point", 
+                "review_count": 277
+            }, 
+            "id": "v-3131DN", 
+            "links": {
+                "booking": "http://www.viator.com/tours/Nashville/Discover-Nashville/d799-3131DN?eap=lonelyplanet-main-6296&aid=vba6296en2", 
+                "image": "http://cache-graphicslib.viator.com/graphicslib/thumbs674x446/3131/SITours/discover-nashville-in-nashville-153165.jpg", 
+                "self": "/partner-activities/v-3131DN"
+            }, 
+            "relationships": {
+                "places": {
+                    "links": {
+                        "related": "/places?filter[id][equals]=1341151,362228,362223,362185,361720,361211,1005229"
+                    }
+                }
+            }, 
+            "type": "partner_activities"
+        }, 
+        {
+            "attributes": {
+                "additional_information": {
+                    "accommodation": "Hotels/hostels (6 nts, some multi-share), participation camping (16 nts).", 
+                    "meals": "17 breakfasts, 15 lunches, 10 dinners", 
+                    "staff_experts": "1 or 2 Chief Experience Officers (CEOs) throughout, depending on group size.", 
+                    "transport": "Air-conditioned private touring van"
+                }, 
+                "canonical_category": "Nature & wildlife", 
+                "categories": [
+                    "Wildlife/Nature"
+                ], 
+                "departure_info": "New York City", 
+                "descriptions": {
+                    "long_description": "Can one 23-day trip define the elusive essence of a complex nation with centuries of incredible history? Probably not, but it\u2019d be a blast to try, no? Designed specifically for curious travellers with a passion for real experiences and lots of time, this adventure takes you from the busy streets of New York to the shores of San Francisco Bay, with just about every shade of Americana thrown in along the way: Philly steaks, the Alamo, Music City USA, the French Quarter, Tex-Mex, Yosemite, the Vegas Strip\u2026  forget e pluribus unum; America\u2019s real motto is \u201cgo big or go home.\u201d", 
+                    "short_description": null
+                }, 
+                "difficulty": {
+                    "description": "2 - Light", 
+                    "grade": null, 
+                    "scale": 5
+                }, 
+                "duration": {
+                    "duration": 23.0, 
+                    "unit": "days"
+                }, 
+                "duration_info": "23 days", 
+                "exclusions": [], 
+                "external_id": "NUCW", 
+                "group_size": {
+                    "average_size": "16", 
+                    "description": "Small Group", 
+                    "maximum_size": "22", 
+                    "minimum_size": null
+                }, 
+                "highlights": [
+                    "Get wild in san francisco and las vegas", 
+                    "Embrace nature in monument valley and yosemite", 
+                    "Learn about america\u2019s history in washington dc", 
+                    "Feel the beat in memphis and nashville", 
+                    "Witness a gorgeous sunset at the grand canyon."
+                ], 
+                "inclusions": [
+                    "Entrance fees to all national parks with hiking and walking excursions", 
+                    "Visit to Arlington Cemetery", 
+                    "Orientation to Las Vegas, Washington DC and New York", 
+                    "Visit to Carlsbad Caverns", 
+                    "Death Valley visit", 
+                    "Self-inflating mattresses and dome tents", 
+                    "All transport between destinations and to/from included activities"
+                ], 
+                "itinerary": [
+                    {
+                        "day": 1, 
+                        "description": "Arrive to the joining hostel at any time. Welcome meeting at 7:00pm. \r\n\r\nFrom the Statue of Liberty to Ground Zero to Chinatown, New York City is full of things to do and see. We recommend spending extra time here; please speak to your sales agent to book pre-trip accommodation.\n\nIncluded Activities:\nArrival Day and Welcome Meeting", 
+                        "title": "Day 1 New York City"
+                    }, 
+                    {
+                        "day": 2, 
+                        "description": "Dive into the hustle and bustle of the Big Apple on a brief orientation to the city with the CEO. Arrive at the capital of the USA, Washington DC, in the late afternoon.\n\nAdditional Notes:\nThis tour departs New York City mid-day on Day 2.\n\nIncluded Activities:\nOrientation Walk\nMonuments by Moonlight\n\nTransport:\nPrivate Vehicle (7.00 hour(s), 375km)", 
+                        "title": "Day 2 New York City/Washington DC (1L, 1D)"
+                    }, 
+                    {
+                        "day": 3, 
+                        "description": "Today is all about the capital of the United States. There is so much to see and do in Washington DC that you can't see it all in one day. Take your time spending a full day exploring this fascinating city.", 
+                        "title": "Day 3 Washington DC (1B)"
+                    }, 
+                    {
+                        "day": 4, 
+                        "description": "Standing on top of the peaks of Shenandoah National Park while gazing across the silent mountains, it's hard to believe Washington DC is just a short distance away. \r\n\r\nOpt to take a short hike on the many trails throughout the park. \r\n\r\n\n\nIncluded Activities:\nArlington Cemetery Visit\n\nTransport:\nPrivate Vehicle (9.00 hour(s), 480km)", 
+                        "title": "Day 4 Washington DC/Appalachia (1B, 1L, 1D)"
+                    }, 
+                    {
+                        "day": 5, 
+                        "description": "Continue through the Appalachian Mountains, a perfect place to relax. Enjoy the fresh, clean air and see the true beauty of North America. Travel to the country music capital of the world, and be immersed in the local music scene in downtown Nashville at night.\n\nTransport:\nPrivate Vehicle (8.00 hour(s), 575km)", 
+                        "title": "Day 5 Appalachia/Nashville (1B, 1L, 1D)"
+                    }, 
+                    {
+                        "day": 6, 
+                        "description": "In the afternoon, opt to walk in the footsteps of the King of Rock \u2018n\u2019 Roll at Elvis Presley\u2019s home, Graceland. See how the legend lived and discover videos, pictures, stage costumes, and much more. Then hear the music in Memphis, Tennessee! Explore the birthplace of Rock 'n' Roll, Home of Blues, and the starting point of soul. Music legends, including Elvis Presley, Johnny Cash, and B.B. King, made their marks on Memphis. \r\n\r\nOpt to check out the National Civil Rights Museum, located where Martin Luther King Jr was assassinated.\n\nTransport:\nPrivate Vehicle (5.00 hour(s), 380km)", 
+                        "title": "Day 6 Nashville/Memphis (1B, 1L)"
+                    }, 
+                    {
+                        "day": 7, 
+                        "description": "The CEO will point out a few things on the drive in, then get out and experience the city at its best. Enjoy a night out with the group.\r\n\n\nAdditional Notes:\nFor our time in New Orleans, we stay close to the action in a hotel in the city centre (multi-share accommodation).\n\nTransport:\nPrivate Vehicle (8.00 hour(s), 640km)", 
+                        "title": "Day 7 Memphis/New Orleans (1B, 1L)"
+                    }, 
+                    {
+                        "day": 8, 
+                        "description": "New travellers may join you today for the rest of the adventure. You are welcome to join them at a group meeting this evening, followed by an optional dinner.", 
+                        "title": "Day 8 New Orleans (1B)"
+                    }, 
+                    {
+                        "day": 9, 
+                        "description": "Travel day from New Orleans to Austin. Sit back and gaze at the scenery while travelling through the southern United States. Upon arrival in the 'Lonestar' state, settle in at the campsite for a night under the stars. \n\nTransport:\nApproximate distance to Austin: 820km (510 mi)\nPrivate Vehicle (9.00 hour(s), 820km)", 
+                        "title": "Day 9 New Orleans/Austin"
+                    }, 
+                    {
+                        "day": 10, 
+                        "description": "Spend a free day in Austin. Opt to visit the SoCo area for thrift shopping, take a dip in the Barton natural pool, or let loose at a local country bar in the evening.", 
+                        "title": "Day 10 Austin (1B)"
+                    }, 
+                    {
+                        "day": 11, 
+                        "description": "Travel to one of the oldest and most famous cave systems in the world. Explore a cave on self-guided trails and be fascinated by the largest underground chambers and countless formations. In the evening, witness a stunning spectacle as nearly 400,000 Mexican free-tail bats exit Carlsbad Cavern.\n\nIncluded Activities:\nCarlsbad Caverns Tour\n\nTransport:\nPrivate Vehicle (9.00 hour(s), 802km)", 
+                        "title": "Day 11 Austin/Carlsbad (1B, 1L, 1D)"
+                    }, 
+                    {
+                        "day": 12, 
+                        "description": "On the night of July 2nd in 1947 something (or someone) crashed into the desert outside of Roswell, New Mexico. Was it a balloon, or really extra-terrestrial life? Find out what all the hype is about when passing through this funky town. \r\n\r\nContinue the journey back in time and explore one of America's oldest and most beautiful cities, Santa Fe. \n\nIncluded Activities:\nExplore Roswell\n\nTransport:\nPrivate Vehicle (8.00 hour(s), 470km)", 
+                        "title": "Day 12 Carlsbad/Santa Fe (1B, 1L)"
+                    }, 
+                    {
+                        "day": 13, 
+                        "description": "Free morning to explore Santa Fe's downtown and enjoy some world-famous roasted green chilies before continuing on to Cortez.\r\n\n\nTransport:\nPrivate Vehicle (6.00 hour(s), 350km)", 
+                        "title": "Day 13 Santa Fe/Cortez (1B, 1L, 1D)"
+                    }, 
+                    {
+                        "day": 14, 
+                        "description": "Hike through history while exploring Mesa Verde National Park \u2013 it offers a spectacular look into the lives of the Ancestral Puebloans. \r\n\r\nIn Monument Valley, opt to explore on a 4x4 tour led by a Navajo guide. Stay overnight in the Tribal Park to see the sun rise from a perspective very few ever experience!\n\nIncluded Activities:\nMesa Verde Guided Tour\n\nTransport:\nApproximate Distance to Mesa Verde NP: 315 km\nPrivate Vehicle (6.00 hour(s))", 
+                        "title": "Day 14 Cortez/Monument Valley (1B, 1L)"
+                    }, 
+                    {
+                        "day": 15, 
+                        "description": "Considered among nature's most spectacular offerings, the Grand Canyon provides spectacular opportunities for exploration. Return to the campsite and recapture the experiences from this memorable day! \n\nAdditional Notes:\nNote: If you have pre-booked the Grand Canyon Helicopter Ride you will enjoy your 45-50min ride over the canyon on either Day 8 or 9. This will be determined by the CEO. \n\nIncluded Activities:\nGrand Canyon South Rim Visit\n\nTransport:\nPrivate Vehicle (5.00 hour(s), 290km)", 
+                        "title": "Day 15 Monument Valley/Grand Canyon (1B, 1L, 1D)"
+                    }, 
+                    {
+                        "day": 16, 
+                        "description": "Enjoy a free day to discover the Grand Canyon. Opt to wander throughout the park and take a hike. Hire a bike, check out a museum or see the canyon from the sky by helicopter.", 
+                        "title": "Day 16 Grand Canyon (1B, 1L, 1D)"
+                    }, 
+                    {
+                        "day": 17, 
+                        "description": "Travel Route 66 and stop at a wacky burger joint. Explore Las Vegas and stroll along the famous Vegas Strip. Take an optional VIP party limo.  \n\nAdditional Notes:\nFor the two nights in Las Vegas, we stay close to the action in a hotel in the city centre.\n\nIncluded Activities:\nVegas Strip Visit \n\nTransport:\nPrivate Vehicle (7.00 hour(s), 475km)", 
+                        "title": "Day 17 Grand Canyon/Las Vegas (1B)"
+                    }, 
+                    {
+                        "day": 18, 
+                        "description": "Full day to explore Las Vegas. Walk the strip and try your luck at the tables or slot machines. Or spend the day shopping, dining or chilling poolside. In the evening, opt to see one of the wildly entertaining shows Vegas is known for.", 
+                        "title": "Day 18 Las Vegas"
+                    }, 
+                    {
+                        "day": 19, 
+                        "description": "Visit one of the country's most rugged landscapes, the legendary Death Valley \u2013 the hottest and driest spot on earth and home to the lowest point in North America.\r\n\r\nSurrounded by peaks which soar more than 14,000 ft (4,267m) in elevation, Bishop, one of \"America's Coolest Mountain Towns\" sits directly in the centre of an incredible area of natural beauty.\n\nAdditional Notes:\nNote: we intend on using the Tioga Pass tomorrow; it's a scenic route through the Sierra Nevada mountain range that connects Bishop with Yosemite NP. In the spring and autumn seasons, there's a chance that the pass will be closed due to poor weather conditions or even snow. In such a case, we use an alternate route, and will spend the night in Lake Isabella instead of Bishop. The status of the road is monitored daily, and our travel plan for the area will be confirmed during the trip.\n\nIncluded Activities:\nDeath Valley National Park Visit\n\nTransport:\nPrivate Vehicle (7.00 hour(s), 590km)", 
+                        "title": "Day 19 Las Vegas/Bishop (1L, 1D)"
+                    }, 
+                    {
+                        "day": 20, 
+                        "description": "In the morning, visit ancient Mono Lake and walk among dramatic and fascinating tufa towers. \r\n\r\nBe in awe of the spectacular views of Yosemite National Park's magnificent peaks and granite domes while enjoying one of the most scenic drives in California: the Tioga Pass!\r\n\r\nHike one of the many trails Yosemite has to offer and be inspired by this beautiful and amazing landscape.\n\nIncluded Activities:\nMono Lake Visit\nTioga Pass Drive\nYosemite National Park Visit\n\nTransport:\nPrivate Vehicle (7.00 hour(s), 330km)", 
+                        "title": "Day 20 Bishop/Yosemite National Park (1B, 1L, 1D)"
+                    }, 
+                    {
+                        "day": 21, 
+                        "description": "Admire spectacular views of Yosemite National Park's magnificent peaks and granite domes. Yosemite has many trails to offer. Be inspired by this beautiful and amazing landscape and opt to rent a bike to better explore the Yosemite Valley.\n\nIncluded Activities:\nYosemite National Park Visit", 
+                        "title": "Day 21 Yosemite National Park (1B, 1L, 1D)"
+                    }, 
+                    {
+                        "day": 22, 
+                        "description": "Arrive at one of the most iconic cities in the world: San Francisco. The CEO will point out some popular sites on the drive into town.\n\nAdditional Notes:\nFor our final night in San Francisco, we stay close to the action in a hotel in the city centre.\n\nTransport:\nPrivate Vehicle (8.00 hour(s), 225km)", 
+                        "title": "Day 22 Yosemite National Park/San Francisco (1B, 1L)"
+                    }, 
+                    {
+                        "day": 23, 
+                        "description": "Depart at any time. There's a lot to see and do in San Francisco, and we recommend spending extra time here if you'd like to explore the city; speak to your sales agent to book extra accommodation. Haight-Ashbury, Alcatraz, the Golden Gate Bridge, Fisherman's Wharf, and the city's famous cable cars all await.\n\nIncluded Activities:\nDeparture Day", 
+                        "title": "Day 23 San Francisco"
+                    }
+                ], 
+                "media": {
+                    "images": [
+                        "http:https://media.gadventures.com/media-server/image_library/IMGP8905-web.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/IMGP0279-web.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/IMGP1610-web.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/IMGP8847-web.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/IMG_1511-web.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/IMGP0772-web.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/USA-California-San-Francisco-Skyline-Windigo-2013-IMG1336-Lg-RGB-web.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/7081970_1080x810_Appalachia_United States.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/7662017_1080x810_Bishop.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/7793333_1080x810_Carlsbad_United States.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/7751119_1080x810_Cortez_United States.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/7629756_1080x810_Grand_Canyon_US.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/7839635_1080x810_Las_Vegas_US.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/6979253_1080x810_Memphis_United States.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/7638717_1080x810_Monument_Valley_US.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/6982574_1080x810_Nashville_United States.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/6680784_1080x810_New Orleans_United States.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/7462537_1080x810_New York_United States.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/7462480_1080x810_New York_United States.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/7725049_1080x810_San_Francisco_US.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/7823010_1080x810_Santa Fe_United States.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/6487445_1080x810_Washington DC.jpg", 
+                        "http:https://media.gadventures.com/media-server/image_library/7743995_1080x810_Yosemite_US.jpg"
+                    ], 
+                    "videos": []
+                }, 
+                "minimum_price": {
+                    "amount": 3499.0, 
+                    "currency": "USD", 
+                    "formatted_amount": "$3499.0"
+                }, 
+                "name": "Southern Cross Country Westbound", 
+                "pricing": {
+                    "regular_price": {
+                        "amount": 3499.0, 
+                        "currency": "USD", 
+                        "formatted_amount": "$3499.0"
+                    }
+                }, 
+                "provider": "gadventures", 
+                "rating": null, 
+                "return_info": "San Francisco", 
+                "review_count": null
+            }, 
+            "id": "g-NUCW", 
+            "links": {
+                "booking": "https://www.gadventures.com/trips/southern-cross-country-westbound/2649/?aff=18424&phonecode=LonelyPlanet&utm_campaign=lonelyplanetvariation&utm_medium=referral&utm_source=lonelyplanet", 
+                "image": "https://media.gadventures.com/media-server/cache/4a/9e/4a9e44b6ec051a35bc3eea5fe5e61679.jpg", 
+                "map": "https://media.gadventures.com/media-server/dynamic/admin/maps/2016/NUCW.png", 
+                "self": "/partner-activities/g-NUCW"
+            }, 
+            "relationships": {
+                "places": {
+                    "links": {
+                        "related": "/places?filter[id][equals]=1329657,362079,362241,362237,361211,362228,362227,362207,362178,1314239,362153,1340211,1334495,362150,1338774,361888,1338766,361780,361858,1339079,362143,1334512,362137,1335547,1334417,361720,1005229,1324576,362149,361880,361879,1324624,1338745,1339037,1329640,361859,1336193,1336397,1319973,362080,1324324,1337117,1329648,361980,1324378,362229,362185,1341151,362223,1329659,362203,1319250,1339164,362172,1314240,362157,1339071,362156,1314244,1326478,362119,362109,362108,1314203"
+                    }
+                }
+            }, 
+            "type": "partner_activities"
+        }, 
+        {
+            "attributes": {
+                "center": {
+                    "coordinates": [
+                        -91.1985097363844, 
+                        27.4829603454397
+                    ], 
+                    "type": "Point"
+                }, 
+                "name": "Americas", 
+                "place_type": "region"
+            }, 
+            "id": "1005229", 
+            "links": {
+                "self": "/places/1005229"
+            }, 
+            "relationships": {
+                "activities": {
+                    "links": {
+                        "related": "/partner-activities?filter[place][equals]=1005229"
+                    }
+                }, 
+                "ancestry": {
+                    "links": {
+                        "related": "/places/1005229/ancestry"
+                    }
+                }, 
+                "articles": {
+                    "links": {
+                        "related": "/articles?filter[place][equals]=1005229&page[limit]=2"
+                    }
+                }, 
+                "descendants": {
+                    "links": {
+                        "related": "/places/1005229/descendants"
+                    }
+                }, 
+                "image-associations": {
+                    "links": {
+                        "related": "/places/1005229/image_associations"
+                    }
+                }, 
+                "introduction": {
+                    "links": {
+                        "related": "/places/1005229/introduction"
+                    }
+                }, 
+                "lodgings": {
+                    "links": {
+                        "related": "/lodgings?filter[place_id][has_ancestor]=1005229"
+                    }
+                }, 
+                "love-letter": {
+                    "links": {
+                        "related": "/places/1005229/love_letter"
+                    }
+                }, 
+                "news": {
+                    "links": {
+                        "related": "/news?filter[place][equals]=1005229&page[limit]=2"
+                    }
+                }, 
+                "parent": {
+                    "data": null
+                }, 
+                "pois": {
+                    "links": {
+                        "related": "/pois?filter[place_id][has_ancestor]=1005229"
+                    }
+                }, 
+                "shape": {
+                    "data": {
+                        "id": "4483", 
+                        "type": "place_shape"
+                    }, 
+                    "links": {
+                        "related": "/places/1005229/shape"
+                    }
+                }, 
+                "top-experiences": {
+                    "links": {
+                        "related": "/places/1005229/top_experiences"
+                    }
+                }
+            }, 
+            "type": "place"
+        }
+    ], 
+    "links": {
+        "self": "/pois/381139?include=image-associations.from,containing-place.ancestry,containing-place.activities"
+    }
+}

@@ -3,6 +3,7 @@ import { expect } from "chai";
 import sinon from "sinon";
 import placeDoc from "./fixtures/place.json";
 import pois from "./fixtures/pois.json";
+import poi from "./fixtures/poi.json";
 // import Benchmark from "benchmark";
 
 describe("Resource", function() {
@@ -78,6 +79,12 @@ describe("Resource", function() {
 
     expect(JSON.stringify(model)).to.be.ok;
   });
+
+  it("should work on a single resource", () => {
+    const model = Resource.from(poi);
+
+    expect(model).to.be.ok;
+  })
 
   it("should add one to many relationships as instance properties", () => {
     const model = Resource.from(placeDoc);
