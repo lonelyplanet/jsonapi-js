@@ -91,7 +91,7 @@ function fetch({
     }
 
     const breaker = circuitbreaker(makeRequest, {
-      timeout: 10000,
+      timeout: process.env.JSONAPIJS_TIMEOUT || 20000,
       maxFailures: 3,
       resetTimeout: 30,
     });
