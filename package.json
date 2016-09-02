@@ -24,7 +24,8 @@
     "circuitbreaker": "^0.2.1",
     "dotenv": "~1.2.0",
     "isomorphic-fetch": "^2.2.1",
-    "lodash": "^4.13.1",
+    "lodash": "^4.15.0",
+    "mocha": "^2.3.4",
     "node-statsd": "^0.1.1",
     "webpack": "^1.12.15"
   },
