@@ -195,6 +195,104 @@
             }, 
             "relationships": {
                 "places": {
+                    "data": [
+                        {
+                            "id": "362207", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362228", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362227", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361211", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362237", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362241", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362079", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1336193", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1336397", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1319973", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362080", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1324324", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361720", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1005229", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1337117", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1329648", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361980", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1324378", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362229", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362185", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1341151", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362223", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1329659", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362203", 
+                            "type": "place"
+                        }
+                    ], 
                     "links": {
                         "related": "/places?filter[id][equals]=362207,362228,362227,361211,362237,362241,362079,1336193,1336397,1319973,362080,1324324,361720,1005229,1337117,1329648,361980,1324378,362229,362185,1341151,362223,1329659,362203"
                     }
@@ -427,8 +525,262 @@
             }, 
             "relationships": {
                 "places": {
+                    "data": [
+                        {
+                            "id": "362150", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362172", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362228", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362227", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361858", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361780", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361888", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1338774", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361211", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1339079", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1334495", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362121", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1314239", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362178", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362207", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362237", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362241", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362079", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1324576", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362149", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1335547", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361720", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1005229", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361880", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361879", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1324624", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1338745", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1339037", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1329640", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361859", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1336193", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1336397", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1319973", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362080", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1324324", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1337117", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1329648", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361980", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1324378", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362229", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362185", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1341151", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362223", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1329659", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362203", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1319250", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1339164", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1314240", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362157", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362153", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1334417", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1339071", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362156", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1314203", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362137", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1340624", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362143", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1334512", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362120", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1320142", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362119", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362109", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362108", 
+                            "type": "place"
+                        }
+                    ], 
                     "links": {
-                        "related": "/places?filter[id][equals]=362150,362172,362228,362227,361858,361780,361888,1338774,361211,1339079,1334495,1314239,362178,362207,362237,362241,362079,1324576,362149,1335547,361720,1005229,361880,361879,1324624,1338745,1339037,1329640,361859,1336193,1336397,1319973,362080,1324324,1337117,1329648,361980,1324378,362229,362185,1341151,362223,1329659,362203,1319250,1339164,1314240,362157,362153,1334417,1339071,362156,1314203,362137,1340624,362143,1334512,362120,1320142,362119,362109,362108"
+                        "related": "/places?filter[id][equals]=362150,362172,362228,362227,361858,361780,361888,1338774,361211,1339079,1334495,362121,1314239,362178,362207,362237,362241,362079,1324576,362149,1335547,361720,1005229,361880,361879,1324624,1338745,1339037,1329640,361859,1336193,1336397,1319973,362080,1324324,1337117,1329648,361980,1324378,362229,362185,1341151,362223,1329659,362203,1319250,1339164,1314240,362157,362153,1334417,1339071,362156,1314203,362137,1340624,362143,1334512,362120,1320142,362119,362109,362108"
                     }
                 }
             }, 
@@ -510,7 +862,7 @@
                     }, 
                     {
                         "day": 5, 
-                        "description": "On the way to Nashville, Tennessee, stop in Lynchburg and opt for a tour of the Jack Daniel's Distillery. Later, head out for live music and cowboy nightlife in this country music capital.\n\nTransport:\nPrivate Vehicle (4.00 hour(s))\nPrivate Vehicle (1.50-2.00 hours)", 
+                        "description": "On the way to Nashville, Tennessee, stop in Lynchburg for a tour of the Jack Daniels Distillery and opt for a sample or two. Later, head out for live music and cowboy nightlife in this country music capital.\n\nIncluded Activities:\nJack Daniel's Distillery Tour\n\nTransport:\nPrivate Vehicle (4.00 hour(s))\nPrivate Vehicle (1.50-2.00 hours)", 
                         "title": "Day 5 Atlanta/Nashville"
                     }, 
                     {
@@ -612,16 +964,16 @@
                 "itinerary": {}, 
                 "media": {}, 
                 "minimum_price": {
-                    "amount": 52.0, 
+                    "amount": 49.0, 
                     "currency": "USD", 
-                    "formatted_amount": "$52.0"
+                    "formatted_amount": "$49.0"
                 }, 
                 "name": "ABCs Nashville", 
                 "pricing": {
                     "regular_price": {
-                        "amount": 52.0, 
+                        "amount": 49.0, 
                         "currency": "USD", 
-                        "formatted_amount": "$52.0"
+                        "formatted_amount": "$49.0"
                     }
                 }, 
                 "provider": "viator", 
@@ -667,6 +1019,28 @@
                     }
                 }, 
                 "ancestry": {
+                    "data": [
+                        {
+                            "id": "362223", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362185", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361720", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361211", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1005229", 
+                            "type": "place"
+                        }
+                    ], 
                     "links": {
                         "related": "/places/362228/ancestry"
                     }
@@ -922,6 +1296,212 @@
             }, 
             "relationships": {
                 "places": {
+                    "data": [
+                        {
+                            "id": "362207", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361858", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362079", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362241", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362237", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361211", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362228", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362227", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361780", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1340624", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1314208", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362150", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1337475", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361814", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361888", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1338774", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1324609", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1339037", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361824", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1324619", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1335547", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361720", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1005229", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1339079", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362143", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1334512", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362137", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1334417", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1324576", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362149", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361880", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361879", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1324624", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1338745", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1329640", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361859", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1336193", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1336397", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1319973", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362080", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1324324", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1337117", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1329648", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361980", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1324378", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362229", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362185", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1341151", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362223", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1329659", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362203", 
+                            "type": "place"
+                        }
+                    ], 
                     "links": {
                         "related": "/places?filter[id][equals]=362207,361858,362079,362241,362237,361211,362228,362227,361780,1340624,1314208,362150,1337475,361814,361888,1338774,1324609,1339037,361824,1324619,1335547,361720,1005229,1339079,362143,1334512,362137,1334417,1324576,362149,361880,361879,1324624,1338745,1329640,361859,1336193,1336397,1319973,362080,1324324,1337117,1329648,361980,1324378,362229,362185,1341151,362223,1329659,362203"
                     }
@@ -1239,40 +1819,40 @@
                 ], 
                 "media": {
                     "images": [
-                        "http:https://media.gadventures.com/media-server/image_library/IMGP8905-web.jpg", 
-                        "http:https://media.gadventures.com/media-server/image_library/IMGP0279-web.jpg", 
-                        "http:https://media.gadventures.com/media-server/image_library/IMGP1610-web.jpg", 
-                        "http:https://media.gadventures.com/media-server/image_library/IMGP8847-web.jpg", 
-                        "http:https://media.gadventures.com/media-server/image_library/IMG_1511-web.jpg", 
-                        "http:https://media.gadventures.com/media-server/image_library/IMGP0772-web.jpg", 
-                        "http:https://media.gadventures.com/media-server/image_library/USA-Arizona-Grand-Canyon-Travellers-Group-Sunrise-Leo-Tamburri-2011-IMGP1203-Lg-RGB-web.jpg", 
-                        "http:https://media.gadventures.com/media-server/image_library/USA-California-San-Francisco-Skyline-Windigo-2013-IMG1336-Lg-RGB-web.jpg", 
-                        "http:https://media.gadventures.com/media-server/image_library/7081970_1080x810_Appalachia_United States.jpg", 
-                        "http:https://media.gadventures.com/media-server/image_library/7662017_1080x810_Bishop.jpg", 
-                        "http:https://media.gadventures.com/media-server/image_library/7793333_1080x810_Carlsbad_United States.jpg", 
-                        "http:https://media.gadventures.com/media-server/image_library/7222569_1080x810_Chicago_United States.jpg", 
-                        "http:https://media.gadventures.com/media-server/image_library/8152781_1080x810_Cody_United States.jpg", 
-                        "http:https://media.gadventures.com/media-server/image_library/8095411_1080x810_Custer State Park_United States.jpg", 
-                        "http:https://media.gadventures.com/media-server/image_library/8154326_1080x810_Devils Tower_United States.jpg", 
-                        "http:https://media.gadventures.com/media-server/image_library/7753246_1080x810_Durango_United States.jpg", 
-                        "http:https://media.gadventures.com/media-server/image_library/7451040_1080x810_Finger Lakes.jpg", 
-                        "http:https://media.gadventures.com/media-server/image_library/7629756_1080x810_Grand_Canyon_US.jpg", 
-                        "http:https://media.gadventures.com/media-server/image_library/8544675_1080x810_Grand_Canyon_National_Park_US.jpg", 
-                        "http:https://media.gadventures.com/media-server/image_library/8159786_1080x810_Jackson_United States.jpg", 
-                        "http:https://media.gadventures.com/media-server/image_library/7839635_1080x810_Las_Vegas_US.jpg", 
-                        "http:https://media.gadventures.com/media-server/image_library/6979253_1080x810_Memphis_United States.jpg", 
-                        "http:https://media.gadventures.com/media-server/image_library/7638717_1080x810_Monument_Valley_US.jpg", 
-                        "http:https://media.gadventures.com/media-server/image_library/6982574_1080x810_Nashville_United States.jpg", 
-                        "http:https://media.gadventures.com/media-server/image_library/7462553_1080x810_Newburgh.jpg", 
-                        "http:https://media.gadventures.com/media-server/image_library/6680784_1080x810_New Orleans_United States.jpg", 
-                        "http:https://media.gadventures.com/media-server/image_library/7462480_1080x810_New York_United States.jpg", 
-                        "http:https://media.gadventures.com/media-server/image_library/7462622_1080x810_Niagara Falls_United States.jpg", 
-                        "http:https://media.gadventures.com/media-server/image_library/7504485_1080x810_Sandusky.jpg", 
-                        "http:https://media.gadventures.com/media-server/image_library/7725049_1080x810_San_Francisco_US.jpg", 
-                        "http:https://media.gadventures.com/media-server/image_library/7823010_1080x810_Santa Fe_United States.jpg", 
-                        "http:https://media.gadventures.com/media-server/image_library/6487445_1080x810_Washington DC.jpg", 
-                        "http:https://media.gadventures.com/media-server/image_library/8174657_1080x810_Yellowstone National Park_United States.jpg", 
-                        "http:https://media.gadventures.com/media-server/image_library/7743995_1080x810_Yosemite_US.jpg"
+                        "https://media.gadventures.com/media-server/image_library/IMGP8905-web.jpg", 
+                        "https://media.gadventures.com/media-server/image_library/IMGP0279-web.jpg", 
+                        "https://media.gadventures.com/media-server/image_library/IMGP1610-web.jpg", 
+                        "https://media.gadventures.com/media-server/image_library/IMGP8847-web.jpg", 
+                        "https://media.gadventures.com/media-server/image_library/IMG_1511-web.jpg", 
+                        "https://media.gadventures.com/media-server/image_library/IMGP0772-web.jpg", 
+                        "https://media.gadventures.com/media-server/image_library/USA-Arizona-Grand-Canyon-Travellers-Group-Sunrise-Leo-Tamburri-2011-IMGP1203-Lg-RGB-web.jpg", 
+                        "https://media.gadventures.com/media-server/image_library/USA-California-San-Francisco-Skyline-Windigo-2013-IMG1336-Lg-RGB-web.jpg", 
+                        "https://media.gadventures.com/media-server/image_library/7081970_1080x810_Appalachia_United States.jpg", 
+                        "https://media.gadventures.com/media-server/image_library/7662017_1080x810_Bishop.jpg", 
+                        "https://media.gadventures.com/media-server/image_library/7793333_1080x810_Carlsbad_United States.jpg", 
+                        "https://media.gadventures.com/media-server/image_library/7222569_1080x810_Chicago_United States.jpg", 
+                        "https://media.gadventures.com/media-server/image_library/8152781_1080x810_Cody_United States.jpg", 
+                        "https://media.gadventures.com/media-server/image_library/8095411_1080x810_Custer State Park_United States.jpg", 
+                        "https://media.gadventures.com/media-server/image_library/8154326_1080x810_Devils Tower_United States.jpg", 
+                        "https://media.gadventures.com/media-server/image_library/7753246_1080x810_Durango_United States.jpg", 
+                        "https://media.gadventures.com/media-server/image_library/7451040_1080x810_Finger Lakes.jpg", 
+                        "https://media.gadventures.com/media-server/image_library/7629756_1080x810_Grand_Canyon_US.jpg", 
+                        "https://media.gadventures.com/media-server/image_library/8544675_1080x810_Grand_Canyon_National_Park_US.jpg", 
+                        "https://media.gadventures.com/media-server/image_library/8159786_1080x810_Jackson_United States.jpg", 
+                        "https://media.gadventures.com/media-server/image_library/7839635_1080x810_Las_Vegas_US.jpg", 
+                        "https://media.gadventures.com/media-server/image_library/6979253_1080x810_Memphis_United States.jpg", 
+                        "https://media.gadventures.com/media-server/image_library/7638717_1080x810_Monument_Valley_US.jpg", 
+                        "https://media.gadventures.com/media-server/image_library/6982574_1080x810_Nashville_United States.jpg", 
+                        "https://media.gadventures.com/media-server/image_library/7462553_1080x810_Newburgh.jpg", 
+                        "https://media.gadventures.com/media-server/image_library/6680784_1080x810_New Orleans_United States.jpg", 
+                        "https://media.gadventures.com/media-server/image_library/7462480_1080x810_New York_United States.jpg", 
+                        "https://media.gadventures.com/media-server/image_library/7462622_1080x810_Niagara Falls_United States.jpg", 
+                        "https://media.gadventures.com/media-server/image_library/7504485_1080x810_Sandusky.jpg", 
+                        "https://media.gadventures.com/media-server/image_library/7725049_1080x810_San_Francisco_US.jpg", 
+                        "https://media.gadventures.com/media-server/image_library/7823010_1080x810_Santa Fe_United States.jpg", 
+                        "https://media.gadventures.com/media-server/image_library/6487445_1080x810_Washington DC.jpg", 
+                        "https://media.gadventures.com/media-server/image_library/8174657_1080x810_Yellowstone National Park_United States.jpg", 
+                        "https://media.gadventures.com/media-server/image_library/7743995_1080x810_Yosemite_US.jpg"
                     ], 
                     "videos": []
                 }, 
@@ -1303,8 +1883,426 @@
             }, 
             "relationships": {
                 "places": {
+                    "data": [
+                        {
+                            "id": "361858", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361780", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361888", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1338774", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361211", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362150", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1339079", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1334495", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362121", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1314239", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362178", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362207", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362227", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362228", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362237", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362241", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362079", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361389", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361932", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1006590", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361952", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1315476", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361967", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361970", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361969", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1324539", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1324537", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1315480", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362131", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1314375", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362135", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362133", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1314428", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362124", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1337493", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362149", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361882", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362086", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1335113", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361372", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1324324", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361212", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1005229", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1324576", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1335547", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361720", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361880", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361879", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1324624", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1338745", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1339037", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1329640", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361859", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1319216", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361929", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361928", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1324505", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361942", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361954", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361968", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362108", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1339104", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362134", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362152", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362151", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1334417", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1339640", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361883", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1336193", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1336397", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1319973", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362080", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1337117", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1329648", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361980", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1324378", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362229", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362185", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1341151", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362223", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1329659", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362203", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1319250", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1339164", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362172", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1314240", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362157", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362153", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1339071", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362156", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1314203", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362137", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1340624", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362143", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1334512", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362120", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1320142", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362119", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362109", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1324328", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1314484", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1324330", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1324474", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361948", 
+                            "type": "place"
+                        }
+                    ], 
                     "links": {
-                        "related": "/places?filter[id][equals]=361858,361780,361888,1338774,361211,362150,1339079,1334495,1314239,362178,362207,362227,362228,362237,362241,362079,361389,361932,1006590,361952,1315476,361967,361970,361969,1324539,1324537,1315480,362131,1314375,362135,362133,1314428,362124,1337493,362149,361882,362086,1335113,361372,1324324,361212,1005229,1324576,1335547,361720,361880,361879,1324624,1338745,1339037,1329640,361859,1319216,361929,361928,1324505,361942,361954,361968,362108,1339104,362134,362152,362151,1334417,1339640,361883,1336193,1336397,1319973,362080,1337117,1329648,361980,1324378,362229,362185,1341151,362223,1329659,362203,1319250,1339164,362172,1314240,362157,362153,1339071,362156,1314203,362137,1340624,362143,1334512,362120,1320142,362119,362109,1324328,1314484,1324330,1324474,361948"
+                        "related": "/places?filter[id][equals]=361858,361780,361888,1338774,361211,362150,1339079,1334495,362121,1314239,362178,362207,362227,362228,362237,362241,362079,361389,361932,1006590,361952,1315476,361967,361970,361969,1324539,1324537,1315480,362131,1314375,362135,362133,1314428,362124,1337493,362149,361882,362086,1335113,361372,1324324,361212,1005229,1324576,1335547,361720,361880,361879,1324624,1338745,1339037,1329640,361859,1319216,361929,361928,1324505,361942,361954,361968,362108,1339104,362134,362152,362151,1334417,1339640,361883,1336193,1336397,1319973,362080,1337117,1329648,361980,1324378,362229,362185,1341151,362223,1329659,362203,1319250,1339164,362172,1314240,362157,362153,1339071,362156,1314203,362137,1340624,362143,1334512,362120,1320142,362119,362109,1324328,1314484,1324330,1324474,361948"
                     }
                 }
             }, 
@@ -1891,38 +2889,38 @@
                 ], 
                 "media": {
                     "images": [
-                        "http:https://media.gadventures.com/media-server/image_library/6680784_1080x810_New Orleans_United States.jpg", 
-                        "http:https://media.gadventures.com/media-server/image_library/7462480_1080x810_New York_United States.jpg", 
-                        "http:https://media.gadventures.com/media-server/image_library/7462622_1080x810_Niagara Falls_United States.jpg", 
-                        "http:https://media.gadventures.com/media-server/image_library/7504485_1080x810_Sandusky.jpg", 
-                        "http:https://media.gadventures.com/media-server/image_library/7725049_1080x810_San_Francisco_US.jpg", 
-                        "http:https://media.gadventures.com/media-server/image_library/7823010_1080x810_Santa Fe_United States.jpg", 
-                        "http:https://media.gadventures.com/media-server/image_library/6487445_1080x810_Washington DC.jpg", 
-                        "http:https://media.gadventures.com/media-server/image_library/8174657_1080x810_Yellowstone National Park_United States.jpg", 
-                        "http:https://media.gadventures.com/media-server/image_library/7743995_1080x810_Yosemite_US.jpg", 
-                        "http:https://media.gadventures.com/media-server/image_library/IMGP8905-web.jpg", 
-                        "http:https://media.gadventures.com/media-server/image_library/IMGP0279-web.jpg", 
-                        "http:https://media.gadventures.com/media-server/image_library/IMGP1610-web.jpg", 
-                        "http:https://media.gadventures.com/media-server/image_library/IMG_1511-web.jpg", 
-                        "http:https://media.gadventures.com/media-server/image_library/IMGP0772-web.jpg", 
-                        "http:https://media.gadventures.com/media-server/image_library/USA-Arizona-Grand-Canyon-Travellers-Group-Sunrise-Leo-Tamburri-2011-IMGP1203-Lg-RGB-web.jpg", 
-                        "http:https://media.gadventures.com/media-server/image_library/7081970_1080x810_Appalachia_United States.jpg", 
-                        "http:https://media.gadventures.com/media-server/image_library/7662017_1080x810_Bishop.jpg", 
-                        "http:https://media.gadventures.com/media-server/image_library/7793333_1080x810_Carlsbad_United States.jpg", 
-                        "http:https://media.gadventures.com/media-server/image_library/7222569_1080x810_Chicago_United States.jpg", 
-                        "http:https://media.gadventures.com/media-server/image_library/8152781_1080x810_Cody_United States.jpg", 
-                        "http:https://media.gadventures.com/media-server/image_library/8095411_1080x810_Custer State Park_United States.jpg", 
-                        "http:https://media.gadventures.com/media-server/image_library/8154326_1080x810_Devils Tower_United States.jpg", 
-                        "http:https://media.gadventures.com/media-server/image_library/7753246_1080x810_Durango_United States.jpg", 
-                        "http:https://media.gadventures.com/media-server/image_library/7451040_1080x810_Finger Lakes.jpg", 
-                        "http:https://media.gadventures.com/media-server/image_library/7629756_1080x810_Grand_Canyon_US.jpg", 
-                        "http:https://media.gadventures.com/media-server/image_library/8544675_1080x810_Grand_Canyon_National_Park_US.jpg", 
-                        "http:https://media.gadventures.com/media-server/image_library/8159786_1080x810_Jackson_United States.jpg", 
-                        "http:https://media.gadventures.com/media-server/image_library/7839635_1080x810_Las_Vegas_US.jpg", 
-                        "http:https://media.gadventures.com/media-server/image_library/6979253_1080x810_Memphis_United States.jpg", 
-                        "http:https://media.gadventures.com/media-server/image_library/7638717_1080x810_Monument_Valley_US.jpg", 
-                        "http:https://media.gadventures.com/media-server/image_library/6982574_1080x810_Nashville_United States.jpg", 
-                        "http:https://media.gadventures.com/media-server/image_library/7462553_1080x810_Newburgh.jpg"
+                        "https://media.gadventures.com/media-server/image_library/IMGP8905-web.jpg", 
+                        "https://media.gadventures.com/media-server/image_library/IMGP0279-web.jpg", 
+                        "https://media.gadventures.com/media-server/image_library/IMGP1610-web.jpg", 
+                        "https://media.gadventures.com/media-server/image_library/IMG_1511-web.jpg", 
+                        "https://media.gadventures.com/media-server/image_library/IMGP0772-web.jpg", 
+                        "https://media.gadventures.com/media-server/image_library/USA-Arizona-Grand-Canyon-Travellers-Group-Sunrise-Leo-Tamburri-2011-IMGP1203-Lg-RGB-web.jpg", 
+                        "https://media.gadventures.com/media-server/image_library/7081970_1080x810_Appalachia_United States.jpg", 
+                        "https://media.gadventures.com/media-server/image_library/7662017_1080x810_Bishop.jpg", 
+                        "https://media.gadventures.com/media-server/image_library/7793333_1080x810_Carlsbad_United States.jpg", 
+                        "https://media.gadventures.com/media-server/image_library/7222569_1080x810_Chicago_United States.jpg", 
+                        "https://media.gadventures.com/media-server/image_library/8152781_1080x810_Cody_United States.jpg", 
+                        "https://media.gadventures.com/media-server/image_library/8095411_1080x810_Custer State Park_United States.jpg", 
+                        "https://media.gadventures.com/media-server/image_library/8154326_1080x810_Devils Tower_United States.jpg", 
+                        "https://media.gadventures.com/media-server/image_library/7753246_1080x810_Durango_United States.jpg", 
+                        "https://media.gadventures.com/media-server/image_library/7451040_1080x810_Finger Lakes.jpg", 
+                        "https://media.gadventures.com/media-server/image_library/7629756_1080x810_Grand_Canyon_US.jpg", 
+                        "https://media.gadventures.com/media-server/image_library/8544675_1080x810_Grand_Canyon_National_Park_US.jpg", 
+                        "https://media.gadventures.com/media-server/image_library/8159786_1080x810_Jackson_United States.jpg", 
+                        "https://media.gadventures.com/media-server/image_library/7839635_1080x810_Las_Vegas_US.jpg", 
+                        "https://media.gadventures.com/media-server/image_library/6979253_1080x810_Memphis_United States.jpg", 
+                        "https://media.gadventures.com/media-server/image_library/7638717_1080x810_Monument_Valley_US.jpg", 
+                        "https://media.gadventures.com/media-server/image_library/6982574_1080x810_Nashville_United States.jpg", 
+                        "https://media.gadventures.com/media-server/image_library/7462553_1080x810_Newburgh.jpg", 
+                        "https://media.gadventures.com/media-server/image_library/6680784_1080x810_New Orleans_United States.jpg", 
+                        "https://media.gadventures.com/media-server/image_library/7462480_1080x810_New York_United States.jpg", 
+                        "https://media.gadventures.com/media-server/image_library/7462622_1080x810_Niagara Falls_United States.jpg", 
+                        "https://media.gadventures.com/media-server/image_library/7504485_1080x810_Sandusky.jpg", 
+                        "https://media.gadventures.com/media-server/image_library/7725049_1080x810_San_Francisco_US.jpg", 
+                        "https://media.gadventures.com/media-server/image_library/7823010_1080x810_Santa Fe_United States.jpg", 
+                        "https://media.gadventures.com/media-server/image_library/6487445_1080x810_Washington DC.jpg", 
+                        "https://media.gadventures.com/media-server/image_library/8174657_1080x810_Yellowstone National Park_United States.jpg", 
+                        "https://media.gadventures.com/media-server/image_library/7743995_1080x810_Yosemite_US.jpg"
                     ], 
                     "videos": []
                 }, 
@@ -1953,8 +2951,426 @@
             }, 
             "relationships": {
                 "places": {
+                    "data": [
+                        {
+                            "id": "362079", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361389", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361932", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1006590", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361952", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1315476", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361967", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361970", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361969", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1324539", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1324537", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1315480", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362131", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1314375", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362135", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362133", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1314428", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362124", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1337493", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362149", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361882", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361888", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361858", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361780", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1338774", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362150", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361211", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1339079", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1334495", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362121", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1314239", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362178", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362207", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362227", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362228", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362237", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362241", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362086", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1335113", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361372", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1324324", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361212", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1005229", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1324576", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1335547", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361720", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361880", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361879", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1324624", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1338745", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1339037", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1329640", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361859", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1319216", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361929", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361928", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1324505", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361942", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361954", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361968", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362108", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1339104", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362134", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362152", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362151", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1334417", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1339640", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361883", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1336193", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1336397", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1319973", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362080", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1337117", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1329648", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361980", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1324378", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362229", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362185", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1341151", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362223", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1329659", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362203", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1319250", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1339164", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362172", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1314240", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362157", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362153", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1339071", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362156", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1314203", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362137", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1340624", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362143", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1334512", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362120", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1320142", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362119", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362109", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1324328", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1314484", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1324330", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1324474", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361948", 
+                            "type": "place"
+                        }
+                    ], 
                     "links": {
-                        "related": "/places?filter[id][equals]=362079,361389,361932,1006590,361952,1315476,361967,361970,361969,1324539,1324537,1315480,362131,1314375,362135,362133,1314428,362124,1337493,362149,361882,361888,361858,361780,1338774,362150,361211,1339079,1334495,1314239,362178,362207,362227,362228,362237,362241,362086,1335113,361372,1324324,361212,1005229,1324576,1335547,361720,361880,361879,1324624,1338745,1339037,1329640,361859,1319216,361929,361928,1324505,361942,361954,361968,362108,1339104,362134,362152,362151,1334417,1339640,361883,1336193,1336397,1319973,362080,1337117,1329648,361980,1324378,362229,362185,1341151,362223,1329659,362203,1319250,1339164,362172,1314240,362157,362153,1339071,362156,1314203,362137,1340624,362143,1334512,362120,1320142,362119,362109,1324328,1314484,1324330,1324474,361948"
+                        "related": "/places?filter[id][equals]=362079,361389,361932,1006590,361952,1315476,361967,361970,361969,1324539,1324537,1315480,362131,1314375,362135,362133,1314428,362124,1337493,362149,361882,361888,361858,361780,1338774,362150,361211,1339079,1334495,362121,1314239,362178,362207,362227,362228,362237,362241,362086,1335113,361372,1324324,361212,1005229,1324576,1335547,361720,361880,361879,1324624,1338745,1339037,1329640,361859,1319216,361929,361928,1324505,361942,361954,361968,362108,1339104,362134,362152,362151,1334417,1339640,361883,1336193,1336397,1319973,362080,1337117,1329648,361980,1324378,362229,362185,1341151,362223,1329659,362203,1319250,1339164,362172,1314240,362157,362153,1339071,362156,1314203,362137,1340624,362143,1334512,362120,1320142,362119,362109,1324328,1314484,1324330,1324474,361948"
                     }
                 }
             }, 
@@ -2344,6 +3760,108 @@
             }, 
             "relationships": {
                 "places": {
+                    "data": [
+                        {
+                            "id": "362096", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362227", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362228", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362207", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362079", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362241", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362237", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361211", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1336193", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1336397", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1319973", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362080", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1324324", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361720", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1005229", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1337117", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1329648", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361980", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1324378", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362229", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362185", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1341151", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362223", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1329659", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362203", 
+                            "type": "place"
+                        }
+                    ], 
                     "links": {
                         "related": "/places?filter[id][equals]=362096,362227,362228,362207,362079,362241,362237,361211,1336193,1336397,1319973,362080,1324324,361720,1005229,1337117,1329648,361980,1324378,362229,362185,1341151,362223,1329659,362203"
                     }
@@ -2386,16 +3904,16 @@
                 "itinerary": {}, 
                 "media": {}, 
                 "minimum_price": {
-                    "amount": 59.0, 
+                    "amount": 55.0, 
                     "currency": "USD", 
-                    "formatted_amount": "$59.0"
+                    "formatted_amount": "$55.0"
                 }, 
                 "name": "Discover Nashville", 
                 "pricing": {
                     "regular_price": {
-                        "amount": 59.0, 
+                        "amount": 55.0, 
                         "currency": "USD", 
-                        "formatted_amount": "$59.0"
+                        "formatted_amount": "$55.0"
                     }
                 }, 
                 "provider": "viator", 
@@ -2641,8 +4159,270 @@
             }, 
             "relationships": {
                 "places": {
+                    "data": [
+                        {
+                            "id": "1329657", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362079", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362241", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362237", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361211", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362228", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362227", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362207", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362178", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1314239", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362153", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1340211", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1334495", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362121", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362150", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1338774", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361888", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1338766", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361780", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361858", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1339079", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362143", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1334512", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362137", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1335547", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1334417", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361720", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1005229", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1324576", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362149", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361880", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361879", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1324624", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1338745", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1339037", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1329640", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361859", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1336193", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1336397", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1319973", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362080", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1324324", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1337117", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1329648", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "361980", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1324378", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362229", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362185", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1341151", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362223", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1329659", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362203", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1319250", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1339164", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362172", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1314240", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362157", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1339071", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362156", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1314244", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1326478", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362119", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362109", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "362108", 
+                            "type": "place"
+                        }, 
+                        {
+                            "id": "1314203", 
+                            "type": "place"
+                        }
+                    ], 
                     "links": {
-                        "related": "/places?filter[id][equals]=1329657,362079,362241,362237,361211,362228,362227,362207,362178,1314239,362153,1340211,1334495,362150,1338774,361888,1338766,361780,361858,1339079,362143,1334512,362137,1335547,1334417,361720,1005229,1324576,362149,361880,361879,1324624,1338745,1339037,1329640,361859,1336193,1336397,1319973,362080,1324324,1337117,1329648,361980,1324378,362229,362185,1341151,362223,1329659,362203,1319250,1339164,362172,1314240,362157,1339071,362156,1314244,1326478,362119,362109,362108,1314203"
+                        "related": "/places?filter[id][equals]=1329657,362079,362241,362237,361211,362228,362227,362207,362178,1314239,362153,1340211,1334495,362121,362150,1338774,361888,1338766,361780,361858,1339079,362143,1334512,362137,1335547,1334417,361720,1005229,1324576,362149,361880,361879,1324624,1338745,1339037,1329640,361859,1336193,1336397,1319973,362080,1324324,1337117,1329648,361980,1324378,362229,362185,1341151,362223,1329659,362203,1319250,1339164,362172,1314240,362157,1339071,362156,1314244,1326478,362119,362109,362108,1314203"
                     }
                 }
             }, 

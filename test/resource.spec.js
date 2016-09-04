@@ -82,15 +82,18 @@ describe("Resource", function() {
 
   it("should work on a single resource", () => {
     const model = Resource.from(poi);
-
     expect(model).to.be.ok;
-  })
+    expect(model.containingPlace.ancestry.length).to.equal(6);
+    expect(model.containingPlace.activities.length).to.equal(10);
+    expect(model.containingPlace.activities[0].id).to.equal("g-NUFY");
+  });
 
   it("should add one to many relationships as instance properties", () => {
     const model = Resource.from(placeDoc);
 
     expect(model.name).to.equal("Nashville");
     expect(model.pois.length).to.equal(10);
+
     expect(model.pois[0].imageAssociations.from.type)
       .to.equal("image");
     expect(model.pois[0].imageAssociations.from.attribution.name)
