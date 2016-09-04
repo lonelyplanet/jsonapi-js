@@ -45,6 +45,8 @@ function createResourceFromDocument(document) {
   });
 }
 
+let count = 0;
+
 /**
  * An abstraction over JsonAPI resources
  * A Resource's attributes will be added as instance properties
@@ -151,7 +153,7 @@ export default class Resource {
     _.each(this.relationships, (rel, key) => {
       const camelKey = _.camelCase(key);
 
-      // Admitedly don't love this, but inifinite loops happen when recursing. TM
+      // Admittedly don't love this, but infinite loops happen when recursing. TM
       if (!rel.data || Resource.ignoreRelationships.indexOf(key) > -1) {
         return;
       }
@@ -162,12 +164,33 @@ export default class Resource {
             i.type === relatedResource.type &&
             i.id === relatedResource.id);
 
+
           if (related) {
             this[camelKey] = this[camelKey] || [];
-            this[camelKey].push(createResourceFromDocument({
-              ...related,
-              included: this._included,
-            }));
+
+            // Sometimes a relationship will have a reference to the current resource
+            // For example 1341151 has activity g-nufy and g-nufy has 1341151 as a place
+            let relatedHasReferenceToThis = false;
+            _.each(related.relationships, (rel) => {
+              if (Array.isArray(rel.data) &&
+                rel.data.find(r =>
+                  r.id === this.id &&
+                  r.type === this.type
+                )) {
+                relatedHasReferenceToThis = true;
+              } else if (rel.data && rel.data.id === this.id && rel.data.type === this.type) {
+                relatedHasReferenceToThis = true;
+              }
+            });
+
+            if (relatedHasReferenceToThis) {
+              this[camelKey].push(createResourceFromDocument({ ...related }));
+            } else {
+              this[camelKey].push(createResourceFromDocument({
+                ...related,
+                included: this._included,
+              }));
+            }
           }
         });
       } else {
