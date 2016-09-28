@@ -139,6 +139,13 @@ function unbuild(url) {
   };
 }
 
+function isArrayOfCustomFilters(arry) {
+  return Boolean(
+    Array.isArray(arry) &&
+    arry.map(fi => typeof fi).filter(ft => ft === "object").length
+  );
+}
+
 function createFilter(key, value) {
   // filter[poi_type]
   const baseFilter = key ? `filter[${underscore(key)}]` : "";
@@ -158,13 +165,20 @@ function createFilter(key, value) {
       filterString += createFilter(key, value.join(","));
     }
   } else if (typeof value === "object") {
+    // [value.operator]=value.value
     if (value.operator && value.value) {
       filterString += `${baseFilter}[${underscore(value.operator)}]=${value.value}`;
     } else {
+      // filter[resource][field][operator]=value
       const keys = value;
-      filterString += Object.keys(keys).map(relKey =>
-        `${baseFilter}[${underscore(relKey)}]${createFilter(null, value[relKey])}`
-      ).join("&");
+
+      filterString += Object.keys(keys).map(relKey => {
+        if (isArrayOfCustomFilters(value[relKey])) {
+          return value[relKey].map((obj) =>
+            `${baseFilter}[${underscore(relKey)}]${createFilter(null, obj)}`).join("&");
+        }
+        return `${baseFilter}[${underscore(relKey)}]${createFilter(null, value[relKey])}`;
+      }).join("&");
     }
   }
 
