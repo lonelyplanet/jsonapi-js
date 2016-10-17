@@ -46,7 +46,8 @@ const makeRequest = function makeRequest(url, callback) {
     }
   })
   .catch(e => {
-    if (e.message.test(/Not Found/)) {
+    console.log(e.message)
+    if (e.message.match(/Not Found/)) {
       return callback(null, null);
     }
 
