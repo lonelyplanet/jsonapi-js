@@ -5,8 +5,8 @@
   "scripts": {
     "build": "NODE_ENV=test npm test && rimraf dist/* && npm run build:prod",
     "build:ci": "NODE_ENV=development babel -d dist src --watch",
-    "build:prod": "NODE_ENV=development babel -d dist src",
-    "build:dev": "NODE_ENV=production babel -d dist src",
+    "build:prod": "NODE_ENV=production babel -d dist src",
+    "build:dev": "NODE_ENV=develop babel -d dist src",
     "prepublish": "npm run build",
     "test": "NODE_ENV=test mocha --colors --reporter dot --compilers js:babel-register --recursive test/",
     "test:cov": "NODE_ENV=test istanbul cover node_modules/mocha/bin/_mocha -- --colors --reporter dot --compilers js:babel-register --recursive test/",
