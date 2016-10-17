@@ -10,13 +10,11 @@ const _ = {
   isEmpty,
 };
 
-const responseCache = {};
-
 // Private makeRequest method to pass to our circuitbreaker
 const makeRequest = function makeRequest(url, callback) {
   return isofetch(url).then((response) => {
     if (response.status === 404) {
-      return callback(null, null);
+      throw new Error(`Not Found: ${url}`);
     }
 
     return response.json();
@@ -42,7 +40,6 @@ const makeRequest = function makeRequest(url, callback) {
 
     try {
       const model = body;
-      responseCache[url] = body;
       return callback(null, _.isEmpty(model) ? null : model);
     } catch (e) {
       return callback(e);
@@ -59,7 +56,6 @@ const makeRequest = function makeRequest(url, callback) {
  * @param {object} [options.filter] - An object of filters
  * @param {number} [options.page] - Number of the page to fetch
  * @param {number} [options.perPage] - How many results per page
- * @param {boolean} [options.cache] = true - Whether to cache the response
  * @return {promise} A promise
  */
 function fetch({
@@ -68,7 +64,6 @@ function fetch({
   filters,
   page,
   perPage,
-  cache = false,
   sort,
 } = {}) {
   return new Promise((resolve, reject) => {
@@ -85,10 +80,6 @@ function fetch({
 
     // Keeping in for now as we're working through OP issues
     process.env.NODE_ENV === "development" && console.log(url);
-
-    if (cache && responseCache[url]) {
-      return resolve(responseCache[url]);
-    }
 
     const breaker = circuitbreaker(makeRequest, {
       timeout: process.env.JSONAPIJS_TIMEOUT || 20000,
