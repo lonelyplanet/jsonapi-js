@@ -14,7 +14,7 @@ const _ = {
 const makeRequest = function makeRequest(url, callback) {
   return isofetch(url).then((response) => {
     if (response.status === 404) {
-      throw new Error(`Not Found: ${url}`);
+      throw new Error("Not Found");
     }
 
     return response.json();
@@ -45,7 +45,13 @@ const makeRequest = function makeRequest(url, callback) {
       return callback(e);
     }
   })
-  .catch(e => callback(e, null));
+  .catch(e => {
+    if (e.message.test(/Not Found/)) {
+      return callback(null, null);
+    }
+
+    return callback(e, null);
+  });
 };
 
 /**
