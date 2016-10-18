@@ -6,7 +6,6 @@ require("dotenv").config({ path: (process.env.ENV_PATH || ".env.test" ) });
   If it does export default, than use import module from "../path"
  */
 
-// Open Planet
 // It would be sorta silly to test these ones since it's just mock data?
 require("../src/core/request");
 require("../src/core/resource");
