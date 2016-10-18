@@ -10,32 +10,38 @@ const _ = {
   isEmpty,
 };
 
+export function processErrors({ url, body, callback }) {
+  const errors = body.errors;
+
+  if (errors.length === 1) {
+    const error = errors[0];
+
+    if (error.status === "404") {
+      return callback(null, null);
+    }
+
+    return callback(new Error(
+      `JSONAPI ${error.title}: ${error.detail} on ${url}`
+    ));
+  }
+
+  return callback(
+    new Error(`JSONAPI ${errors.map(e => `${e.title} ${e.detail}`).join("\n")}`)
+  );
+}
+
 // Private makeRequest method to pass to our circuitbreaker
 const makeRequest = function makeRequest(url, callback) {
   return isofetch(url).then((response) => {
-    if (response.status === 404) {
-      throw new Error("Not Found");
+    if (response.status !== 500) {
+      return response.json();
     }
 
-    return response.json();
+    throw new Error(`JSONAPI Error on: ${url}`);
   })
   .then((body) => {
-    const errors = body.errors;
-
-    if (errors && errors.length && errors.length === 1) {
-      const error = errors[0];
-
-      if (error.status === "404") {
-        return callback(null, null);
-      }
-
-      return callback(new Error(
-        `Open Planet ${error.title}: ${error.detail} on ${url}`
-      ));
-    } else if (errors && errors.length > 1) {
-      return callback(
-        new Error(`Open Planet ${errors.map(e => `${e.title} ${e.detail}`).join("\n")}`)
-      );
+    if (body.errors) {
+      return processErrors({ url, body, callback });
     }
 
     try {
@@ -45,13 +51,7 @@ const makeRequest = function makeRequest(url, callback) {
       return callback(e);
     }
   })
-  .catch(e => {
-    if (e.message.test(/Not Found/)) {
-      return callback(null, null);
-    }
-
-    return callback(e, null);
-  });
+  .catch(e => callback(e, null));
 };
 
 /**
@@ -99,7 +99,7 @@ function fetch({
       })
       .fail((err) => {
         if (err.message.match(/CircuitBreaker timeout/)) {
-          return reject(new Error("Couldn't connect to Open Planet"));
+          return reject(new Error(`Couldn't connect to ${process.env.JSONAPIJS_HOST}`));
         }
 
         return reject(err);
