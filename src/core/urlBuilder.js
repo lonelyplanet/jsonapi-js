@@ -54,7 +54,7 @@ function createOperatorObject(memo, keys, value) {
     }
     case 3: {
       const [relationship, ...rest] = keys;
-      filter[relationship] = createOperatorObject({}, rest, value);
+      filter[relationship] = Object.assign({}, filter[relationship] || {}, createOperatorObject({}, rest, value));
       break;
     }
     default:
@@ -122,7 +122,7 @@ function parseQueryString(url) {
 * Parse a url and returns it's filters, includes, and pagination params
 * @param {string} url A url to parse
 * @example
-* unbuild("http://api.lonelyplanet.com/foo?bar=1"); // { base: "http://api.lonelyplanet.com", resource: "foo" ... } 
+* unbuild("http://api.lonelyplanet.com/foo?bar=1"); // { base: "http://api.lonelyplanet.com", resource: "foo" ... }
 */
 function unbuild(url) {
   const { base, resource } = getBaseParams(url);
@@ -282,7 +282,6 @@ function build({
   let url = `${base}${parsed}`;
 
   const params = unbuild(`${base}${resource}`);
-
   const merged = _.merge({}, {
     include: params.includes,
     page: params.page,
