@@ -214,6 +214,20 @@ describe("urlBuilder", () => {
     expect(filterString).to.equal("http://api.lonelyplanet.com/partner-activities?filter[partner_activity][place][equals]=362079&filter[partner_activity][duration][to]=4320&filter[partner_activity][price][between]=385,1000");
   });
 
+  it("should merge unbuilt url and filter object without creating duplicates", () => {
+    const filterString = build({
+      base: "http://api.lonelyplanet.com",
+      resource:'/partner-activities?filter[partner_activity][duration][to]=4320&filter[partner_activity][place][equals]=362079&filter[partner_activity][price][between]=385,1000&page[limit]=10&page[offset]=10',
+      filters: {
+        partner_activity: {
+          duration: { operator: 'to', value: 4320 },
+          price: { operator: 'between', value: '385,1000' } },
+        }
+    });
+
+    expect(filterString).to.equal("http://api.lonelyplanet.com/partner-activities?filter[partner_activity][duration][to]=4320&filter[partner_activity][place][equals]=362079&filter[partner_activity][price][between]=385,1000&page[limit]=10&page[offset]=10");
+  });
+
   it("should unbuild the query string with a nested filter object", () => {
     const filterString = {
       base: "http://api.lonelyplanet.com",

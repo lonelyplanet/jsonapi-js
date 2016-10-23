@@ -1,8 +1,9 @@
 import merge from "lodash/merge";
 import map from "lodash/map";
+import mapKeys from "lodash/mapKeys";
 import camelCase from "lodash/camelCase";
 
-const _ = { merge, map, camelCase };
+const _ = { merge, map, mapKeys, camelCase };
 
 /**
  * Take a cacmelCaseString and return camel_case_string;
@@ -252,6 +253,15 @@ function buildQuery({ includes = [], filters = {}, page, perPage, sort, }) {
 }
 
 /**
+ * Take an object and convert all of its keys to camelCase;
+ * @param  {object} obj An object of filters
+ * @return {object} An object with camelCased keys
+ */
+function formatFilterKeys(filterObject) {
+  return _.mapKeys(filterObject, (value, key) => _.camelCase(key));
+}
+
+/**
  * Builds a url for fetching resources
  * @param  {object} options={} - Options for this request
  * @param  {string} options.base="" - The base url for the API
@@ -282,6 +292,10 @@ function build({
   let url = `${base}${parsed}`;
 
   const params = unbuild(`${base}${resource}`);
+
+  // incoming filters need to be formated the same way as
+  // when being unbuilt from the url string
+  filters = formatFilterKeys(filters);
   const merged = _.merge({}, {
     include: params.includes,
     page: params.page,
