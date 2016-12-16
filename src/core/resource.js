@@ -1,107 +1,25 @@
+// @flow
+
 import clone from "lodash/clone";
 import each from "lodash/each";
 import find from "lodash/find";
 import camelCase from "lodash/camelCase";
-import memoize from "lodash/memoize";
 import isEmpty from "lodash/isEmpty";
 import { fetch } from "./request";
 
-const _ = {
-  clone, each, find, camelCase, memoize, isEmpty,
+export type IResource = {
+  id: number,
+  type: string,
+  attributes: Object,
+  relationships: Object,
+  meta: Object,
+  links: Object,
+  included: Array<Object>,
 };
 
-/**
- * Recursively process a document
- * @param  {object} document A JsonAPI Document
- * @return {Resource | [Resource]}  Returns a resource or an array of resources
- */
-function createResourceFromDocument(document) {
-  if (Array.isArray(document.data)) {
-    return createResourceFromCollectionDocument(document);
-  } else {
-    const resources = createResourceFromCollectionDocument({
-      ...document,
-      data: [document.data],
-    });
-    if (!_.isEmpty(resources)) {
-      return resources[0];
-    } else {
-      return null;
-    }
-  }
-}
-
-function createResourceFromCollectionDocument(document) {
-  const resources = [];
-  const included = [];
-
-  _.each(document.data, (d) => {
-    if (d) {
-      addResource(resources, {
-        ...d,
-        included: document.included,
-        links: d.links,
-      });
-    }
-  });
-
-  document.included.map(d => addResource(included, d));
-
-  var allDocuments = {};
-
-  _.each(resources, (r) => allDocuments[r.resourceLinkage] = r);
-  _.each(included, (r) => {
-    if (!allDocuments[r.resourceLinkage]) {
-      allDocuments[r.resourceLinkage] = r
-    }
-  });
-
-  _.each(allDocuments, (r) => r.resource._create(allDocuments));
-
-  return resources.map((r) => r.resource)
-}
-
-function addResource(resources, data) {
-  const resource = createSingleResource(data);
-
-  if (resource) {
-    resources.push({
-      "resourceLinkage": resourceLinkageKey(resource),
-      "resource": resource
-    });
-  }
-}
-
-function createSingleResource(document) {
-  const doc = document.data ? document.data : document;
-  const links = document.links;
-  const included = document.included;
-
-  if (!doc.type || !doc.id) {
-    console.log(doc);
-    return null;
-  }
-
-  const { id, type, attributes, relationships, meta } = doc;
-
-  return new Resource({
-    id,
-    type,
-    attributes,
-    relationships,
-    meta,
-    links,
-    included,
-  });
-}
-
-function resourceLinkageKey(resource) {
-  if (!resource.type || !resource.id) {
-    return
-  }
-
-  return resource.type + "_" + resource.id
-}
+const _ = {
+  clone, each, find, camelCase, isEmpty,
+};
 
 /**
  * An abstraction over JsonAPI resources
@@ -120,13 +38,25 @@ export default class Resource {
    * @return {Resource} An instance of the Resource class
    */
   static from(document) {
-    const run = _.memoize(createResourceFromDocument);
-    const resource = run(document);
+    const resource = createResourceFromDocument(document);
+
+    if (!resource) return null;
 
     return Array.isArray(resource) ?
-      resource.map(r => r.toJs()) :
+      resource.filter(r => r).map(r => r.toJs()) :
       resource.toJs();
   }
+
+  id: number;
+  type: string;
+  attributes: Object;
+  relationships: Object;
+  links: Object;
+  meta: Object;
+  included: Array<Object>;
+  _fetch: () => Promise<Resource>;
+  _attributes: Object;
+
   /**
    * Constructor for a resource
    * @param  {string} options
@@ -147,8 +77,8 @@ export default class Resource {
     links = {},
     meta = {},
     included = [],
-  } = {},
-  _fetch = fetch) {
+  }: IResource = {},
+  _fetch: Function = fetch) {
     this.id = id;
     this.type = type;
     this.relationships = relationships;
@@ -222,7 +152,7 @@ export default class Resource {
         });
 
         if (!_.isEmpty(linked)) {
-          this[camelKey] = linked
+          this[camelKey] = linked;
         }
       } else {
         const related = allResources[resourceLinkageKey(rel.data)];
@@ -265,3 +195,92 @@ export default class Resource {
     return this._js;
   }
 }
+
+function resourceLinkageKey(resource: Resource): string {
+  if (!resource.type || !resource.id) {
+    return "";
+  }
+
+  return `${resource.type}_${resource.id}`;
+}
+
+function createSingleResource(document): Resource {
+  const doc = document.data ? document.data : document;
+  const links = document.links;
+  const included = document.included;
+
+  const { id, type, attributes, relationships, meta } = doc;
+
+  return new Resource({
+    id,
+    type,
+    attributes,
+    relationships,
+    meta,
+    links,
+    included,
+  });
+}
+
+function addResource(data): { resourceLinkage: string, resource: Resource } {
+  const resource = createSingleResource(data);
+  return {
+    resourceLinkage: resourceLinkageKey(resource),
+    resource,
+  };
+}
+
+function createResourceFromCollectionDocument(document) {
+  const resources = [];
+  const included = [];
+
+  _.each(document.data, (d) => {
+    if (d) {
+      resources.push(addResource({
+        ...d,
+        included: document.included,
+        links: d.links,
+      }));
+    }
+  });
+  _.each(document.included, (d) => included.push(addResource(d)));
+
+  const allDocuments = {};
+
+  _.each(resources, (r) => {
+    allDocuments[r.resourceLinkage] = r;
+  });
+
+  _.each(included, (r) => {
+    if (!allDocuments[r.resourceLinkage]) {
+      allDocuments[r.resourceLinkage] = r;
+    }
+  });
+
+  _.each(allDocuments, (r) => r.resource._create(allDocuments));
+
+  return resources.map((r) => r.resource);
+}
+
+/**
+ * Recursively process a document
+ * @param  {object} document A JsonAPI Document
+ * @return {Resource | [Resource]}  Returns a resource or an array of resources
+ */
+function createResourceFromDocument(document): Resource | Resource[] | null {
+  if (Array.isArray(document.data)) {
+    return createResourceFromCollectionDocument(document);
+  }
+
+  const resources = createResourceFromCollectionDocument({
+    ...document,
+    data: [document.data],
+  });
+
+  if (!_.isEmpty(resources)) {
+    return resources[0];
+  }
+
+  return null;
+}
+
