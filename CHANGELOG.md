@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.3.0"></a>
+# [0.3.0](https://github.com/lonelyplanet/jsonapi-js/compare/v0.2.26...v0.3.0) (2017-03-09)
+
+
+### Features
+
+* Add standard version to generate a changelog. Winning. ([9d24475](https://github.com/lonelyplanet/jsonapi-js/commit/9d24475))
+
+
+
 <a name="0.2.26"></a>
 ## [0.2.26](https://github.com/lonelyplanet/jsonapi-js/compare/v0.2.25...v0.2.26) (2017-03-09)
 
