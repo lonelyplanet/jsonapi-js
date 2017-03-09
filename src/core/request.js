@@ -32,13 +32,9 @@ export function processErrors({ url, body, callback }) {
 
 // Private makeRequest method to pass to our circuitbreaker
 const makeRequest = function makeRequest(url, callback) {
-  return isofetch(url).then((response) => {
-    if (response.status !== 500) {
-      return response.json();
-    }
-
-    throw new Error(`JSONAPI Error on: ${url}`);
-  })
+  return isofetch(url).then((response) =>
+    response.json()
+  )
   .then((body) => {
     if (body.errors) {
       return processErrors({ url, body, callback });
