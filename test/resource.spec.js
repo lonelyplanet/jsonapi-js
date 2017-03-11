@@ -76,8 +76,6 @@ describe("Resource", function() {
     expect(model.parent.name).to.equal("Tennessee");
     expect(model._links).to.not.be.ok;
     expect(model instanceof Resource).to.not.be.ok;
-
-    expect(JSON.stringify(model)).to.be.ok;
   });
 
   it("should work on a single resource", () => {

@@ -1,51 +1,25 @@
+// @flow
+
 import clone from "lodash/clone";
 import each from "lodash/each";
 import find from "lodash/find";
 import camelCase from "lodash/camelCase";
-import memoize from "lodash/memoize";
 import isEmpty from "lodash/isEmpty";
 import { fetch } from "./request";
 
-const _ = {
-  clone, each, find, camelCase, memoize, isEmpty,
+export type IResource = {
+  id: number,
+  type: string,
+  attributes: Object,
+  relationships: Object,
+  meta: Object,
+  links: Object,
+  included: Array<Object>,
 };
 
-/**
- * Recursively process a document
- * @param  {object} document A JsonAPI Document
- * @return {Resource | [Resource]}  Returns a resorce or an array of resources
- */
-function createResourceFromDocument(document) {
-  if (Array.isArray(document.data)) {
-    return document.data.map((d) => createResourceFromDocument({
-      ...d,
-      included: document.included,
-      links: d.links,
-    }));
-  }
-
-  const doc = document.data ? document.data : document;
-  const links = document.links;
-  const included = document.included;
-
-  if (!doc.type || !doc.id) {
-    return null;
-  }
-
-  const { id, type, attributes, relationships, meta } = doc;
-
-  return new Resource({
-    id,
-    type,
-    attributes,
-    relationships,
-    meta,
-    links,
-    included,
-  });
-}
-
-let count = 0;
+const _ = {
+  clone, each, find, camelCase, isEmpty,
+};
 
 /**
  * An abstraction over JsonAPI resources
@@ -64,13 +38,25 @@ export default class Resource {
    * @return {Resource} An instance of the Resource class
    */
   static from(document) {
-    const run = _.memoize(createResourceFromDocument);
-    const resource = run(document);
+    const resource = createResourceFromDocument(document);
+
+    if (!resource) return null;
 
     return Array.isArray(resource) ?
-      resource.map(r => r.toJs()) :
+      resource.filter(r => r).map(r => r.toJs()) :
       resource.toJs();
   }
+
+  id: number;
+  type: string;
+  attributes: Object;
+  relationships: Object;
+  links: Object;
+  meta: Object;
+  included: Array<Object>;
+  _fetch: () => Promise<Resource>;
+  _attributes: Object;
+
   /**
    * Constructor for a resource
    * @param  {string} options
@@ -91,8 +77,8 @@ export default class Resource {
     links = {},
     meta = {},
     included = [],
-  } = {},
-  _fetch = fetch) {
+  }: IResource = {},
+  _fetch: Function = fetch) {
     this.id = id;
     this.type = type;
     this.relationships = relationships;
@@ -101,9 +87,6 @@ export default class Resource {
 
     this._fetch = _fetch;
     this._attributes = attributes;
-    this._included = included;
-
-    this._create();
   }
   fetch(...args) {
     return new Promise((resolve, reject) => {
@@ -142,10 +125,10 @@ export default class Resource {
     });
   }
   /**
-   * Recursively parses the document and adds relationships and attributes to the instance
+   * Adds relationships and attributes to the instance
    * @private
    */
-  _create() {
+  _create(allResources) {
     _.each(this._attributes, (attribute, key) => {
       this[_.camelCase(key)] = _.clone(attribute);
     });
@@ -153,56 +136,29 @@ export default class Resource {
     _.each(this.relationships, (rel, key) => {
       const camelKey = _.camelCase(key);
 
-      // Admittedly don't love this, but infinite loops happen when recursing. TM
       if (!rel.data || Resource.ignoreRelationships.indexOf(key) > -1) {
         return;
       }
 
       if (Array.isArray(rel.data)) {
-        _.each(rel.data, (relatedResource) => {
-          const related = _.find(this._included, i =>
-            i.type === relatedResource.type &&
-            i.id === relatedResource.id);
+        const linked = [];
 
+        _.each(rel.data, (relatedResource) => {
+          const related = allResources[resourceLinkageKey(relatedResource)];
 
           if (related) {
-            this[camelKey] = this[camelKey] || [];
-
-            // Sometimes a relationship will have a reference to the current resource
-            // For example 1341151 has activity g-nufy and g-nufy has 1341151 as a place
-            let relatedHasReferenceToThis = false;
-            _.each(related.relationships, (rel) => {
-              if (Array.isArray(rel.data) &&
-                rel.data.find(r =>
-                  r.id === this.id &&
-                  r.type === this.type
-                )) {
-                relatedHasReferenceToThis = true;
-              } else if (rel.data && rel.data.id === this.id && rel.data.type === this.type) {
-                relatedHasReferenceToThis = true;
-              }
-            });
-
-            if (relatedHasReferenceToThis) {
-              this[camelKey].push(createResourceFromDocument({ ...related }));
-            } else {
-              this[camelKey].push(createResourceFromDocument({
-                ...related,
-                included: this._included,
-              }));
-            }
+            linked.push(related.resource);
           }
         });
+
+        if (!_.isEmpty(linked)) {
+          this[camelKey] = linked;
+        }
       } else {
-        const related = _.find(this._included, i =>
-          i.type === rel.data.type &&
-          i.id === rel.data.id);
+        const related = allResources[resourceLinkageKey(rel.data)];
 
         if (related) {
-          this[camelKey] = createResourceFromDocument({
-            ...related,
-            included: this._included,
-          });
+          this[camelKey] = related.resource;
         }
       }
     });
@@ -212,29 +168,119 @@ export default class Resource {
    * @return {[type]} [description]
    */
   toJs() {
-    const js = {};
+    if (!this._js) {
+      this._js = {};
+      Object.keys(this).forEach((key) => {
+        // Removes "private" things
+        if (this.hasOwnProperty(key) && key[0] !== "_") {
+          if (this[key] instanceof Resource) {
+            this._js[key] = this[key].toJs();
+          } else if (Array.isArray(this[key])) {
+            this._js[key] = this[key].reduce((memo, i) => {
+              if (i instanceof Resource) {
+                memo.push(i.toJs());
+              } else {
+                memo.push(i);
+              }
 
-    Object.keys(this).forEach((key) => {
-      // Removes "private" things
-      if (this.hasOwnProperty(key) && key[0] !== "_") {
-        if (this[key] instanceof Resource) {
-          js[key] = this[key].toJs();
-        } else if (Array.isArray(this[key])) {
-          js[key] = this[key].reduce((memo, i) => {
-            if (i instanceof Resource) {
-              memo.push(i.toJs());
-            } else {
-              memo.push(i);
-            }
-
-            return memo;
-          }, []);
-        } else {
-          js[key] = this[key];
+              return memo;
+            }, []);
+          } else {
+            this._js[key] = this[key];
+          }
         }
-      }
-    });
+      });
+    }
 
-    return js;
+    return this._js;
   }
 }
+
+function resourceLinkageKey(resource: Resource): string {
+  if (!resource.type || !resource.id) {
+    return "";
+  }
+
+  return `${resource.type}_${resource.id}`;
+}
+
+function createSingleResource(document): Resource {
+  const doc = document.data ? document.data : document;
+  const links = document.links;
+  const included = document.included;
+
+  const { id, type, attributes, relationships, meta } = doc;
+
+  return new Resource({
+    id,
+    type,
+    attributes,
+    relationships,
+    meta,
+    links,
+    included,
+  });
+}
+
+function addResource(data): { resourceLinkage: string, resource: Resource } {
+  const resource = createSingleResource(data);
+  return {
+    resourceLinkage: resourceLinkageKey(resource),
+    resource,
+  };
+}
+
+function createResourceFromCollectionDocument(document) {
+  const resources = [];
+  const included = [];
+
+  _.each(document.data, (d) => {
+    if (d) {
+      resources.push(addResource({
+        ...d,
+        included: document.included,
+        links: d.links,
+      }));
+    }
+  });
+  _.each(document.included, (d) => included.push(addResource(d)));
+
+  const allDocuments = {};
+
+  _.each(resources, (r) => {
+    allDocuments[r.resourceLinkage] = r;
+  });
+
+  _.each(included, (r) => {
+    if (!allDocuments[r.resourceLinkage]) {
+      allDocuments[r.resourceLinkage] = r;
+    }
+  });
+
+  _.each(allDocuments, (r) => r.resource._create(allDocuments));
+
+  return resources.map((r) => r.resource);
+}
+
+/**
+ * Recursively process a document
+ * @param  {object} document A JsonAPI Document
+ * @return {Resource | [Resource]}  Returns a resource or an array of resources
+ */
+function createResourceFromDocument(document): Resource | Resource[] | null {
+  if (Array.isArray(document.data)) {
+    return createResourceFromCollectionDocument(document);
+  }
+
+  const resources = createResourceFromCollectionDocument({
+    ...document,
+    data: [document.data],
+  });
+
+  if (!_.isEmpty(resources)) {
+    return resources[0];
+  }
+
+  return null;
+}
+
