@@ -112,6 +112,8 @@ function parseQueryString(url) {
       }
     } else if (urlPart.startsWith("sort")) {
       qs.sort = value;
+    } else if (urlPart.startsWith("expanded_children")) {
+      qs.expanded = value;
     }
 
 
@@ -127,7 +129,7 @@ function parseQueryString(url) {
 */
 function unbuild(url) {
   const { base, resource } = getBaseParams(url);
-  const { filters, includes, perPage, page, sort } = parseQueryString(decodeURIComponent(url));
+  const { filters, includes, perPage, page, sort, expanded_children } = parseQueryString(decodeURIComponent(url));
 
   return {
     base,
@@ -137,6 +139,7 @@ function unbuild(url) {
     perPage,
     page,
     sort,
+    expanded_children
   };
 }
 
@@ -230,7 +233,7 @@ const createIncludes = (include) => {
   return `include=${include.join(",")}`;
 };
 
-function buildQuery({ includes = [], filters = {}, page, perPage, sort, }) {
+function buildQuery({ includes = [], filters = {}, page, perPage, sort, expanded_children, }) {
   const urlParts = [];
 
   if (includes.length) {
@@ -247,6 +250,10 @@ function buildQuery({ includes = [], filters = {}, page, perPage, sort, }) {
 
   if (sort) {
     urlParts.push(`sort=${sort}`)
+  }
+
+  if (expanded_children) {
+    urlParts.push(`expanded_children=${expanded_children}`)
   }
 
   return urlParts.filter(part => part).join("&");
@@ -285,6 +292,7 @@ function build({
   page,
   perPage,
   sort,
+  expanded_children,
 } = {}) {
   const parsed = `${resource.substr(0, 1) === "/" ? "" : "/"}${resource}`
     .replace(/\?(.*)$/, "");
@@ -302,8 +310,9 @@ function build({
     filters: params.filters,
     perPage: params.perPage,
     sort: params.sort,
+    expanded_children: params.expanded_children,
   }, {
-    includes, page, filters, perPage, sort,
+    includes, page, filters, perPage, sort, expanded_children,
   });
   const query = buildQuery(merged);
 
