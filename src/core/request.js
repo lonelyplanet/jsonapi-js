@@ -67,6 +67,7 @@ function fetch({
   page,
   perPage,
   sort,
+  expanded_children
 } = {}) {
   return new Promise((resolve, reject) => {
     const base = process.env.JSONAPIJS_HOST;
@@ -78,6 +79,7 @@ function fetch({
       page,
       perPage,
       sort,
+      expanded_children,
     });
 
     // Keeping in for now as we're working through OP issues
