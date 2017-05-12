@@ -164,33 +164,30 @@ export default class Resource {
             i.type === relatedResource.type &&
             i.id === relatedResource.id);
 
-
           if (related) {
             this[camelKey] = this[camelKey] || [];
 
-            // Sometimes a relationship will have a reference to the current resource
-            // For example 1341151 has activity g-nufy and g-nufy has 1341151 as a place
-            let relatedHasReferenceToThis = false;
-            _.each(related.relationships, (rel) => {
+            // Prototype version of new approach to relationships. Instead of checking for self-reference
+            // in relationships, lets remove all that references back to resource. Do we even need to use them?
+            let modifiedRelated = {};
+            _.each(related.relationships, (rel, key) => {
               if (Array.isArray(rel.data) &&
                 rel.data.find(r =>
                   r.id === this.id &&
                   r.type === this.type
                 )) {
-                relatedHasReferenceToThis = true;
-              } else if (rel.data && rel.data.id === this.id && rel.data.type === this.type) {
-                relatedHasReferenceToThis = true;
+                }
+              else if (rel.data && rel.data.id === this.id && rel.data.type === this.type) {
+              } else {
+                modifiedRelated[key] = rel;
               }
-            });
+            })
 
-            if (relatedHasReferenceToThis) {
-              this[camelKey].push(createResourceFromDocument({ ...related }));
-            } else {
-              this[camelKey].push(createResourceFromDocument({
-                ...related,
-                included: this._included,
-              }));
-            }
+            related.relationships = modifiedRelated;
+            this[camelKey].push(createResourceFromDocument({
+              ...related,
+              included: this._included,
+            }));
           }
         });
       } else {
