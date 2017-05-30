@@ -167,21 +167,20 @@ export default class Resource {
           if (related) {
             this[camelKey] = this[camelKey] || [];
 
-            // Prototype version of new approach to relationships. Instead of checking for self-reference
-            // in relationships, lets remove all that references back to resource. Do we even need to use them?
-            let modifiedRelated = {};
-            _.each(related.relationships, (rel, key) => {
-              if (Array.isArray(rel.data) &&
-                rel.data.find(r =>
+            // Exclude any relationships that reference back to original resource to
+            // prevent infinite looping issues
+            const modifiedRelated = {};
+            _.each(related.relationships, (includedRel, includedRelKey) => {
+              if (Array.isArray(includedRel.data) && includedRel.data.find(r =>
                   r.id === this.id &&
-                  r.type === this.type
-                )) {
-                }
-              else if (rel.data && rel.data.id === this.id && rel.data.type === this.type) {
-              } else {
-                modifiedRelated[key] = rel;
+                  r.type === this.type) ||
+                  (includedRel.data && includedRel.data.id === this.id
+                  && includedRel.data.type === this.type)) {
+                return;
               }
-            })
+
+              modifiedRelated[includedRelKey] = includedRel;
+            });
 
             related.relationships = modifiedRelated;
             this[camelKey].push(createResourceFromDocument({
