@@ -1,0 +1,335 @@
+{
+  "data": {
+    "attributes": {
+      "ancestor_ids": [
+        1000321,
+        358537,
+        1326050,
+        360727,
+        360760
+      ],
+      "center": {
+        "coordinates": [
+          2.170433,
+          41.384641
+        ],
+        "type": "Point"
+      },
+      "name": "Barcelona",
+      "place_type": "city"
+    },
+    "id": "360761",
+    "links": {
+      "self": "/places/360761"
+    },
+    "relationships": {
+      "activities": {
+        "links": {
+          "related": "/partner-activities?filter[partner_activity][place][equals]=360761"
+        }
+      },
+      "ancestry": {
+        "links": {
+          "related": "/places/360761/ancestry"
+        }
+      },
+      "articles": {
+        "links": {
+          "related": "/articles?filter[article][place][equals]=360761&page[limit]=2"
+        }
+      },
+      "descendants": {
+        "links": {
+          "related": "/places/360761/descendants"
+        }
+      },
+      "image-associations": {
+        "data": [
+          {
+            "id": "places_masthead_5156",
+            "type": "image_association"
+          },
+          {
+            "id": "places_hero_6773",
+            "type": "image_association"
+          },
+          {
+            "id": "places_food_50636",
+            "type": "image_association"
+          }
+        ],
+        "links": {
+          "related": "/places/360761/image_associations"
+        }
+      },
+      "introduction": {
+        "links": {
+          "related": "/places/360761/introduction"
+        }
+      },
+      "lodgings": {
+        "links": {
+          "related": "/lodgings?filter[lodging][place_id][has_ancestor]=360761"
+        }
+      },
+      "love-letter": {
+        "links": {
+          "related": "/places/360761/love_letter"
+        }
+      },
+      "narratives": {
+        "links": {
+          "related": "/places/360761/narratives"
+        }
+      },
+      "news": {
+        "links": {
+          "related": "/news?filter[news][place][equals]=360761&page[limit]=2"
+        }
+      },
+      "parent": {
+        "data": {
+          "id": "360760",
+          "type": "place"
+        },
+        "links": {
+          "related": "/places/360760"
+        }
+      },
+      "pois": {
+        "links": {
+          "related": "/pois?filter[poi][place_id][has_ancestor]=360761"
+        }
+      },
+      "shape": {
+        "data": {
+          "id": "1598",
+          "type": "place_shape"
+        },
+        "links": {
+          "related": "/places/360761/shape"
+        }
+      },
+      "top-experiences": {
+        "links": {
+          "related": "/places/360761/top_experiences"
+        }
+      }
+    },
+    "type": "place"
+  },
+  "included": [
+    {
+      "attributes": {
+        "attribution": [],
+        "caption": "",
+        "height": 756,
+        "orientation": "portrait",
+        "path": "/a/g/hi/t/14992701ade2a32f2fff12f02a078900-western-europe.jpg",
+        "width": 501
+      },
+      "id": "17645",
+      "links": {
+        "pixels": "https://media.lonelyplanet.com/a/g/hi/t/14992701ade2a32f2fff12f02a078900-western-europe.jpg",
+        "self": "/images/17645"
+      },
+      "type": "image"
+    },
+    {
+      "attributes": {
+        "tag": "food"
+      },
+      "id": "places_food_50636",
+      "links": {
+        "self": "/image_associations/places_food_50636"
+      },
+      "relationships": {
+        "from": {
+          "data": {
+            "id": "17645",
+            "type": "image"
+          },
+          "links": {
+            "related": "/images/17645"
+          }
+        },
+        "to": {
+          "data": {
+            "id": "360761",
+            "type": "place"
+          },
+          "links": {
+            "related": "/places/360761"
+          }
+        }
+      },
+      "type": "image_association"
+    },
+    {
+      "attributes": {
+        "crops": [
+          {
+            "crop": " 2848:1886;0,0",
+            "resolution": "3020x2000"
+          },
+          {
+            "crop": " 2848:2596;0,0",
+            "resolution": "768x700"
+          },
+          {
+            "crop": " 2848:3721;0,0",
+            "resolution": "375x490"
+          },
+          {
+            "crop": " 2848:2848;0,0",
+            "resolution": "820x820"
+          },
+          {
+            "crop": " 2848:1539;0,0",
+            "resolution": "522x282"
+          },
+          {
+            "crop": " 2848:4272;0,0",
+            "resolution": "1740x2610"
+          },
+          {
+            "crop": " 2848:1139;0,0",
+            "resolution": "1440x576"
+          }
+        ],
+        "tag": "hero"
+      },
+      "id": "places_hero_6773",
+      "links": {
+        "self": "/image_associations/places_hero_6773"
+      },
+      "relationships": {
+        "from": {
+          "data": {
+            "id": "13469",
+            "type": "image"
+          },
+          "links": {
+            "related": "/images/13469"
+          }
+        },
+        "to": {
+          "data": {
+            "id": "360761",
+            "type": "place"
+          },
+          "links": {
+            "related": "/places/360761"
+          }
+        }
+      },
+      "type": "image_association"
+    },
+    {
+      "attributes": {
+        "attribution": [
+          {
+            "name": "Image by Oscar Cardoso",
+            "organization": "500px Images"
+          }
+        ],
+        "caption": "Facade, Casa Batlló - Gaudí architecture work - Barcelona, Spain",
+        "height": 2592,
+        "orientation": "landscape",
+        "path": "/mastheads/stock-photo-casa-batllo%CC%81-1-5045639.jpg",
+        "width": 3872
+      },
+      "id": "13313",
+      "links": {
+        "pixels": "https://media.lonelyplanet.com/mastheads/stock-photo-casa-batllo%CC%81-1-5045639.jpg",
+        "self": "/images/13313"
+      },
+      "type": "image"
+    },
+    {
+      "attributes": {
+        "crops": [
+          {
+            "crop": " 3872:2564;0,0",
+            "resolution": "3020x2000"
+          },
+          {
+            "crop": " 2843:2592;514,0",
+            "resolution": "768x700"
+          },
+          {
+            "crop": " 1983:2592;944,0",
+            "resolution": "375x490"
+          },
+          {
+            "crop": " 2592:2592;640,0",
+            "resolution": "820x820"
+          },
+          {
+            "crop": " 3872:2092;0,0",
+            "resolution": "522x282"
+          },
+          {
+            "crop": " 1728:2592;1072,0",
+            "resolution": "1740x2610"
+          },
+          {
+            "crop": " 3872:1549;0,0",
+            "resolution": "1440x576"
+          }
+        ],
+        "strapline": "is wandering through a dream",
+        "tag": "masthead"
+      },
+      "id": "places_masthead_5156",
+      "links": {
+        "self": "/image_associations/places_masthead_5156"
+      },
+      "relationships": {
+        "from": {
+          "data": {
+            "id": "13313",
+            "type": "image"
+          },
+          "links": {
+            "related": "/images/13313"
+          }
+        },
+        "to": {
+          "data": {
+            "id": "360761",
+            "type": "place"
+          },
+          "links": {
+            "related": "/places/360761"
+          }
+        }
+      },
+      "type": "image_association"
+    },
+    {
+      "attributes": {
+        "attribution": [
+          {
+            "name": "Image by Simone Migliazza",
+            "organization": "500px Images"
+          }
+        ],
+        "caption": "Di Barcellona IV",
+        "height": 4272,
+        "orientation": "portrait",
+        "path": "/mastheads/stock-photo-di-barcellona-iv-67528947.jpg",
+        "width": 2848
+      },
+      "id": "13469",
+      "links": {
+        "pixels": "https://media.lonelyplanet.com/mastheads/stock-photo-di-barcellona-iv-67528947.jpg",
+        "self": "/images/13469"
+      },
+      "type": "image"
+    }
+  ],
+  "links": {
+    "self": "/places/360761?include=image-associations.from"
+  }
+}

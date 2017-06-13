@@ -20,6 +20,19 @@ describe("urlBuilder", () => {
     expect(filterString).to.equal("http://api.lonelyplanet.com/places?filter[poi_type][equals]=eating,sleeping&filter[location][notexists]&filter[subtypes][equals]=museum");
   });
 
+  it("should build urls with custom params like expanded_children", () => {
+    const base = "http://api.lonelyplanet.com";
+    const resource = "places/360761/narratives/planning/if-you-like";
+
+    const url = build({
+      base,
+      resource,
+      expanded_children: true
+    });
+
+    expect(url).to.equal(`${base}/${resource}?expanded_children=true`);
+  });
+
   it("should build urls with filters and incldues", () => {
     const base = "http://api.lonelyplanet.com";
     const resource = "pois";

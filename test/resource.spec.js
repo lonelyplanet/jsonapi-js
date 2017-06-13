@@ -2,6 +2,7 @@ import Resource from "../src/core/resource";
 import { expect } from "chai";
 import sinon from "sinon";
 import placeDoc from "./fixtures/place.json";
+import placeWithImages from "./fixtures/placeWithImages.json"
 import pois from "./fixtures/pois.json";
 import poi from "./fixtures/poi.json";
 // import Benchmark from "benchmark";
@@ -110,6 +111,19 @@ describe("Resource", function() {
       .to.be.ok;
     expect(models.filter((m) => m.id === "1534790")[0].imageAssociations.from.path)
       .to.equal("/a/g/hi/t/1a68c1375a0936c75218c6228ceae66a-bicentennial-capitol-mall.jpg");
+  });
+
+  it("should add many to many relationships as instance properties", () => {
+    const model = Resource.from(placeWithImages);
+
+    expect(model.imageAssociations.filter((a) => a.tag === "masthead")[0].from.path)
+      .to.equal("/mastheads/stock-photo-casa-batllo%CC%81-1-5045639.jpg");
+
+    expect(model.imageAssociations.filter((a) => a.tag === "hero")[0].from.path)
+      .to.equal("/mastheads/stock-photo-di-barcellona-iv-67528947.jpg");
+
+    expect(model.imageAssociations.filter((a) => a.tag === "food")[0].from.path)
+      .to.equal("/a/g/hi/t/14992701ade2a32f2fff12f02a078900-western-europe.jpg");
   });
 
   // Uncomment for testing performance
