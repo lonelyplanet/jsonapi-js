@@ -67,6 +67,11 @@ export default class Resource {
     const run = _.memoize(createResourceFromDocument);
     const resource = run(document);
 
+    /* Handle very weird responses like that: http://stable.web.op-api-gateway.qa.lonelyplanet.com/places/363014/narratives/planning/if-you-like */
+    if (!resource) {
+      return null;
+    }
+
     return Array.isArray(resource) ?
       resource.map(r => r.toJs()) :
       resource.toJs();

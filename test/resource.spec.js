@@ -5,6 +5,7 @@ import placeDoc from "./fixtures/place.json";
 import placeWithImages from "./fixtures/placeWithImages.json"
 import pois from "./fixtures/pois.json";
 import poi from "./fixtures/poi.json";
+import emptyNarrative from "./fixtures/emptyNarrative.json"
 // import Benchmark from "benchmark";
 
 describe("Resource", function() {
@@ -87,6 +88,11 @@ describe("Resource", function() {
     expect(model.containingPlace.ancestry.length).to.equal(6);
     expect(model.containingPlace.activities.length).to.equal(10);
     expect(model.containingPlace.activities[0].id).to.equal("g-NUFY");
+  });
+
+  it("should return null on empty resource", () => {
+    const model = Resource.from(emptyNarrative);
+    expect(model).to.equal(null);
   });
 
   it("should add one to many relationships as instance properties", () => {
