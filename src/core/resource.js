@@ -17,7 +17,7 @@ const _ = {
  */
 function createResourceFromDocument(document) {
   if (Array.isArray(document.data)) {
-    return document.data.map((d) => createResourceFromDocument({
+    return document.data.map(d => createResourceFromDocument({
       ...d,
       included: document.included,
       links: d.links,
@@ -44,8 +44,6 @@ function createResourceFromDocument(document) {
     included,
   });
 }
-
-let count = 0;
 
 /**
  * An abstraction over JsonAPI resources
@@ -97,7 +95,7 @@ export default class Resource {
     meta = {},
     included = [],
   } = {},
-  _fetch = fetch) {
+    _fetch = fetch) {
     this.id = id;
     this.type = type;
     this.relationships = relationships;
@@ -113,7 +111,7 @@ export default class Resource {
   fetch(...args) {
     return new Promise((resolve, reject) => {
       this._fetch(...args)
-        .then((r) => resolve(this._resolve(r)))
+        .then(r => resolve(this._resolve(r)))
         .catch(reject);
     });
   }

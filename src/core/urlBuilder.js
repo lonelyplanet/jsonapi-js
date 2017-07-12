@@ -10,7 +10,7 @@ const _ = { merge, map, mapKeys, camelCase };
  * @param  {string} str A camelCaseString
  * @return {string} An underscore cased string
  */
-const underscore = (str) => str.replace(/[A-Z]/g, (n) => `_${n.toLowerCase()}`);
+const underscore = str => str.replace(/[A-Z]/g, n => `_${n.toLowerCase()}`);
 
 function getBaseParams(url) {
   const matches = url.match(/(https?:\/\/[^/]*)\/([^?]*)/);
@@ -55,7 +55,8 @@ function createOperatorObject(memo, keys, value) {
     }
     case 3: {
       const [relationship, ...rest] = keys;
-      filter[relationship] = Object.assign({}, filter[relationship] || {}, createOperatorObject({}, rest, value));
+      filter[relationship] = Object.assign({}, filter[relationship] || {},
+        createOperatorObject({}, rest, value));
       break;
     }
     default:
@@ -129,7 +130,13 @@ function parseQueryString(url) {
 */
 function unbuild(url) {
   const { base, resource } = getBaseParams(url);
-  const { filters, includes, perPage, page, sort, expanded_children } = parseQueryString(decodeURIComponent(url));
+  const {
+    filters,
+    includes,
+    perPage,
+    page,
+    sort,
+    expanded_children } = parseQueryString(decodeURIComponent(url));
 
   return {
     base,
@@ -139,14 +146,14 @@ function unbuild(url) {
     perPage,
     page,
     sort,
-    expanded_children
+    expanded_children,
   };
 }
 
 function isArrayOfCustomFilters(arry) {
   return Boolean(
     Array.isArray(arry) &&
-    arry.map(fi => typeof fi).filter(ft => ft === "object").length
+    arry.map(fi => typeof fi).filter(ft => ft === "object").length,
   );
 }
 
@@ -176,9 +183,9 @@ function createFilter(key, value) {
       // filter[resource][field][operator]=value
       const keys = value;
 
-      filterString += Object.keys(keys).map(relKey => {
+      filterString += Object.keys(keys).map((relKey) => {
         if (isArrayOfCustomFilters(value[relKey])) {
-          return value[relKey].map((obj) =>
+          return value[relKey].map(obj =>
             `${baseFilter}[${underscore(relKey)}]${createFilter(null, obj)}`).join("&");
         }
         return `${baseFilter}[${underscore(relKey)}]${createFilter(null, value[relKey])}`;
@@ -233,7 +240,7 @@ const createIncludes = (include) => {
   return `include=${include.join(",")}`;
 };
 
-function buildQuery({ includes = [], filters = {}, page, perPage, sort, expanded_children, }) {
+function buildQuery({ includes = [], filters = {}, page, perPage, sort, expandedChildren }) {
   const urlParts = [];
 
   if (includes.length) {
@@ -252,8 +259,8 @@ function buildQuery({ includes = [], filters = {}, page, perPage, sort, expanded
     urlParts.push(`sort=${sort}`)
   }
 
-  if (expanded_children) {
-    urlParts.push(`expanded_children=${expanded_children}`)
+  if (expandedChildren) {
+    urlParts.push(`expanded_children=${expandedChildren}`);
   }
 
   return urlParts.filter(part => part).join("&");
@@ -303,16 +310,16 @@ function build({
 
   // incoming filters need to be formated the same way as
   // when being unbuilt from the url string
-  filters = formatFilterKeys(filters);
+  const formattedFilters = formatFilterKeys(filters);
   const merged = _.merge({}, {
     include: params.includes,
     page: params.page,
     filters: params.filters,
     perPage: params.perPage,
     sort: params.sort,
-    expanded_children: params.expanded_children,
+    expandedChildren: params.expanded_children,
   }, {
-    includes, page, filters, perPage, sort, expanded_children,
+    includes, page, filters: formattedFilters, perPage, sort, expandedChildren: expanded_children,
   });
   const query = buildQuery(merged);
 
