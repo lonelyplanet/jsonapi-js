@@ -1,6 +1,7 @@
-import circuitbreaker from "circuitbreaker";
-import { build } from "./urlBuilder";
 import isEmpty from "lodash/isEmpty";
+import { build } from "./urlBuilder";
+import createTraceToken from "./createTraceToken";
+
 
 const isofetch = typeof window !== "undefined" ?
   require("isomorphic-fetch/fetch-npm-browserify.js") :
@@ -21,20 +22,22 @@ export function processErrors({ url, body, callback }) {
     }
 
     return callback(new Error(
-      `JSONAPI ${error.title}: ${error.detail} on ${url}`
+      `JSONAPI ${error.title}: ${error.detail} on ${url}`,
     ));
   }
 
   return callback(
-    new Error(`JSONAPI ${errors.map(e => `${e.title} ${e.detail}`).join("\n")}`)
+    new Error(`JSONAPI ${errors.map(e => `${e.title} ${e.detail}`).join("\n")}`),
   );
 }
 
 // Private makeRequest method to pass to our circuitbreaker
 const makeRequest = function makeRequest(url, callback) {
-  return isofetch(url).then((response) =>
-    response.json()
-  )
+  return isofetch(url, {
+    headers: {
+      "X-Trace-Token": createTraceToken(url),
+    },
+  }).then(response => response.json())
   .then((body) => {
     if (body.errors) {
       return processErrors({ url, body, callback });
@@ -67,7 +70,7 @@ function fetch({
   page,
   perPage,
   sort,
-  expanded_children
+  expanded_children,
 } = {}) {
   return new Promise((resolve, reject) => {
     const base = process.env.JSONAPIJS_HOST;
@@ -85,23 +88,13 @@ function fetch({
     // Keeping in for now as we're working through OP issues
     process.env.NODE_ENV === "development" && console.log(url);
 
-    const breaker = circuitbreaker(makeRequest, {
-      timeout: process.env.JSONAPIJS_TIMEOUT || 20000,
-      maxFailures: 3,
-      resetTimeout: 30,
+    return makeRequest(url, (e, response) => {
+      if (e) {
+        return reject(e);
+      }
+
+      return resolve(response);
     });
-
-    return breaker(url)
-      .then((model) => {
-        resolve(model);
-      })
-      .fail((err) => {
-        if (err.message.match(/CircuitBreaker timeout/)) {
-          return reject(new Error(`Couldn't connect to ${process.env.JSONAPIJS_HOST}`));
-        }
-
-        return reject(err);
-      });
   });
 }
 
