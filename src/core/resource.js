@@ -1,13 +1,14 @@
 import clone from "lodash/clone";
 import each from "lodash/each";
 import find from "lodash/find";
+import reject from "lodash/reject";
 import camelCase from "lodash/camelCase";
 import memoize from "lodash/memoize";
 import isEmpty from "lodash/isEmpty";
 import { fetch } from "./request";
 
 const _ = {
-  clone, each, find, camelCase, memoize, isEmpty,
+  clone, each, find, camelCase, memoize, isEmpty, reject,
 };
 
 /**
@@ -170,26 +171,36 @@ export default class Resource {
           if (related) {
             this[camelKey] = this[camelKey] || [];
 
-            // Exclude any relationships that reference back to original resource to
-            // prevent infinite looping issues
-            const modifiedRelated = {};
-            _.each(related.relationships, (includedRel, includedRelKey) => {
-              if (Array.isArray(includedRel.data) && includedRel.data.find(r =>
-                  r.id === this.id &&
-                  r.type === this.type) ||
-                  (includedRel.data && includedRel.data.id === this.id
-                  && includedRel.data.type === this.type)) {
-                return;
-              }
+            // Sometimes a relationship will have a reference to the current resource
+            // For example 1341151 has activity g-nufy and g-nufy has 1341151 as a place
+            let relatedHasReferenceToThis = false;
 
-              modifiedRelated[includedRelKey] = includedRel;
+            // Remove "to" relationship as imageAssociations for place always reference
+            // back to initial resource.
+            const modifiedRelationships = _.reject(related.relationships, (rel, key) => {
+              return key === "to";
+            })
+
+            _.each(modifiedRelationships, (rel) => {
+              if (Array.isArray(rel.data) &&
+                rel.data.find(r =>
+                  r.id === this.id &&
+                  r.type === this.type
+                )) {
+                relatedHasReferenceToThis = true;
+              } else if (rel.data && rel.data.id === this.id && rel.data.type === this.type) {
+                relatedHasReferenceToThis = true;
+              }
             });
 
-            related.relationships = modifiedRelated;
-            this[camelKey].push(createResourceFromDocument({
-              ...related,
-              included: this._included,
-            }));
+            if (relatedHasReferenceToThis) {
+              this[camelKey].push(createResourceFromDocument({ ...related }));
+            } else {
+              this[camelKey].push(createResourceFromDocument({
+                ...related,
+                included: this._included,
+              }));
+            }
           }
         });
       } else {
