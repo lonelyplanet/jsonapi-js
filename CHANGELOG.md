@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.4.4"></a>
+## [0.4.4](https://github.com/lonelyplanet/jsonapi-js/compare/v0.4.3...v0.4.4) (2017-10-04)
+
+
+### Bug Fixes
+
+* Evidently we still need relationships in some cases ([9b1227c](https://github.com/lonelyplanet/jsonapi-js/commit/9b1227c))
+
+
+
 <a name="0.4.3"></a>
 ## [0.4.3](https://github.com/lonelyplanet/jsonapi-js/compare/v0.4.1...v0.4.3) (2017-10-04)
 

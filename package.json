@@ -1,6 +1,6 @@
 {
   "name": "jsonapi-js",
-  "version": "0.4.3",
+  "version": "0.4.4",
   "main": "dist/index",
   "scripts": {
     "build": "NODE_ENV=test npm test && rimraf dist/* && npm run build:prod",
