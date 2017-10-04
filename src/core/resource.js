@@ -1,3 +1,4 @@
+// @ts-check
 import clone from "lodash/clone";
 import each from "lodash/each";
 import find from "lodash/find";
@@ -14,15 +15,18 @@ const _ = {
 /**
  * Recursively process a document
  * @param  {object} document A JsonAPI Document
+ * @param  {{ relationships: boolean }} options Additional processing options
  * @return {Resource | [Resource]}  Returns a resorce or an array of resources
  */
-function createResourceFromDocument(document) {
+function createResourceFromDocument(document, options = {
+  relationships: false,
+}) {
   if (Array.isArray(document.data)) {
     return document.data.map(d => createResourceFromDocument({
       ...d,
       included: document.included,
       links: d.links,
-    }));
+    }, options));
   }
 
   const doc = document.data ? document.data : document;
@@ -43,6 +47,7 @@ function createResourceFromDocument(document) {
     meta,
     links,
     included,
+    options,
   });
 }
 
@@ -62,9 +67,9 @@ export default class Resource {
    * @param  {object} document The JsonAPI compliant document
    * @return {Resource} An instance of the Resource class
    */
-  static from(document) {
+  static from(document, options) {
     const run = _.memoize(createResourceFromDocument);
-    const resource = run(document);
+    const resource = run(document, options);
 
     /* Handle very weird responses like that: http://stable.web.op-api-gateway.qa.lonelyplanet.com/places/363014/narratives/planning/if-you-like */
     if (!resource) {
@@ -77,7 +82,7 @@ export default class Resource {
   }
   /**
    * Constructor for a resource
-   * @param  {string} options
+   * @param  {Objects} options
    * @param  {string} options.id=""
    * @param  {string} options.type=""
    * @param  {string} [options.attributes=""]
@@ -85,6 +90,7 @@ export default class Resource {
    * @param  {string} [options.links={}]
    * @param  {string} [options.meta={}]
    * @param  {string} [options.included=[]]
+   * @param  {{ relationships: boolean }} [options.options={}]
    * @return {Resource} An instance of a Resource
    */
   constructor({
@@ -95,13 +101,21 @@ export default class Resource {
     links = {},
     meta = {},
     included = [],
+    options = {
+      relationships: false,
+    },
   } = {},
     _fetch = fetch) {
     this.id = id;
     this.type = type;
     this.links = links;
 
-    this._relationships = relationships;
+    if (options.relationships) {
+      this.relationships = relationships;
+    } else {
+      this._relationships = relationships;
+    }
+
     this._meta = meta;
 
     this._fetch = _fetch;
@@ -111,15 +125,16 @@ export default class Resource {
     this._create();
   }
   fetch(...args) {
+    const options = args[0];
     return new Promise((resolve, reject) => {
       this._fetch(...args)
-        .then(r => resolve(this._resolve(r)))
+        .then(r => resolve(this._resolve(r, options)))
         .catch(reject);
     });
   }
-  _resolve(response) {
+  _resolve(response, options) {
     return (response && !_.isEmpty(response)) ? {
-      model: Resource.from(response),
+      model: Resource.from(response, options),
       response,
     } : {
       model: null,
@@ -155,7 +170,7 @@ export default class Resource {
       this[_.camelCase(key)] = _.clone(attribute);
     });
 
-    _.each(this._relationships, (rel, key) => {
+    _.each((this._relationships || this.relationships), (rel, key) => {
       const camelKey = _.camelCase(key);
 
       // Admittedly don't love this, but infinite loops happen when recursing. TM
@@ -180,7 +195,7 @@ export default class Resource {
             // back to initial resource.
             const modifiedRelationships = _.reject(related.relationships, (rel, key) => {
               return key === "to";
-            })
+            });
 
             _.each(modifiedRelationships, (rel) => {
               if (Array.isArray(rel.data) &&
@@ -220,7 +235,7 @@ export default class Resource {
   }
   /**
    * Return the JavaScript object for this resource
-   * @return {[type]} [description]
+   * @return {Object} Processed object
    */
   toJs() {
     const js = {};
