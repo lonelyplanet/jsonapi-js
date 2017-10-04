@@ -99,9 +99,10 @@ export default class Resource {
     _fetch = fetch) {
     this.id = id;
     this.type = type;
-    this.relationships = relationships;
     this.links = links;
-    this.meta = meta;
+
+    this._relationships = relationships;
+    this._meta = meta;
 
     this._fetch = _fetch;
     this._attributes = attributes;
@@ -154,7 +155,7 @@ export default class Resource {
       this[_.camelCase(key)] = _.clone(attribute);
     });
 
-    _.each(this.relationships, (rel, key) => {
+    _.each(this._relationships, (rel, key) => {
       const camelKey = _.camelCase(key);
 
       // Admittedly don't love this, but infinite loops happen when recursing. TM
@@ -185,7 +186,7 @@ export default class Resource {
               if (Array.isArray(rel.data) &&
                 rel.data.find(r =>
                   r.id === this.id &&
-                  r.type === this.type
+                  r.type === this.type,
                 )) {
                 relatedHasReferenceToThis = true;
               } else if (rel.data && rel.data.id === this.id && rel.data.type === this.type) {
