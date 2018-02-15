@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.4.5"></a>
+## [0.4.5](https://github.com/lonelyplanet/jsonapi-js/compare/v0.4.4...v0.4.5) (2018-02-15)
+
+
+### Bug Fixes
+
+* Add keepalive flag to server side http calls ([bf96887](https://github.com/lonelyplanet/jsonapi-js/commit/bf96887))
+
+
+
 <a name="0.4.4"></a>
 ## [0.4.4](https://github.com/lonelyplanet/jsonapi-js/compare/v0.4.3...v0.4.4) (2017-10-04)
 
