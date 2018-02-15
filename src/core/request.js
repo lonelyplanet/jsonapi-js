@@ -2,10 +2,19 @@ import isEmpty from "lodash/isEmpty";
 import { build } from "./urlBuilder";
 import createTraceToken from "./createTraceToken";
 
-
 const isofetch = typeof window !== "undefined" ?
   require("isomorphic-fetch/fetch-npm-browserify.js") :
   require("isomorphic-fetch");
+
+const http = typeof window === "undefined" ?
+  require("http") :
+  null;
+
+const agent = http ?
+  null :
+  new http.Agent({
+    keepAlive: true,
+  });
 
 const _ = {
   isEmpty,
@@ -33,11 +42,17 @@ export function processErrors({ url, body, callback }) {
 
 // Private makeRequest method to pass to our circuitbreaker
 const makeRequest = function makeRequest(url, callback) {
-  return isofetch(url, {
+  const options = {
     headers: {
       "X-Trace-Token": createTraceToken(url),
     },
-  }).then(response => response.json())
+  };
+
+  if (agent) {
+    options.agent = agent;
+  }
+
+  return isofetch(url, options).then(response => response.json())
   .then((body) => {
     if (body.errors) {
       return processErrors({ url, body, callback });
