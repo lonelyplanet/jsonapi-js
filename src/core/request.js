@@ -11,10 +11,10 @@ const http = typeof window === "undefined" ?
   null;
 
 const agent = http ?
-  null :
   new http.Agent({
     keepAlive: true,
-  });
+  }) :
+  null;
 
 const _ = {
   isEmpty,
