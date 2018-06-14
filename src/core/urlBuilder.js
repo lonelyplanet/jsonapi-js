@@ -251,7 +251,9 @@ function buildQuery({ includes = [], filters = {}, page, perPage, sort, expanded
     urlParts.push(createFilters(filters));
   }
 
-  urlParts.push(paginate({ page, perPage }));
+  if (page || perPage) {
+    urlParts.push(paginate({ page, perPage }));
+  }
 
   if (sort) {
     urlParts.push(`sort=${sort}`)
